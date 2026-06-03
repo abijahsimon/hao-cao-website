@@ -1,0 +1,26 @@
+.DS_Store
+._*
+
+# Local editor/system files
+*.swp
+*.tmp
+*.bak
+*.log
+
+# Secrets/config that should never be published accidentally
+.env
+.env.*
+*.pem
+*.key
+
+# Dependency/build folders, in case this site later gains a build step
+node_modules/
+dist/
+build/
+.cache/
+
+# Working/reference material not linked by the public website
+archive/
+references/
+*.zip
+~$*
