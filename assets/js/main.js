@@ -106,10 +106,74 @@
 				return;
 
 			var ns = 'http://www.w3.org/2000/svg',
-				jupiterCx = parseFloat(svg.getAttribute('data-jupiter-cx')) || 1045,
-				jupiterCy = parseFloat(svg.getAttribute('data-jupiter-cy')) || 485,
-				jupiterRadius = parseFloat(svg.getAttribute('data-jupiter-radius')) || 155,
 				ganymedeRadius = parseFloat(svg.getAttribute('data-ganymede-radius')) || 15;
+
+			function drawJupiterFieldLines() {
+				const svg = document.getElementById("magneticHero");
+				const fieldGroup = document.getElementById("jupiterFieldLines");
+				const footpointGroup = document.getElementById("jupiterFieldFootpoints");
+
+				if (!svg || !fieldGroup || !footpointGroup) return;
+
+				const cx = Number(svg.dataset.jupiterCx || 1085) || 1085;
+				const cy = Number(svg.dataset.jupiterCy || 485) || 485;
+				const planetRadius = Number(svg.dataset.jupiterRadius || 175) || 175;
+				const topPole = {
+					x: cx,
+					y: cy - planetRadius * 0.77
+				};
+				const bottomPole = {
+					x: cx,
+					y: cy + planetRadius * 0.77
+				};
+
+				fieldGroup.innerHTML = "";
+				footpointGroup.innerHTML = "";
+
+				const lines = [
+					{ rx: 150, ry: 155, poleSpread: 3, cls: "inner", opacity: 0.44 },
+					{ rx: 205, ry: 205, poleSpread: 6, cls: "inner", opacity: 0.40 },
+					{ rx: 270, ry: 260, poleSpread: 9, cls: "inner", opacity: 0.35 },
+					{ rx: 340, ry: 315, poleSpread: 12, cls: "", opacity: 0.30 },
+					{ rx: 425, ry: 380, poleSpread: 16, cls: "", opacity: 0.25 },
+					{ rx: 520, ry: 455, poleSpread: 20, cls: "outer", opacity: 0.20 },
+					{ rx: 635, ry: 540, poleSpread: 24, cls: "outer", opacity: 0.16 },
+					{ rx: 760, ry: 620, poleSpread: 28, cls: "outer", opacity: 0.12 }
+				];
+
+				function appendLobe(side, line) {
+					const top = {
+						x: topPole.x + side * line.poleSpread,
+						y: topPole.y + line.poleSpread * 0.15
+					};
+					const bottom = {
+						x: bottomPole.x + side * line.poleSpread,
+						y: bottomPole.y - line.poleSpread * 0.15
+					};
+					const farX = cx + side * line.rx;
+					const upperY = cy - line.ry;
+					const lowerY = cy + line.ry;
+					const d = [
+						`M ${top.x.toFixed(2)} ${top.y.toFixed(2)}`,
+						`C ${(cx + side * line.rx * 0.20).toFixed(2)} ${upperY.toFixed(2)},`,
+						`${farX.toFixed(2)} ${(cy - line.ry * 0.72).toFixed(2)},`,
+						`${farX.toFixed(2)} ${cy.toFixed(2)}`,
+						`C ${farX.toFixed(2)} ${(cy + line.ry * 0.72).toFixed(2)},`,
+						`${(cx + side * line.rx * 0.20).toFixed(2)} ${lowerY.toFixed(2)},`,
+						`${bottom.x.toFixed(2)} ${bottom.y.toFixed(2)}`
+					].join(" ");
+					const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+					path.setAttribute("d", d);
+					path.setAttribute("class", `jupiter-field-line ${line.cls}`.trim());
+					path.setAttribute("opacity", line.opacity);
+					fieldGroup.appendChild(path);
+				}
+
+				lines.forEach((line) => {
+					appendLobe(-1, line);
+					appendLobe(1, line);
+				});
+			}
 
 			function rotatePoint(x, y, angleDeg, originX, originY) {
 				var a = angleDeg * Math.PI / 180,
@@ -259,20 +323,7 @@
 				});
 			}
 
-			appendDipoleLines(jupiterLinesGroup, [560, 720, 940, 1250, 1720, 2400], {
-				cx: jupiterCx,
-				cy: jupiterCy,
-				radius: jupiterRadius,
-				scaleX: 0.68,
-				scaleY: 1.16,
-				tiltDeg: 0,
-				sides: [-1, 1],
-				surfaceSides: [-0.72, -0.42, -0.18, 0.18, 0.42, 0.72],
-				className: 'jupiter-dipole-line',
-				surfaceClassName: 'jupiter-dipole-footpoint',
-				surfaceGroup: jupiterFootpointGroup,
-				surfaceSegmentPoints: 7
-			});
+			drawJupiterFieldLines();
 
 			ganymedeLinesGroups.forEach(function(ganymedeLinesGroup) {
 				appendDipoleLines(ganymedeLinesGroup, [30, 42, 56], {

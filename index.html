@@ -32,9 +32,9 @@
 									class="jovian-hero-svg"
 									viewBox="0 0 1600 900"
 									preserveAspectRatio="xMidYMid slice"
-									data-jupiter-cx="1045"
+									data-jupiter-cx="1085"
 									data-jupiter-cy="485"
-									data-jupiter-radius="180"
+									data-jupiter-radius="175"
 									data-ganymede-radius="15"
 									aria-hidden="true"
 								>
@@ -101,19 +101,19 @@
 										</radialGradient>
 
 										<clipPath id="jupiterClip">
-											<circle cx="1045" cy="485" r="155"></circle>
+											<circle cx="1085" cy="485" r="155"></circle>
 										</clipPath>
 
 										<clipPath id="jupiterCutawayClip">
-											<path d="M 1045 485 L 1165 392 A 155 155 0 0 1 1174 588 Z"></path>
+											<path d="M 1085 485 L 1205 392 A 155 155 0 0 1 1214 588 Z"></path>
 										</clipPath>
 
 										<path id="europaOrbitPath" d="M 745 500 A 300 50 0 0 1 1345 500 A 300 50 0 0 1 745 500"></path>
 										<path id="europaOrbitBackPath" d="M 745 500 A 300 50 0 0 1 1345 500"></path>
 										<path id="europaOrbitFrontPath" d="M 1345 500 A 300 50 0 0 1 745 500"></path>
-										<path id="ganymedeOrbitPath" d="M 1425 505 A 380 82 0 0 0 665 505 A 380 82 0 0 0 1425 505"></path>
-										<path id="ganymedeOrbitBackPath" d="M 1425 505 A 380 82 0 0 0 665 505"></path>
-										<path id="ganymedeOrbitFrontPath" d="M 665 505 A 380 82 0 0 0 1425 505"></path>
+										<path id="ganymedeOrbitPath" d="M 665 505 A 380 82 0 0 1 1425 505 A 380 82 0 0 1 665 505"></path>
+										<path id="ganymedeOrbitBackPath" d="M 665 505 A 380 82 0 0 1 1425 505"></path>
+										<path id="ganymedeOrbitFrontPath" d="M 1425 505 A 380 82 0 0 1 665 505"></path>
 									</defs>
 
 									<rect class="space-base" width="1600" height="900"></rect>
@@ -167,17 +167,27 @@
 										</g>
 									</g>
 
-									<g class="jupiter-visual" filter="url(#jupiterShadow)" transform="translate(1045 485) scale(1.16) translate(-1045 -485)">
+									<g class="jupiter-visual" filter="url(#jupiterShadow)"
+										transform="translate(1085 485) scale(1.16) translate(-1085 -485)">
 										<image
 											class="jupiter-image"
 											href="assets/images/jupiter-cutaway-clean.png"
-											x="890"
+											x="930"
 											y="330"
 											width="310"
 											height="310"
 											clip-path="url(#jupiterClip)"
 											preserveAspectRatio="xMidYMid slice"
 										></image>
+
+										<!-- soft dark veil to keep the core from overpowering the homepage -->
+										<circle
+											class="jupiter-core-dimmer"
+											cx="1085"
+											cy="485"
+											r="155"
+											clip-path="url(#jupiterClip)"
+										></circle>
 									</g>
 
 									<g id="jupiterFieldFootpoints" class="jupiter-field-footpoints" filter="url(#magneticGlow)"></g>
