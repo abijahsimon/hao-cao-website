@@ -1,0 +1,151 @@
+<?php
+/**
+ * Template Name: Teaching
+ */
+?>
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Teaching | Hao Cao</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta
+			name="description"
+			content="Teaching history for Hao Cao at UCLA, Harvard, and Caltech, including planetary dynamos, space weather, planetary physics, and applied geophysics."
+		/>
+		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260602-content-edits')); ?>" />
+		<noscript><link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/noscript.css')); ?>" /></noscript>
+			<?php wp_head(); ?>
+	</head>
+	<body <?php body_class('no-sidebar is-preload'); ?>>
+		<?php wp_body_open(); ?>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="<?php echo esc_url(hao_cao_research_page_url('')); ?>" id="logo">Hao Cao</a></h1>
+								<p>Planetary magnetism, interiors,<span class="tagline-wrap"> and space environment</span></p>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="<?php echo esc_url(hao_cao_research_page_url('')); ?>">Home</a></li>
+								<li><a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>">Research</a></li>
+								<li><a href="<?php echo esc_url(hao_cao_research_page_url('publications')); ?>">Publications</a></li>
+								<li><a href="<?php echo esc_url(hao_cao_research_page_url('team')); ?>">Team</a></li>
+								<li><a href="<?php echo esc_url(hao_cao_research_page_url('opportunities')); ?>">Opportunities</a></li>
+								<li class="active"><a href="<?php echo esc_url(hao_cao_research_page_url('teaching')); ?>">Teaching</a></li>
+								<li><a href="<?php echo esc_url(hao_cao_research_page_url('curriculum-vitae')); ?>">CV</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper">
+
+					<div class="container">
+						<article id="main" class="teaching-page simple-content-page">
+							<header>
+								<h2>Teaching</h2>
+								<p>
+									Courses and guest lectures connect planetary physics, space weather, applied geophysics,
+									scientific computing, and the physics of planetary dynamos.
+								</p>
+							</header>
+							<section class="teaching-section">
+								<h3>UCLA</h3>
+								<ul class="simple-list">
+									<li>Instructor, EPS SCI 154, <strong>Solar Terrestrial Physics</strong>, Fall 2024</li>
+									<li>Instructor, EPS SCI 136B, <strong>Applied Geophysics</strong>, Spring 2024</li>
+									<li>Instructor, EPS SCI M7/AOS M7, <strong>Perils of Space: Introduction to Space Weather</strong>, Fall 2023/2025</li>
+									<li>Instructor, EPS SCI 155, <strong>Planetary Physics</strong>, Spring 2023/2025</li>
+									<li>Guest Lecturer, EPS SCI 228, <strong>Introduction to Planetary Dynamos</strong> (1 lecture), Spring 2017</li>
+									<li>Guest Lecturer, EPS SCI 171, <strong>Advanced Computing in Geosciences</strong> (1 lecture), Fall 2016</li>
+									<li>Guest Lecturer, EPS SCI 71, <strong>Introduction to Computing for Geoscientists</strong> (1 lecture), UCLA Fall 2016</li>
+								</ul>
+							</section>
+
+							<section class="teaching-section">
+								<h3>Harvard</h3>
+								<p>
+									Hao received a Harvard Certificate of Distinction in Teaching in 2022.
+								</p>
+								<ul class="simple-list">
+									<li>Teaching Fellow, EPS 160, <strong>Space Science and Engineering</strong>, Fall 2021</li>
+								</ul>
+							</section>
+
+							<section class="teaching-section">
+								<h3>Caltech</h3>
+								<ul class="simple-list">
+									<li>Guest Lecturer, Ge 194, <strong>Juno and Cassini</strong> (2 lectures), Graduate Course, Fall 2017</li>
+									<li>Guest Lecturer, Ge 131, <strong>Planetary Structure and Evolution</strong> (2 lectures), Graduate Course, Spring 2016</li>
+								</ul>
+							</section>
+						</article>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Contact</h3>
+										</header>
+										<p>
+											Hao Cao<br />
+											Associate Professor, Department of Earth, Planetary, and Space Sciences<br />
+											University of California, Los Angeles<br />
+											Email: hcao [at] epss.ucla.edu | Tel: <a href="tel:+13107949467">310-794-9467</a> | 4859 Slichter Hall, 595 Charles Young Drive East, Los Angeles, CA 90095-1567
+										</p>
+										<ul class="icons">
+											<li><span class="icon solid fa-envelope footer-static-icon"><span class="label">Email</span></span></li>
+											<li><a href="tel:+13107949467" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
+											<li><a href="https://sites.epss.ucla.edu/hcao/" target="_blank" rel="noopener" class="icon solid fa-globe"><span class="label">Research Website</span></a></li>
+											<li><a href="https://epss.ucla.edu/hao-cao/" target="_blank" rel="noopener" class="icon solid fa-building"><span class="label">EPSS Profile</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Hao Cao. Planetary magnetism and interiors research at UCLA.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+			<!-- Scripts -->
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/jquery.min.js')); ?>"></script>
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/jquery.scrolly.min.js')); ?>"></script>
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/breakpoints.min.js')); ?>"></script>
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/util.js')); ?>"></script>
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/main.js')); ?>"></script>
+
+		<?php wp_footer(); ?>
+	</body>
+</html>

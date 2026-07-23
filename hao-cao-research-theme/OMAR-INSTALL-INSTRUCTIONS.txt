@@ -1,0 +1,30 @@
+Hao Cao Research Website WordPress Theme
+========================================
+
+Package:
+hao-cao-research-theme.zip
+
+Purpose:
+This is a custom WordPress theme that preserves the current static Hao Cao research website as closely as possible. It includes the existing HTML, CSS, JavaScript, images, and video assets, adapted into WordPress template files.
+
+Install:
+1. In WordPress Network Admin or site admin with theme upload privileges, upload and install hao-cao-research-theme.zip.
+2. Activate "Hao Cao Research Website" for https://sites.epss.ucla.edu/hcao/.
+3. Confirm that the site has pages with these slugs:
+   - research
+   - publications
+   - team
+   - teaching
+   - curriculum-vitae
+   - opportunities
+   - links
+4. Go to Settings > Reading.
+5. Set the homepage to a static page if needed.
+6. Set the homepage page to Home.
+
+Notes:
+- This is a static-fidelity theme, not a block-editable rebuild.
+- Most visual content lives in template files, not the WordPress block editor.
+- The theme calls wp_head(), wp_body_open(), and wp_footer() for WordPress/plugin compatibility.
+- The theme includes the HTML5 UP Helios license in LICENSE.txt.
+

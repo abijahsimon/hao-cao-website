@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "scripts": {
+    "render:hero-video": "remotion render remotion/src/index.tsx JovianHero assets/video/jupiter-europa-ganymede-hero.mp4 --codec=h264 --muted --overwrite --public-dir=remotion/public",
+    "still:hero-video": "remotion still remotion/src/index.tsx JovianHero assets/images/jupiter-europa-ganymede-hero-poster.jpg --frame=0 --image-format=jpeg --jpeg-quality=88 --overwrite --public-dir=remotion/public"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.474"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.474",
+    "typescript": "5.5.4"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  }
+}

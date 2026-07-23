@@ -1,0 +1,442 @@
+<?php
+/**
+ * Template Name: Front Page
+ */
+?>
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hao Cao | UCLA Planetary Magnetism</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta
+			name="description"
+			content="Hao Cao is an associate professor at UCLA studying planetary magnetism, deep interiors, and space environment across the solar system."
+		/>
+		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260723-hero-scroll')); ?>" />
+		<noscript><link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/noscript.css')); ?>" /></noscript>
+			<?php wp_head(); ?>
+	</head>
+	<body <?php body_class('homepage is-preload'); ?>>
+		<?php wp_body_open(); ?>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+					 <!-- Inner -->
+						<section class="inner hero-inner jovian-hero" aria-labelledby="home-hero-title">
+
+							<div class="hero-bg" aria-hidden="true">
+								<video
+									class="hero-video"
+									autoplay
+									muted
+									playsinline
+									preload="auto"
+									poster="<?php echo esc_url(hao_cao_research_theme_uri('assets/images/jupiter-europa-ganymede-hero-poster.jpg?v=20260723-hero-hd')); ?>"
+								>
+									<source
+										src="<?php echo esc_url(hao_cao_research_theme_uri('assets/video/jupiter-europa-ganymede-hero.mp4?v=20260723-hero-scrub')); ?>"
+										type="video/mp4"
+										media="(prefers-reduced-motion: no-preference)"
+									/>
+								</video>
+								<svg
+									id="magneticHero"
+									class="jovian-hero-svg"
+									viewBox="0 0 1600 900"
+									preserveAspectRatio="xMidYMid slice"
+									data-jupiter-cx="1085"
+									data-jupiter-cy="485"
+									data-jupiter-radius="175"
+									data-ganymede-radius="15"
+									aria-hidden="true"
+								>
+									<defs>
+										<filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+											<feGaussianBlur stdDeviation="7" result="blur"/>
+											<feMerge>
+												<feMergeNode in="blur"/>
+												<feMergeNode in="SourceGraphic"/>
+											</feMerge>
+										</filter>
+
+										<filter id="magneticGlow" x="-60%" y="-60%" width="220%" height="220%">
+											<feGaussianBlur stdDeviation="4" result="fieldBlur"/>
+											<feColorMatrix in="fieldBlur" type="matrix" values="0 0 0 0 0.18 0 0 0 0 0.46 0 0 0 0 1 0 0 0 0.72 0" result="blueGlow"/>
+											<feMerge>
+												<feMergeNode in="blueGlow"/>
+												<feMergeNode in="SourceGraphic"/>
+											</feMerge>
+										</filter>
+
+										<filter id="jupiterShadow" x="-30%" y="-30%" width="160%" height="160%">
+											<feDropShadow dx="22" dy="18" stdDeviation="24" flood-color="#00040d" flood-opacity="0.68"/>
+										</filter>
+
+										<linearGradient id="spaceFade" x1="0%" y1="0%" x2="100%" y2="0%">
+											<stop offset="0%" stop-color="#020511" stop-opacity="0.94"></stop>
+											<stop offset="34%" stop-color="#020511" stop-opacity="0.78"></stop>
+											<stop offset="58%" stop-color="#04102a" stop-opacity="0.24"></stop>
+											<stop offset="100%" stop-color="#030611" stop-opacity="0.28"></stop>
+										</linearGradient>
+
+										<radialGradient id="jupiterDisc" cx="34%" cy="30%" r="74%">
+											<stop offset="0%" stop-color="#fff8e7"></stop>
+											<stop offset="22%" stop-color="#efd09a"></stop>
+											<stop offset="48%" stop-color="#c8894e"></stop>
+											<stop offset="73%" stop-color="#7b472f"></stop>
+											<stop offset="100%" stop-color="#1c1520"></stop>
+										</radialGradient>
+
+										<radialGradient id="jupiterAtmosphere" cx="30%" cy="28%" r="76%">
+											<stop offset="0%" stop-color="#fff5dc" stop-opacity="0.82"></stop>
+											<stop offset="62%" stop-color="#f6b45a" stop-opacity="0.12"></stop>
+											<stop offset="100%" stop-color="#00040d" stop-opacity="0.58"></stop>
+										</radialGradient>
+
+										<radialGradient id="interiorCore" cx="50%" cy="52%" r="68%">
+											<stop offset="0%" stop-color="#dfe6ec"></stop>
+											<stop offset="32%" stop-color="#8f98a4"></stop>
+											<stop offset="66%" stop-color="#3c4250"></stop>
+											<stop offset="100%" stop-color="#181923"></stop>
+										</radialGradient>
+
+										<radialGradient id="europaShade" cx="36%" cy="32%">
+											<stop offset="0%" stop-color="#fbfff7"></stop>
+											<stop offset="45%" stop-color="#d6c8ad"></stop>
+											<stop offset="100%" stop-color="#69635d"></stop>
+										</radialGradient>
+
+										<radialGradient id="ganymedeShade" cx="34%" cy="30%">
+											<stop offset="0%" stop-color="#f6efe5"></stop>
+											<stop offset="48%" stop-color="#ad9677"></stop>
+											<stop offset="100%" stop-color="#4e443c"></stop>
+										</radialGradient>
+
+										<clipPath id="jupiterClip">
+											<circle cx="1085" cy="485" r="155"></circle>
+										</clipPath>
+
+										<clipPath id="jupiterCutawayClip">
+											<path d="M 1085 485 L 1205 392 A 155 155 0 0 1 1214 588 Z"></path>
+										</clipPath>
+
+										<path id="europaOrbitPath" d="M 745 500 A 300 50 0 0 1 1345 500 A 300 50 0 0 1 745 500"></path>
+										<path id="europaOrbitBackPath" d="M 745 500 A 300 50 0 0 1 1345 500"></path>
+										<path id="europaOrbitFrontPath" d="M 1345 500 A 300 50 0 0 1 745 500"></path>
+										<path id="ganymedeOrbitPath" d="M 665 505 A 380 82 0 0 1 1425 505 A 380 82 0 0 1 665 505"></path>
+										<path id="ganymedeOrbitBackPath" d="M 665 505 A 380 82 0 0 1 1425 505"></path>
+										<path id="ganymedeOrbitFrontPath" d="M 1425 505 A 380 82 0 0 1 665 505"></path>
+									</defs>
+
+									<rect class="space-base" width="1600" height="900"></rect>
+									<g class="hero-starfield hero-starfield-deep">
+										<circle class="twinkle-star s1" cx="88" cy="105" r="1.5"></circle>
+										<circle class="twinkle-star s2" cx="158" cy="224" r="0.9"></circle>
+										<circle class="twinkle-star s4" cx="226" cy="610" r="1.2"></circle>
+										<circle class="twinkle-star s3" cx="364" cy="172" r="0.8"></circle>
+										<circle class="twinkle-star s5" cx="468" cy="724" r="1.4"></circle>
+										<circle class="twinkle-star s2" cx="566" cy="92" r="0.9"></circle>
+										<circle class="twinkle-star s1" cx="692" cy="684" r="1.2"></circle>
+										<circle class="twinkle-star s4" cx="790" cy="146" r="0.8"></circle>
+										<circle class="twinkle-star s3" cx="1236" cy="128" r="1.1"></circle>
+										<circle class="twinkle-star s5" cx="1484" cy="606" r="1.6"></circle>
+									</g>
+									<g class="hero-starfield hero-starfield-near">
+										<circle class="twinkle-star s4" cx="116" cy="452" r="0.8"></circle>
+										<circle class="twinkle-star s2" cx="318" cy="362" r="1.1"></circle>
+										<circle class="twinkle-star s1" cx="518" cy="482" r="0.9"></circle>
+										<circle class="twinkle-star s3" cx="662" cy="316" r="1.3"></circle>
+										<circle class="twinkle-star s5" cx="824" cy="734" r="1.0"></circle>
+										<circle class="twinkle-star s2" cx="1164" cy="696" r="1.2"></circle>
+										<circle class="twinkle-star s1" cx="1328" cy="342" r="0.8"></circle>
+										<circle class="twinkle-star s4" cx="1518" cy="186" r="1.1"></circle>
+									</g>
+									<path class="nebula-ribbon" d="M 520 860 C 730 630 872 320 1160 116 C 1308 14 1450 10 1600 36 L 1600 900 Z"></path>
+									<rect class="hero-text-scrim" x="0" y="0" width="1600" height="900" fill="url(#spaceFade)"></rect>
+
+									<g id="jupiterFieldLines" class="jupiter-field-system" filter="url(#magneticGlow)"></g>
+
+									<g class="moon-orbit-plane moon-orbit-plane-back">
+										<use href="#europaOrbitBackPath" class="jovian-orbit europa-orbit orbit-back"></use>
+										<use href="#ganymedeOrbitBackPath" class="jovian-orbit ganymede-orbit orbit-back"></use>
+									</g>
+
+									<g class="moon-depth-layer moon-depth-back">
+										<g class="orbiting-moon europa-orbiting europa-orbiting-back">
+											<animate attributeName="opacity" dur="92s" repeatCount="indefinite" values="1;1;0;0;1" keyTimes="0;0.49;0.51;0.99;1"></animate>
+											<animateMotion dur="92s" repeatCount="indefinite" rotate="0">
+												<mpath href="#europaOrbitPath"></mpath>
+											</animateMotion>
+											<circle class="moon-disc europa-moon" r="8.5" fill="url(#europaShade)"></circle>
+										</g>
+
+										<g class="orbiting-moon ganymede-orbiting ganymede-orbiting-back">
+											<animate attributeName="opacity" dur="168s" repeatCount="indefinite" values="1;1;0;0;1" keyTimes="0;0.49;0.51;0.99;1"></animate>
+											<animateMotion dur="168s" repeatCount="indefinite" rotate="0">
+												<mpath href="#ganymedeOrbitPath"></mpath>
+											</animateMotion>
+											<circle class="moon-disc ganymede-moon" r="15" fill="url(#ganymedeShade)"></circle>
+										</g>
+									</g>
+
+									<g class="jupiter-visual" filter="url(#jupiterShadow)"
+										transform="translate(1085 485) scale(1.16) translate(-1085 -485)">
+										<image
+											class="jupiter-image"
+											href="<?php echo esc_url(hao_cao_research_theme_uri('assets/images/jupiter-cutaway-clean.png')); ?>"
+											x="930"
+											y="330"
+											width="310"
+											height="310"
+											clip-path="url(#jupiterClip)"
+											preserveAspectRatio="xMidYMid slice"
+										></image>
+
+										<!-- soft dark veil to keep the core from overpowering the homepage -->
+										<circle
+											class="jupiter-core-dimmer"
+											cx="1085"
+											cy="485"
+											r="155"
+											clip-path="url(#jupiterClip)"
+										></circle>
+									</g>
+
+									<g id="jupiterFieldFootpoints" class="jupiter-field-footpoints" filter="url(#magneticGlow)"></g>
+
+									<g class="moon-orbit-plane moon-orbit-plane-front">
+										<use href="#europaOrbitFrontPath" class="jovian-orbit europa-orbit orbit-front"></use>
+										<use href="#ganymedeOrbitFrontPath" class="jovian-orbit ganymede-orbit orbit-front"></use>
+									</g>
+
+									<g class="moon-depth-layer moon-depth-front">
+										<g class="orbiting-moon europa-orbiting europa-orbiting-front">
+											<animate attributeName="opacity" dur="92s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.49;0.51;0.99;1"></animate>
+											<animateMotion dur="92s" repeatCount="indefinite" rotate="0">
+												<mpath href="#europaOrbitPath"></mpath>
+											</animateMotion>
+											<circle class="moon-disc europa-moon" r="8.5" fill="url(#europaShade)"></circle>
+										</g>
+
+										<g class="orbiting-moon ganymede-orbiting ganymede-orbiting-front">
+											<animate attributeName="opacity" dur="168s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.49;0.51;0.99;1"></animate>
+											<animateMotion dur="168s" repeatCount="indefinite" rotate="0">
+												<mpath href="#ganymedeOrbitPath"></mpath>
+											</animateMotion>
+											<circle class="moon-disc ganymede-moon" r="15" fill="url(#ganymedeShade)"></circle>
+										</g>
+									</g>
+
+									<g class="orbiting-moon mobile-ganymede-proxy" transform="translate(665 505)">
+										<circle class="moon-disc ganymede-moon" r="15" fill="url(#ganymedeShade)"></circle>
+									</g>
+								</svg>
+							</div>
+
+							<header class="hero-copy">
+								<h1 id="home-hero-title" class="hero-name">
+									<span class="latin-name">Hao Cao</span>
+									<span class="chinese-name">曹浩</span>
+								</h1>
+
+								<p class="hero-tagline">Planetary magnetism, interiors,<br />and space environment</p>
+
+								<p class="hero-affiliation">
+									University of California, Los Angeles
+								</p>
+								</header>
+
+							<footer class="hero-footer">
+								<a href="#banner" class="button icon solid fa-arrow-down scrolly" aria-label="Scroll to site overview"></a>
+							</footer>
+
+						</section>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="active"><a href="<?php echo esc_url(hao_cao_research_page_url('')); ?>">Home</a></li>
+									<li><a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>">Research</a></li>
+									<li><a href="<?php echo esc_url(hao_cao_research_page_url('publications')); ?>">Publications</a></li>
+									<li><a href="<?php echo esc_url(hao_cao_research_page_url('team')); ?>">Team</a></li>
+									<li><a href="<?php echo esc_url(hao_cao_research_page_url('opportunities')); ?>">Opportunities</a></li>
+									<li><a href="<?php echo esc_url(hao_cao_research_page_url('teaching')); ?>">Teaching</a></li>
+									<li><a href="<?php echo esc_url(hao_cao_research_page_url('curriculum-vitae')); ?>">CV</a></li>
+								</ul>
+							</nav>
+
+				</div>
+
+				<!-- Banner -->
+					<section id="banner">
+						<header>
+							<h2>Understanding planetary interiors and space environment: data analysis, numerical simulations, and instrument innovation</h2>
+							<p>
+								Hao Cao studies how planets and moons work beneath their visible surfaces. His group combines
+								spacecraft magnetic and gravitational measurements with theory, numerical modeling, and
+								instrument development to probe deep fluid motion, dynamo action, interior structure, and the
+								space environments surrounding planetary bodies.
+							</p>
+						</header>
+					</section>
+
+				<!-- <hr class="major" /> -->
+
+						<!-- Research Summary -->
+							<section id="research-areas" class="wrapper research-summary">
+							<div class="container">
+								<div class="research-summary-layout">
+									<header class="special">
+										<h2>Research Areas</h2>
+										<p>
+											Across giant planets, ocean worlds, the Moon, and Earth&apos;s space environment, the group uses
+											physical signals measured by spacecraft and instruments to infer what cannot be observed directly.
+										</p>
+										<footer class="research-summary-footer">
+											<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="button">Explore Research</a>
+										</footer>
+									</header>
+
+									<div class="research-summary-side">
+										<ul class="research-summary-bullets">
+											<li class="research-bullet">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+													<span class="research-bullet-mark" aria-hidden="true"></span>
+													<span class="research-bullet-title">Planetary Interiors</span>
+													<span class="research-bullet-summary">
+														Gravity and magnetic measurements reveal deep winds, electrical structure, and interior dynamics.
+													</span>
+												</a>
+											</li>
+											<li class="research-bullet">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+													<span class="research-bullet-mark" aria-hidden="true"></span>
+													<span class="research-bullet-title">Planetary Magnetic Fields</span>
+													<span class="research-bullet-summary">
+														Dynamo models and spacecraft magnetometry connect evolving fields to fluid motion inside planets.
+													</span>
+												</a>
+											</li>
+											<li class="research-bullet">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+													<span class="research-bullet-mark" aria-hidden="true"></span>
+													<span class="research-bullet-title">Ocean Worlds</span>
+													<span class="research-bullet-summary">
+														Magnetic induction and plasma interactions probe icy moons and coupled interior-space environments.
+													</span>
+												</a>
+											</li>
+											<li class="research-bullet">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+													<span class="research-bullet-mark" aria-hidden="true"></span>
+													<span class="research-bullet-title">Surface Magnetometry</span>
+													<span class="research-bullet-summary">
+														Instrument development supports long-duration magnetic measurements on the lunar surface.
+													</span>
+												</a>
+											</li>
+											<li class="research-bullet">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+													<span class="research-bullet-mark" aria-hidden="true"></span>
+													<span class="research-bullet-title">Space Weather</span>
+													<span class="research-bullet-summary">
+														Fluxgate magnetometers help measure Earth&apos;s near-space response to solar-wind forcing.
+													</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</section>
+
+
+
+				<!-- Main -->
+					<div id="about" class="wrapper about-section">
+
+					<article id="main" class="container special">
+						<div class="about-profile">
+							<div class="about-profile-photo">
+								<img src="<?php echo esc_url(hao_cao_research_theme_uri('images/HaoCao_pic.jpg')); ?>" alt="Portrait of Hao Cao" />
+							</div>
+							<div class="about-profile-copy">
+								<header>
+									<h2>About Hao Cao</h2>
+									<p>
+										Associate Professor, Department of Earth, Planetary, and Space Sciences, University of California,
+										Los Angeles.
+									</p>
+								</header>
+								<p>
+									Dr. Hao Cao is an Associate Professor of Space Science at UCLA. His research treats magnetic
+									fields and gravity as windows into the hidden interiors and surrounding space environments of
+									planetary bodies. The group works across observation, theory, modeling, and magnetometer
+									development, with applications ranging from giant planets and icy moons to the Moon and Earth&apos;s
+									near-space environment.
+								</p>
+							</div>
+						</div>
+					</article>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Contact</h3>
+										</header>
+										<p>
+											Hao Cao<br />
+											Associate Professor, Department of Earth, Planetary, and Space Sciences<br />
+											University of California, Los Angeles<br />
+											Email: hcao [at] epss.ucla.edu | Tel: <a href="tel:+13107949467">310-794-9467</a> | 4859 Slichter Hall, 595 Charles Young Drive East, Los Angeles, CA 90095-1567
+										</p>
+										<ul class="icons">
+											<li><span class="icon solid fa-envelope footer-static-icon"><span class="label">Email</span></span></li>
+											<li><a href="tel:+13107949467" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
+											<li><a href="https://sites.epss.ucla.edu/hcao/" target="_blank" rel="noopener" class="icon solid fa-globe"><span class="label">Research Website</span></a></li>
+											<li><a href="https://epss.ucla.edu/hao-cao/" target="_blank" rel="noopener" class="icon solid fa-building"><span class="label">EPSS Profile</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Hao Cao. Planetary magnetism and interiors research at UCLA.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+			<!-- Scripts -->
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/jquery.min.js')); ?>"></script>
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/jquery.scrolly.min.js')); ?>"></script>
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/breakpoints.min.js')); ?>"></script>
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/util.js')); ?>"></script>
+				<script src="<?php echo esc_url(hao_cao_research_theme_uri('assets/js/main.js?v=20260723-hero-scroll-orbit-focus')); ?>"></script>
+
+			<?php wp_footer(); ?>
+	</body>
+</html>
