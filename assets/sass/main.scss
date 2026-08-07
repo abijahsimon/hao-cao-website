@@ -2402,6 +2402,15 @@ body:not(.homepage) .wrapper {
 	border-bottom-color: transparent;
 }
 
+.research-publication-list a {
+	font-weight: 400;
+}
+
+.research-publication-list strong {
+	color: #173861;
+	font-weight: 700;
+}
+
 .research-source-list li > span:not(.research-source-type) {
 	display: block;
 	margin-top: 0.18rem;
@@ -3858,6 +3867,15 @@ body.homepage #banner h2 {
 
 .research-source-list a {
 	display: inline;
+}
+
+.research-publication-list a {
+	font-weight: 400;
+}
+
+.research-publication-list strong {
+	color: #173861;
+	font-weight: 700;
 }
 
 .research-source-list li > span:not(.research-source-type) {
