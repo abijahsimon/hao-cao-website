@@ -18,7 +18,7 @@
 			name="description"
 			content="Hao Cao is an associate professor at UCLA studying planetary magnetism, deep interiors, and space environment across the solar system."
 		/>
-		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-centered-intro')); ?>" />
+		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-research-refresh')); ?>" />
 		<noscript><link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/noscript.css')); ?>" /></noscript>
 			<?php wp_head(); ?>
 	</head>
@@ -280,9 +280,10 @@
 					<section id="banner">
 						<header>
 							<p class="homepage-intro-copy">
-								<strong>Hao Cao studies planetary interiors and the space environment through data analysis, numerical simulations, and instrument innovation.</strong> His group combines spacecraft magnetic and gravitational measurements with theory, numerical modeling, and
-								instrument development to probe deep fluid motion, dynamo action, interior structure, and the space
-								environments surrounding planetary bodies.
+								<strong>Hao Cao&apos;s group studies how magnetic fields and gravity reveal the otherwise hidden interiors, deep fluid motion, and space environments of planets and moons.</strong>
+								The work connects spacecraft observations with geophysical theory, numerical modeling, and
+								magnetometer development, so the same physical signals can be used to understand both planetary
+								structure and the environments through which spacecraft travel.
 							</p>
 						</header>
 					</section>
@@ -365,7 +366,7 @@
 					<article id="main" class="container special">
 						<div class="about-profile">
 							<div class="about-profile-photo">
-								<img src="<?php echo esc_url(hao_cao_research_theme_uri('images/HaoCao_pic.jpg')); ?>" alt="Portrait of Hao Cao" />
+								<img src="<?php echo esc_url(hao_cao_research_theme_uri('images/HaoCao_pic_home.png')); ?>" alt="Portrait of Hao Cao" />
 							</div>
 							<div class="about-profile-copy">
 								<header>

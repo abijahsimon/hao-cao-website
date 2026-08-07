@@ -2267,7 +2267,7 @@ body:not(.homepage) .wrapper {
 
 .research-theme-list {
 	display: grid;
-	gap: 1rem;
+	gap: 1.45rem;
 }
 
 .research-theme {
@@ -2280,27 +2280,9 @@ body:not(.homepage) .wrapper {
 
 .research-theme-primary {
 	display: grid;
-	grid-template-columns: 4.4rem minmax(0, 1fr);
+	grid-template-columns: minmax(0, 1fr);
 	gap: 1.2rem 2.2rem;
-	padding: 1.45rem 1.45rem 1.25rem 1.45rem;
-}
-
-.research-theme-index {
-	color: #6f8296;
-	font-weight: 700;
-	letter-spacing: 0.1em;
-	line-height: 1.25;
-}
-
-.research-theme-label {
-	display: inline-block;
-	margin: 0 0 0.35rem 0;
-	color: #6f8296;
-	font-size: 0.68rem;
-	font-weight: 700;
-	letter-spacing: 0.1em;
-	line-height: 1.45;
-	text-transform: uppercase;
+	padding: 1.45rem;
 }
 
 .research-theme h3 {
@@ -2317,7 +2299,7 @@ body:not(.homepage) .wrapper {
 }
 
 .research-theme-links {
-	margin: 0 1.45rem 1.35rem 7.95rem;
+	margin: 0 1.45rem 1.45rem 1.45rem;
 	padding-top: 1rem;
 	border-top: 1px solid rgba(24, 55, 92, 0.11);
 }
@@ -3578,10 +3560,6 @@ body:not(.homepage) .wrapper {
 		padding: 1.15rem;
 	}
 
-	.research-theme-index {
-		font-size: 0.92rem;
-	}
-
 	.research-theme-links {
 		margin: 0 1.15rem 1.15rem 1.15rem;
 	}
@@ -3732,44 +3710,35 @@ body.homepage #banner h2 {
 }
 
 .research-theme-links {
-	margin: 0 1.45rem 1.35rem 7.95rem;
+	margin: 0 1.45rem 1.45rem 1.45rem;
 	padding-top: 0.95rem;
 }
 
-.research-theme-links h4 {
-	margin: 0 0 0.65rem 0;
-	color: #173861;
-	font-size: 0.84rem;
-	font-weight: 700;
-	letter-spacing: 0.08em;
-	line-height: 1.35;
-	text-transform: uppercase;
-}
-
 .research-source-list {
-	display: block;
-	margin-top: 0;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.95rem;
+	margin: 1rem 0 0 0;
 }
 
 .research-source-list li {
-	padding: 0.45rem 0 0.62rem 0;
-	border: 0;
-	border-bottom: 1px solid rgba(24, 55, 92, 0.11);
-	border-radius: 0;
-	background: transparent;
+	padding: 0.95rem 1rem;
+	border: 1px solid rgba(24, 55, 92, 0.12);
+	border-radius: 6px;
+	background: #f8fbfe;
 }
 
 .research-source-list li:last-child {
-	padding-bottom: 0;
-	border-bottom: 0;
+	padding-bottom: 0.95rem;
+	border-bottom: 1px solid rgba(24, 55, 92, 0.12);
 }
 
 .research-source-list a {
-	display: inline;
+	display: block;
 }
 
 .research-source-list li > span:not(.research-source-type) {
-	margin-top: 0.15rem;
+	margin-top: 0.32rem;
 }
 
 .research-source-type {
@@ -3950,20 +3919,22 @@ body.homepage .research-summary header.special p {
 
 body.homepage #main .about-profile {
 	align-items: stretch;
+	gap: 2.4rem 5rem;
+	grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
 }
 
 body.homepage #main .about-profile-photo {
-	max-width: 280px;
-	aspect-ratio: 1 / 1;
-	overflow: hidden;
+	max-width: 300px;
+	aspect-ratio: auto;
+	overflow: visible;
 }
 
 body.homepage #main .about-profile-photo img {
-	height: 100%;
-	object-fit: cover;
-	object-position: center 24%;
+	height: auto;
+	object-fit: contain;
+	object-position: center center;
 	transform: none;
-	transform-origin: 50% 58%;
+	transform-origin: 50% 50%;
 }
 
 body.homepage #main .about-profile-copy {
@@ -4080,5 +4051,56 @@ body.homepage #main .about-profile-copy > .home-editor-content {
 
 	body.homepage #main .about-profile-copy {
 		display: block;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	body,
+	#page-wrapper {
+		overflow-x: hidden;
+	}
+
+	body.homepage #banner header {
+		box-sizing: border-box;
+		width: 100% !important;
+		max-width: 100% !important;
+		padding-left: 1.4rem;
+		padding-right: 1.4rem;
+	}
+
+	body.homepage #banner .homepage-intro-copy,
+	body.homepage #banner header > p.homepage-intro-copy {
+		box-sizing: border-box;
+		width: min(17.5rem, 100%) !important;
+		max-width: min(17.5rem, 100%) !important;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	body:not(.homepage) .wrapper > .container,
+	.research-page-wrapper .container {
+		box-sizing: border-box;
+		width: min(100%, calc(100vw - 3rem)) !important;
+		max-width: calc(100vw - 3rem) !important;
+	}
+
+	#main.research-page,
+	#main.research-page > header,
+	#main.research-page > section,
+	.research-theme-list,
+	.research-theme {
+		box-sizing: border-box;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 0;
+	}
+
+	.research-theme h3,
+	.research-theme p,
+	.research-theme summary,
+	.research-source-list a,
+	.research-source-list li > span:not(.research-source-type) {
+		overflow-wrap: anywhere;
+		word-break: normal;
 	}
 }
