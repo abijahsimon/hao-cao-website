@@ -18,7 +18,7 @@
 			name="description"
 			content="Research themes in Hao Cao's group at UCLA, including planetary interiors, magnetic fields, ocean worlds, lunar magnetometry, and space-weather instrumentation."
 		/>
-		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-see-more-list')); ?>" />
+		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-related-links-columns')); ?>" />
 		<noscript><link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/noscript.css')); ?>" /></noscript>
 			<?php wp_head(); ?>
 	</head>
@@ -77,28 +77,48 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related content">
-											<summary>See more</summary>
-											<ul class="research-source-list">
-											<li>
-												<span class="research-source-type">Video</span>
-												<a href="https://www.mathinstitutes.org/videos/22687" target="_blank" rel="noopener">Giant Planet Interior Dynamics: Recent Progress and Open Questions</a>
-												<span>IPAM/MathInstitutes video of Hao Cao&apos;s January 31, 2025 talk on giant-planet interior dynamics.</span>
-											</li>
-											<li>
-												<a href="https://science.nasa.gov/mission/juno/" target="_blank" rel="noopener">NASA Juno mission overview</a>
-												<span>Juno mission context for Jupiter&apos;s interior, atmosphere, gravity, and magnetosphere measurements.</span>
-											</li>
-											<li>
-												<a href="https://www.missionjuno.swri.edu/news/jupiters-jetstreams-are-unearthly" target="_blank" rel="noopener">Juno findings: Jupiter&apos;s jet-streams are unearthly</a>
-												<span>NASA/Juno summary of deep atmospheric winds inferred from spacecraft data.</span>
-											</li>
-											<li>
-												<span class="research-source-type">Publication</span>
-												<a href="https://doi.org/10.3847/1538-4357/ad0cbb" target="_blank" rel="noopener">Strong resemblance between surface and deep zonal winds inside Jupiter</a>
-													<span>Peer-reviewed gravity analysis connecting Jupiter&apos;s visible winds to deep interior flow.</span>
-												</li>
-											</ul>
+										<details class="research-theme-links" aria-label="Related links">
+											<summary>Related links</summary>
+											<div class="research-related-grid">
+												<section class="research-related-column" aria-label="Links">
+													<h4>Links</h4>
+													<ul class="research-source-list">
+														<li>
+															<span class="research-source-type">Video</span>
+															<a href="https://www.mathinstitutes.org/videos/22687" target="_blank" rel="noopener">Giant Planet Interior Dynamics: Recent Progress and Open Questions</a>
+															<span>IPAM/MathInstitutes video of Hao Cao&apos;s January 31, 2025 talk on giant-planet interior dynamics.</span>
+														</li>
+														<li>
+															<a href="https://www.missionjuno.swri.edu/news/jupiters-jetstreams-are-unearthly" target="_blank" rel="noopener">Juno findings: Jupiter&apos;s jet-streams are unearthly</a>
+															<span>NASA/Juno summary of deep atmospheric winds inferred from spacecraft gravity data.</span>
+														</li>
+														<li>
+															<a href="https://science.nasa.gov/mission/juno/" target="_blank" rel="noopener">NASA Juno mission overview</a>
+															<span>Mission context for Jupiter&apos;s interior, atmosphere, gravity, and magnetosphere measurements.</span>
+														</li>
+													</ul>
+												</section>
+												<section class="research-related-column research-related-publications" aria-label="Publications">
+													<h4>Publications</h4>
+													<ul class="research-source-list research-publication-list">
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.3847/1538-4357/ad0cbb" target="_blank" rel="noopener"><strong>Cao, H.</strong>, Bloxham, J., Park, R.S., Militzer, B., Yadav, R.K., Kulowski, L., Stevenson, D.J. and Bolton, S.J., 2023. Strong resemblance between surface and deep zonal winds inside Jupiter revealed by high-degree gravity moments.</a>
+															<span><em>The Astrophysical Journal</em> 959, 78.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1029/2021JE007138" target="_blank" rel="noopener">Bloxham, J., Moore, K.M., Kulowski, L., <strong>Cao, H.</strong>, Yadav, R.K., Stevenson, D.J., Connerney, J.E.P. and Bolton, S., 2022. Differential Rotation in Jupiter&apos;s Interior Revealed by Simultaneous Inversion for the Magnetic Field and Zonal Flux Velocity.</a>
+															<span><em>Journal of Geophysical Research: Planets</em> 127, e2021JE007138.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1029/2019JE006165" target="_blank" rel="noopener">Kulowski, L., <strong>Cao, H.</strong>, Bloxham, J., 2020. Contributions to Jupiter&apos;s gravity field from dynamics in the dynamo region.</a>
+															<span><em>Journal of Geophysical Research: Planets</em> 125, e2019JE006165.</span>
+														</li>
+													</ul>
+												</section>
+											</div>
 										</details>
 									</article>
 									<article id="planetary-magnetic-fields" class="research-theme">
@@ -113,33 +133,58 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related content">
-											<summary>See more</summary>
-											<ul class="research-source-list">
-											<li>
-												<span class="research-source-type">Video</span>
-												<a href="https://www.youtube.com/watch?v=SRmGf0AUHR8" target="_blank" rel="noopener">The Magnetic Fields of Mercury, Ganymede, and Saturn</a>
-												<span>Public INI/Newton Institute seminar video by Hao Cao on comparative planetary magnetic fields.</span>
-											</li>
-											<li>
-												<a href="https://www.jpl.nasa.gov/news/nasas-juno-finds-changes-in-jupiters-magnetic-field/" target="_blank" rel="noopener">NASA&apos;s Juno finds changes in Jupiter&apos;s magnetic field</a>
-												<span>NASA/JPL overview of Jupiter magnetic secular variation and its likely connection to deep winds.</span>
-											</li>
-											<li>
-												<span class="research-source-type">Video</span>
-												<a href="https://svs.gsfc.nasa.gov/13007/" target="_blank" rel="noopener">Jupiter Magnetic Tour</a>
-												<span>NASA Scientific Visualization Studio tour of Jupiter&apos;s dynamo and magnetic field.</span>
-											</li>
-											<li>
-												<span class="research-source-type">Publication</span>
-												<a href="https://doi.org/10.1038/s41586-024-07046-3" target="_blank" rel="noopener">A rapidly time-varying equatorial jet in Jupiter&apos;s deep interior</a>
-												<span>Nature paper connecting Jupiter&apos;s changing magnetic field to a deep equatorial jet.</span>
-											</li>
-											<li>
-												<a href="https://science.nasa.gov/mission/cassini/grand-finale/overview/" target="_blank" rel="noopener">Cassini Grand Finale overview</a>
-													<span>NASA context for Saturn gravity and magnetic-field measurements close to the planet.</span>
-												</li>
-											</ul>
+										<details class="research-theme-links" aria-label="Related links">
+											<summary>Related links</summary>
+											<div class="research-related-grid">
+												<section class="research-related-column" aria-label="Links">
+													<h4>Links</h4>
+													<ul class="research-source-list">
+														<li>
+															<span class="research-source-type">Video</span>
+															<a href="https://www.youtube.com/watch?v=SRmGf0AUHR8" target="_blank" rel="noopener">The Magnetic Fields of Mercury, Ganymede, and Saturn</a>
+															<span>Public INI/Newton Institute seminar video by Hao Cao on comparative planetary magnetic fields.</span>
+														</li>
+														<li>
+															<a href="https://www.jpl.nasa.gov/news/nasas-juno-finds-changes-in-jupiters-magnetic-field/" target="_blank" rel="noopener">NASA&apos;s Juno finds changes in Jupiter&apos;s magnetic field</a>
+															<span>NASA/JPL overview of Jupiter magnetic secular variation and its likely connection to deep winds.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Video</span>
+															<a href="https://svs.gsfc.nasa.gov/13007/" target="_blank" rel="noopener">Jupiter Magnetic Tour</a>
+															<span>NASA Scientific Visualization Studio tour of Jupiter&apos;s dynamo and magnetic field.</span>
+														</li>
+														<li>
+															<a href="https://science.nasa.gov/mission/cassini/grand-finale/overview/" target="_blank" rel="noopener">Cassini Grand Finale overview</a>
+															<span>NASA context for Saturn gravity and magnetic-field measurements close to the planet.</span>
+														</li>
+													</ul>
+												</section>
+												<section class="research-related-column research-related-publications" aria-label="Publications">
+													<h4>Publications</h4>
+													<ul class="research-source-list research-publication-list">
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1038/s41586-024-07046-3" target="_blank" rel="noopener">Bloxham, J., <strong>Cao, H.</strong>, Stevenson, D.J., Connerney, J.E. and Bolton, S.J., 2024. A rapidly time-varying equatorial jet in Jupiter&apos;s deep interior.</a>
+															<span><em>Nature</em> 627, 64-66.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1038/s41550-019-0772-5" target="_blank" rel="noopener">Moore, K.M., <strong>Cao, H.</strong>, Bloxham, J., Stevenson, D.J., Connerney, J.E.P. and Bolton, S.J., 2019. Time-variation of Jupiter&apos;s internal magnetic field consistent with zonal wind advection.</a>
+															<span><em>Nature Astronomy</em> 3, 730-735.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1016/j.icarus.2019.113541" target="_blank" rel="noopener"><strong>Cao, H.</strong>, Dougherty, M.K., Hunt, G.J., Provan, Cowley, S.W.H., Bunce, E.J., Kellock, S. and Stevenson, D.J., 2020. The landscape of Saturn&apos;s internal magnetic field from the Cassini Grand Finale.</a>
+															<span><em>Icarus</em> 344, 113541.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1126/science.aat5434" target="_blank" rel="noopener">Dougherty, M.K., <strong>Cao, H.</strong>, Khurana, K.K., et al., 2018. Saturn&apos;s magnetic field revealed by the Cassini Grand Finale.</a>
+															<span><em>Science</em> 362, eaat5434.</span>
+														</li>
+													</ul>
+												</section>
+											</div>
 										</details>
 									</article>
 									<article id="ocean-worlds" class="research-theme">
@@ -154,28 +199,43 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related content">
-											<summary>See more</summary>
-											<ul class="research-source-list">
-											<li>
-												<a href="https://www.esa.int/Science_Exploration/Space_Science/Juice/Jupiter_and_its_complex_surroundings_What_will_Juice_reveal" target="_blank" rel="noopener">Jupiter and its complex surroundings: what will Juice reveal?</a>
-												<span>ESA overview of Juice science across icy moons, Jupiter&apos;s magnetic environment, and coupled plasma systems.</span>
-											</li>
-											<li>
-												<a href="https://science.nasa.gov/missions/europa-clipper/europa-clipper-resources/induced-magnetic-field-from-europas-subsurface-ocean/" target="_blank" rel="noopener">Induced magnetic field from Europa&apos;s subsurface ocean</a>
-												<span>NASA explanation of how Europa&apos;s induced magnetic response constrains ocean and ice-shell properties.</span>
-											</li>
-											<li>
-												<span class="research-source-type">Video</span>
-												<a href="https://www.jpl.nasa.gov/videos/spacecraft-makers-testing-europa-clippers-magnetometer/" target="_blank" rel="noopener">Testing Europa Clipper&apos;s magnetometer</a>
-												<span>JPL video on the instrument that will measure Europa&apos;s magnetic environment.</span>
-											</li>
-											<li>
-												<span class="research-source-type">Publication</span>
-												<a href="https://doi.org/10.1007/s11214-024-01085-y" target="_blank" rel="noopener">Geophysical characterization of Ganymede, Callisto, and Europa by Juice</a>
-													<span>Space Science Reviews paper on Juice investigations of icy-moon interiors.</span>
-												</li>
-											</ul>
+										<details class="research-theme-links" aria-label="Related links">
+											<summary>Related links</summary>
+											<div class="research-related-grid">
+												<section class="research-related-column" aria-label="Links">
+													<h4>Links</h4>
+													<ul class="research-source-list">
+														<li>
+															<a href="https://www.esa.int/Science_Exploration/Space_Science/Juice/Jupiter_and_its_complex_surroundings_What_will_Juice_reveal" target="_blank" rel="noopener">Jupiter and its complex surroundings: what will Juice reveal?</a>
+															<span>ESA overview of Juice science across icy moons, Jupiter&apos;s magnetic environment, and coupled plasma systems.</span>
+														</li>
+														<li>
+															<a href="https://science.nasa.gov/missions/europa-clipper/europa-clipper-resources/induced-magnetic-field-from-europas-subsurface-ocean/" target="_blank" rel="noopener">Induced magnetic field from Europa&apos;s subsurface ocean</a>
+															<span>NASA explanation of how Europa&apos;s induced magnetic response constrains ocean and ice-shell properties.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Video</span>
+															<a href="https://www.jpl.nasa.gov/videos/spacecraft-makers-testing-europa-clippers-magnetometer/" target="_blank" rel="noopener">Testing Europa Clipper&apos;s magnetometer</a>
+															<span>JPL video on the instrument that will measure Europa&apos;s magnetic environment.</span>
+														</li>
+													</ul>
+												</section>
+												<section class="research-related-column research-related-publications" aria-label="Publications">
+													<h4>Publications</h4>
+													<ul class="research-source-list research-publication-list">
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1007/s11214-024-01085-y" target="_blank" rel="noopener">Van Hoolst, T., Tobie, G., Vallat, C., Altobelli, N., Bruzzone, <strong>Cao, H.</strong>, et al., 2024. Geophysical Characterization of the Interiors of Ganymede, Callisto and Europa by ESA&apos;s JUpiter ICy moons Explorer.</a>
+															<span><em>Space Science Reviews</em> 220, 54.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1029/2025JA034657" target="_blank" rel="noopener">Hadid, L.Z., Chust, T., Wahlund, J.-E., <strong>Cao, H.</strong>, Kurth, W.S. and Dougherty, M.K., 2026. Evidence of an extended Alfv&eacute;n wing system at Enceladus: Cassini&apos;s multi-instrument observations.</a>
+															<span><em>Journal of Geophysical Research: Space Physics</em> 131, e2025JA034657.</span>
+														</li>
+													</ul>
+												</section>
+											</div>
 										</details>
 									</article>
 									<article id="surface-magnetometry" class="research-theme">
@@ -190,23 +250,47 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related content">
-											<summary>See more</summary>
-											<ul class="research-source-list">
-											<li>
-												<a href="https://www.nasa.gov/glenn/glenn-expertise-space-exploration/pesto/dali/" target="_blank" rel="noopener">NASA Development and Advancement of Lunar Instrumentation awards</a>
-												<span>NASA DALI context for L-MAG and lunar surface instrument development.</span>
-											</li>
-											<li>
-												<a href="https://physicalsciences.ucla.edu/how-to-study-water-on-the-moon/" target="_blank" rel="noopener">How to study water on the Moon</a>
-												<span>UCLA overview of Hao Cao&apos;s NASA-funded lunar magnetometer technology work.</span>
-											</li>
-											<li>
-												<span class="research-source-type">Video</span>
-												<a href="https://svs.gsfc.nasa.gov/5644/" target="_blank" rel="noopener">The Moon passes through Earth&apos;s magnetotail</a>
-													<span>NASA visualization of the lunar space environment relevant to long-duration surface magnetometry.</span>
-												</li>
-											</ul>
+										<details class="research-theme-links" aria-label="Related links">
+											<summary>Related links</summary>
+											<div class="research-related-grid">
+												<section class="research-related-column" aria-label="Links">
+													<h4>Links</h4>
+													<ul class="research-source-list">
+														<li>
+															<a href="https://physicalsciences.ucla.edu/how-to-study-water-on-the-moon/" target="_blank" rel="noopener">How to study water on the Moon</a>
+															<span>UCLA overview of Hao Cao&apos;s NASA-funded lunar magnetometer technology work.</span>
+														</li>
+														<li>
+															<a href="https://www.nasa.gov/glenn/glenn-expertise-space-exploration/pesto/dali/" target="_blank" rel="noopener">NASA Development and Advancement of Lunar Instrumentation awards</a>
+															<span>NASA DALI context for L-MAG and lunar surface instrument development.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Video</span>
+															<a href="https://svs.gsfc.nasa.gov/5644/" target="_blank" rel="noopener">The Moon passes through Earth&apos;s magnetotail</a>
+															<span>NASA visualization of the lunar space environment relevant to long-duration surface magnetometry.</span>
+														</li>
+													</ul>
+												</section>
+												<section class="research-related-column research-related-publications" aria-label="Publications">
+													<h4>Publications</h4>
+													<ul class="research-source-list research-publication-list">
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1073/pnas.1717454115" target="_blank" rel="noopener"><strong>Cao, H.</strong>, Yadav, Y. and Aurnou, J.M., 2018. Geomagnetic polar minima do not arise from steady meridional circulation.</a>
+															<span><em>Proceedings of the National Academy of Sciences</em> 115, 11186-11191.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1002/2014GL060196" target="_blank" rel="noopener"><strong>Cao, H.</strong>, Aurnou, J.M., Wicht, J., Dietrich, W., Soderlund, K.M. and Russell, C.T., 2014. A dynamo explanation for Mercury&apos;s anomalous magnetic field.</a>
+															<span><em>Geophysical Research Letters</em> 41, 4127-4134.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<span><strong>Cao, H.</strong>, Kuang, W., Cheng, J.S. and Aurnou, J.M., 2024. Revealing whole Earth dynamics through geomagnetism: From core to magnetosphere. White paper for NASA Earth Science CORE 2.0 Report.</span>
+														</li>
+													</ul>
+												</section>
+											</div>
 										</details>
 									</article>
 									<article id="space-weather" class="research-theme">
@@ -220,28 +304,53 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related content">
-											<summary>See more</summary>
-											<ul class="research-source-list">
-											<li>
-												<a href="https://science.nasa.gov/mission/tracers/" target="_blank" rel="noopener">NASA TRACERS mission overview</a>
-												<span>NASA mission page for studying magnetic reconnection and space-weather effects near Earth.</span>
-											</li>
-											<li>
-												<a href="https://physicalsciences.ucla.edu/nasa-launches-ucla-instrument-into-space-to-study-effects-of-sunsmagnetic-field-on-earth/" target="_blank" rel="noopener">NASA launches UCLA instrument into space</a>
-												<span>UCLA story on the TRACERS fluxgate magnetometer designed and built by the UCLA team.</span>
-											</li>
-											<li>
-												<span class="research-source-type">Video</span>
-												<a href="https://svs.gsfc.nasa.gov/20404/" target="_blank" rel="noopener">TRACERS science animations</a>
-												<span>NASA Scientific Visualization Studio animations of TRACERS sampling the polar cusp.</span>
-											</li>
-											<li>
-												<span class="research-source-type">Publication</span>
-												<a href="https://doi.org/10.1007/s11214-025-01212-3" target="_blank" rel="noopener">The TRACERS Fluxgate Magnetometer (MAG)</a>
-													<span>Space Science Reviews paper on the TRACERS magnetic-field instrument.</span>
-												</li>
-											</ul>
+										<details class="research-theme-links" aria-label="Related links">
+											<summary>Related links</summary>
+											<div class="research-related-grid">
+												<section class="research-related-column" aria-label="Links">
+													<h4>Links</h4>
+													<ul class="research-source-list">
+														<li>
+															<a href="https://physicalsciences.ucla.edu/nasa-launches-ucla-instrument-into-space-to-study-effects-of-sunsmagnetic-field-on-earth/" target="_blank" rel="noopener">NASA launches UCLA instrument into space</a>
+															<span>UCLA story on the TRACERS fluxgate magnetometer designed and built by the UCLA team.</span>
+														</li>
+														<li>
+															<a href="https://science.nasa.gov/mission/tracers/" target="_blank" rel="noopener">NASA TRACERS mission overview</a>
+															<span>NASA mission page for studying magnetic reconnection and space-weather effects near Earth.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Video</span>
+															<a href="https://svs.gsfc.nasa.gov/20404/" target="_blank" rel="noopener">TRACERS science animations</a>
+															<span>NASA Scientific Visualization Studio animations of TRACERS sampling the polar cusp.</span>
+														</li>
+													</ul>
+												</section>
+												<section class="research-related-column research-related-publications" aria-label="Publications">
+													<h4>Publications</h4>
+													<ul class="research-source-list research-publication-list">
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1007/s11214-025-01212-3" target="_blank" rel="noopener">Strangeway, R.J., <strong>Cao, H.</strong>, Orrill, E., Caron, R.P., Pierce, D., et al., 2025. The TRACERS Fluxgate Magnetometer (MAG).</a>
+															<span><em>Space Science Reviews</em> 221, 84.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1007/s11214-025-01184-4" target="_blank" rel="noopener">Miles, D.M., Kletzing, C.A., Fuselier, S.A., Goodrich, K.A., Bonnell, J.W., Bounds, S., <strong>Cao, H.</strong>, et al., 2025. The Tandem Reconnection And Cusp Electrodynamics Reconnaissance Satellites (TRACERS) Mission.</a>
+															<span><em>Space Science Reviews</em> 221, 61.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1029/2026GL123732" target="_blank" rel="noopener">Shen, Y., Strangeway, R.J., <strong>Cao, H.</strong>, et al., 2026. TRACERS small-scale field-aligned currents and intense GPS amplitude and phase scintillations in the nightside auroral region.</a>
+															<span><em>Geophysical Research Letters</em> 53, e2026GL123732.</span>
+														</li>
+														<li>
+															<span class="research-source-type">Publication</span>
+															<a href="https://doi.org/10.1029/2026GL123404" target="_blank" rel="noopener">&Oslash;ieroset, M., Fuselier, S.A., Bonnell, J.B., <strong>Cao, H.</strong>, Chen, L.-J., Conner, H.K., et al., 2026. Simultaneous TRACERS and THEMIS observations of reversed cusp ion dispersions and dual-lobe reconnection.</a>
+															<span><em>Geophysical Research Letters</em> 53, e2026GL123404.</span>
+														</li>
+													</ul>
+												</section>
+											</div>
 										</details>
 									</article>
 							</section>
