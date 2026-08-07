@@ -18,7 +18,7 @@
 			name="description"
 			content="Research themes in Hao Cao's group at UCLA, including planetary interiors, magnetic fields, ocean worlds, lunar magnetometry, and space-weather instrumentation."
 		/>
-		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-publication-author-contrast')); ?>" />
+		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-research-typography-polish')); ?>" />
 		<noscript><link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/noscript.css')); ?>" /></noscript>
 			<?php wp_head(); ?>
 	</head>
@@ -77,8 +77,8 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related links">
-											<summary>Related links</summary>
+										<details class="research-theme-links" aria-label="Related resources">
+											<summary>Related resources</summary>
 											<div class="research-related-grid">
 												<section class="research-related-column" aria-label="Links">
 													<h4>Links</h4>
@@ -102,15 +102,15 @@
 													<h4>Publications</h4>
 													<ul class="research-source-list research-publication-list">
 														<li>
-															<a href="https://doi.org/10.3847/1538-4357/ad0cbb" target="_blank" rel="noopener"><span class="research-publication-authors"><strong>Cao, H.</strong>, Bloxham, J., Park, R.S., Militzer, B., Yadav, R.K., Kulowski, L., Stevenson, D.J. and Bolton, S.J., 2023.</span> <span class="research-publication-title">Strong resemblance between surface and deep zonal winds inside Jupiter revealed by high-degree gravity moments.</span> <span class="research-publication-journal"><em>The Astrophysical Journal</em> 959, 78.</span></a>
+															<a href="https://doi.org/10.3847/1538-4357/ad0cbb" target="_blank" rel="noopener"><span class="research-publication-authors"><strong>Cao, H.</strong>, Bloxham, J., Park, R.S., Militzer, B., Yadav, R.K., Kulowski, L., Stevenson, D.J. and Bolton, S.J. &middot; 2023</span> <span class="research-publication-title">Strong resemblance between surface and deep zonal winds inside Jupiter revealed by high-degree gravity moments.</span> <span class="research-publication-journal"><em>The Astrophysical Journal</em> 959, 78.</span></a>
 															<span class="research-publication-note">Uses high-degree Juno gravity moments to connect visible winds with deep interior flow.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1029/2021JE007138" target="_blank" rel="noopener"><span class="research-publication-authors">Bloxham, J., Moore, K.M., Kulowski, L., <strong>Cao, H.</strong>, Yadav, R.K., Stevenson, D.J., Connerney, J.E.P. and Bolton, S., 2022.</span> <span class="research-publication-title">Differential Rotation in Jupiter&apos;s Interior Revealed by Simultaneous Inversion for the Magnetic Field and Zonal Flux Velocity.</span> <span class="research-publication-journal"><em>Journal of Geophysical Research: Planets</em> 127, e2021JE007138.</span></a>
+															<a href="https://doi.org/10.1029/2021JE007138" target="_blank" rel="noopener"><span class="research-publication-authors">Bloxham, J., Moore, K.M., Kulowski, L., <strong>Cao, H.</strong>, Yadav, R.K., Stevenson, D.J., Connerney, J.E.P. and Bolton, S. &middot; 2022</span> <span class="research-publication-title">Differential Rotation in Jupiter&apos;s Interior Revealed by Simultaneous Inversion for the Magnetic Field and Zonal Flux Velocity.</span> <span class="research-publication-journal"><em>Journal of Geophysical Research: Planets</em> 127, e2021JE007138.</span></a>
 															<span class="research-publication-note">Combines magnetic-field inversion and zonal-flow modeling to constrain Jupiter&apos;s interior rotation.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1029/2019JE006165" target="_blank" rel="noopener"><span class="research-publication-authors">Kulowski, L., <strong>Cao, H.</strong>, Bloxham, J., 2020.</span> <span class="research-publication-title">Contributions to Jupiter&apos;s gravity field from dynamics in the dynamo region.</span> <span class="research-publication-journal"><em>Journal of Geophysical Research: Planets</em> 125, e2019JE006165.</span></a>
+															<a href="https://doi.org/10.1029/2019JE006165" target="_blank" rel="noopener"><span class="research-publication-authors">Kulowski, L., <strong>Cao, H.</strong>, Bloxham, J. &middot; 2020</span> <span class="research-publication-title">Contributions to Jupiter&apos;s gravity field from dynamics in the dynamo region.</span> <span class="research-publication-journal"><em>Journal of Geophysical Research: Planets</em> 125, e2019JE006165.</span></a>
 															<span class="research-publication-note">Links gravity signals to dynamics in Jupiter&apos;s electrically conducting dynamo region.</span>
 														</li>
 													</ul>
@@ -130,8 +130,8 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related links">
-											<summary>Related links</summary>
+										<details class="research-theme-links" aria-label="Related resources">
+											<summary>Related resources</summary>
 											<div class="research-related-grid">
 												<section class="research-related-column" aria-label="Links">
 													<h4>Links</h4>
@@ -160,23 +160,23 @@
 													<h4>Publications</h4>
 													<ul class="research-source-list research-publication-list">
 														<li>
-															<a href="https://doi.org/10.1038/s41586-024-07046-3" target="_blank" rel="noopener"><span class="research-publication-authors">Bloxham, J., <strong>Cao, H.</strong>, Stevenson, D.J., Connerney, J.E. and Bolton, S.J., 2024.</span> <span class="research-publication-title">A rapidly time-varying equatorial jet in Jupiter&apos;s deep interior.</span> <span class="research-publication-journal"><em>Nature</em> 627, 64-66.</span></a>
+															<a href="https://doi.org/10.1038/s41586-024-07046-3" target="_blank" rel="noopener"><span class="research-publication-authors">Bloxham, J., <strong>Cao, H.</strong>, Stevenson, D.J., Connerney, J.E. and Bolton, S.J. &middot; 2024</span> <span class="research-publication-title">A rapidly time-varying equatorial jet in Jupiter&apos;s deep interior.</span> <span class="research-publication-journal"><em>Nature</em> 627, 64-66.</span></a>
 															<span class="research-publication-note">Interprets Juno magnetic-field variation as evidence for a deep, time-varying equatorial jet.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1038/s41550-019-0772-5" target="_blank" rel="noopener"><span class="research-publication-authors">Moore, K.M., <strong>Cao, H.</strong>, Bloxham, J., Stevenson, D.J., Connerney, J.E.P. and Bolton, S.J., 2019.</span> <span class="research-publication-title">Time-variation of Jupiter&apos;s internal magnetic field consistent with zonal wind advection.</span> <span class="research-publication-journal"><em>Nature Astronomy</em> 3, 730-735.</span></a>
+															<a href="https://doi.org/10.1038/s41550-019-0772-5" target="_blank" rel="noopener"><span class="research-publication-authors">Moore, K.M., <strong>Cao, H.</strong>, Bloxham, J., Stevenson, D.J., Connerney, J.E.P. and Bolton, S.J. &middot; 2019</span> <span class="research-publication-title">Time-variation of Jupiter&apos;s internal magnetic field consistent with zonal wind advection.</span> <span class="research-publication-journal"><em>Nature Astronomy</em> 3, 730-735.</span></a>
 															<span class="research-publication-note">Connects secular variation in Jupiter&apos;s internal field to zonal wind advection.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1016/j.icarus.2019.113541" target="_blank" rel="noopener"><span class="research-publication-authors"><strong>Cao, H.</strong>, Dougherty, M.K., Hunt, G.J., Provan, G., Cowley, S.W.H., Bunce, E.J., Kellock, S. and Stevenson, D.J., 2020.</span> <span class="research-publication-title">The landscape of Saturn&apos;s internal magnetic field from the Cassini Grand Finale.</span> <span class="research-publication-journal"><em>Icarus</em> 344, 113541.</span></a>
+															<a href="https://doi.org/10.1016/j.icarus.2019.113541" target="_blank" rel="noopener"><span class="research-publication-authors"><strong>Cao, H.</strong>, Dougherty, M.K., Hunt, G.J., Provan, G., Cowley, S.W.H., Bunce, E.J., Kellock, S. and Stevenson, D.J. &middot; 2020</span> <span class="research-publication-title">The landscape of Saturn&apos;s internal magnetic field from the Cassini Grand Finale.</span> <span class="research-publication-journal"><em>Icarus</em> 344, 113541.</span></a>
 															<span class="research-publication-note">Uses Cassini Grand Finale magnetometry to resolve fine-scale structure in Saturn&apos;s internal magnetic field.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1126/science.aat5434" target="_blank" rel="noopener"><span class="research-publication-authors">Dougherty, M.K., <strong>Cao, H.</strong>, Khurana, K.K., et al., 2018.</span> <span class="research-publication-title">Saturn&apos;s magnetic field revealed by the Cassini Grand Finale.</span> <span class="research-publication-journal"><em>Science</em> 362, eaat5434.</span></a>
+															<a href="https://doi.org/10.1126/science.aat5434" target="_blank" rel="noopener"><span class="research-publication-authors">Dougherty, M.K., <strong>Cao, H.</strong>, Khurana, K.K., et al. &middot; 2018</span> <span class="research-publication-title">Saturn&apos;s magnetic field revealed by the Cassini Grand Finale.</span> <span class="research-publication-journal"><em>Science</em> 362, eaat5434.</span></a>
 															<span class="research-publication-note">Reports the close-in Saturn magnetic-field measurements central to Hao Cao&apos;s dynamo work.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1002/2014GL060196" target="_blank" rel="noopener"><span class="research-publication-authors"><strong>Cao, H.</strong>, Aurnou, J.M., Wicht, J., Dietrich, W., Soderlund, K.M. and Russell, C.T., 2014.</span> <span class="research-publication-title">A dynamo explanation for Mercury&apos;s anomalous magnetic field.</span> <span class="research-publication-journal"><em>Geophysical Research Letters</em> 41, 4127-4134.</span></a>
+															<a href="https://doi.org/10.1002/2014GL060196" target="_blank" rel="noopener"><span class="research-publication-authors"><strong>Cao, H.</strong>, Aurnou, J.M., Wicht, J., Dietrich, W., Soderlund, K.M. and Russell, C.T. &middot; 2014</span> <span class="research-publication-title">A dynamo explanation for Mercury&apos;s anomalous magnetic field.</span> <span class="research-publication-journal"><em>Geophysical Research Letters</em> 41, 4127-4134.</span></a>
 															<span class="research-publication-note">Extends comparative planetary dynamo work to Mercury&apos;s unusual magnetic-field geometry.</span>
 														</li>
 													</ul>
@@ -196,8 +196,8 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related links">
-											<summary>Related links</summary>
+										<details class="research-theme-links" aria-label="Related resources">
+											<summary>Related resources</summary>
 											<div class="research-related-grid">
 												<section class="research-related-column" aria-label="Links">
 													<h4>Links</h4>
@@ -221,11 +221,11 @@
 													<h4>Publications</h4>
 													<ul class="research-source-list research-publication-list">
 														<li>
-															<a href="https://doi.org/10.1007/s11214-024-01085-y" target="_blank" rel="noopener"><span class="research-publication-authors">Van Hoolst, T., Tobie, G., Vallat, C., Altobelli, N., Bruzzone, L., <strong>Cao, H.</strong>, et al., 2024.</span> <span class="research-publication-title">Geophysical Characterization of the Interiors of Ganymede, Callisto and Europa by ESA&apos;s JUpiter ICy moons Explorer.</span> <span class="research-publication-journal"><em>Space Science Reviews</em> 220, 54.</span></a>
+															<a href="https://doi.org/10.1007/s11214-024-01085-y" target="_blank" rel="noopener"><span class="research-publication-authors">Van Hoolst, T., Tobie, G., Vallat, C., Altobelli, N., Bruzzone, L., <strong>Cao, H.</strong>, et al. &middot; 2024</span> <span class="research-publication-title">Geophysical Characterization of the Interiors of Ganymede, Callisto and Europa by ESA&apos;s JUpiter ICy moons Explorer.</span> <span class="research-publication-journal"><em>Space Science Reviews</em> 220, 54.</span></a>
 															<span class="research-publication-note">Frames how Juice will use geophysical measurements to characterize Ganymede, Callisto, and Europa interiors.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1029/2025JA034657" target="_blank" rel="noopener"><span class="research-publication-authors">Hadid, L.Z., Chust, T., Wahlund, J.-E., <strong>Cao, H.</strong>, Kurth, W.S. and Dougherty, M.K., 2026.</span> <span class="research-publication-title">Evidence of an extended Alfv&eacute;n wing system at Enceladus: Cassini&apos;s multi-instrument observations.</span> <span class="research-publication-journal"><em>Journal of Geophysical Research: Space Physics</em> 131, e2025JA034657.</span></a>
+															<a href="https://doi.org/10.1029/2025JA034657" target="_blank" rel="noopener"><span class="research-publication-authors">Hadid, L.Z., Chust, T., Wahlund, J.-E., <strong>Cao, H.</strong>, Kurth, W.S. and Dougherty, M.K. &middot; 2026</span> <span class="research-publication-title">Evidence of an extended Alfv&eacute;n wing system at Enceladus: Cassini&apos;s multi-instrument observations.</span> <span class="research-publication-journal"><em>Journal of Geophysical Research: Space Physics</em> 131, e2025JA034657.</span></a>
 															<span class="research-publication-note">Uses Cassini observations at Enceladus to connect moon-plasma interactions with ocean-world environments.</span>
 														</li>
 													</ul>
@@ -245,8 +245,8 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related links">
-											<summary>Related links</summary>
+										<details class="research-theme-links" aria-label="Related resources">
+											<summary>Related resources</summary>
 											<div class="research-related-grid">
 												<section class="research-related-column" aria-label="Links">
 													<h4>Links</h4>
@@ -270,11 +270,11 @@
 													<h4>Publications</h4>
 													<ul class="research-source-list research-publication-list">
 														<li>
-															<a href="<?php echo esc_url(hao_cao_research_page_url('publications') . '#reports-white-papers'); ?>"><span class="research-publication-authors"><strong>Cao, H.</strong>, Kuang, W., Cheng, J.S. and Aurnou, J.M., 2024.</span> <span class="research-publication-title">Revealing whole Earth dynamics through geomagnetism: From core to magnetosphere.</span> <span class="research-publication-journal">White paper for NASA Earth Science CORE 2.0 Report.</span></a>
+															<a href="<?php echo esc_url(hao_cao_research_page_url('publications') . '#reports-white-papers'); ?>"><span class="research-publication-authors"><strong>Cao, H.</strong>, Kuang, W., Cheng, J.S. and Aurnou, J.M. &middot; 2024</span> <span class="research-publication-title">Revealing whole Earth dynamics through geomagnetism: From core to magnetosphere.</span> <span class="research-publication-journal">White paper for NASA Earth Science CORE 2.0 Report.</span></a>
 															<span class="research-publication-note">Connects magnetic observations from surface platforms to broad geophysical inference.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1073/pnas.1717454115" target="_blank" rel="noopener"><span class="research-publication-authors"><strong>Cao, H.</strong>, Yadav, Y. and Aurnou, J.M., 2018.</span> <span class="research-publication-title">Geomagnetic polar minima do not arise from steady meridional circulation.</span> <span class="research-publication-journal"><em>Proceedings of the National Academy of Sciences</em> 115, 11186-11191.</span></a>
+															<a href="https://doi.org/10.1073/pnas.1717454115" target="_blank" rel="noopener"><span class="research-publication-authors"><strong>Cao, H.</strong>, Yadav, Y. and Aurnou, J.M. &middot; 2018</span> <span class="research-publication-title">Geomagnetic polar minima do not arise from steady meridional circulation.</span> <span class="research-publication-journal"><em>Proceedings of the National Academy of Sciences</em> 115, 11186-11191.</span></a>
 															<span class="research-publication-note">Develops magnetic-field interpretation methods relevant to separating interior dynamics from measured surface signals.</span>
 														</li>
 													</ul>
@@ -293,8 +293,8 @@
 												</p>
 											</div>
 										</div>
-										<details class="research-theme-links" aria-label="Related links">
-											<summary>Related links</summary>
+										<details class="research-theme-links" aria-label="Related resources">
+											<summary>Related resources</summary>
 											<div class="research-related-grid">
 												<section class="research-related-column" aria-label="Links">
 													<h4>Links</h4>
@@ -318,19 +318,19 @@
 													<h4>Publications</h4>
 													<ul class="research-source-list research-publication-list">
 														<li>
-															<a href="https://doi.org/10.1007/s11214-025-01212-3" target="_blank" rel="noopener"><span class="research-publication-authors">Strangeway, R.J., <strong>Cao, H.</strong>, Orrill, E., Caron, R.P., Pierce, D., et al., 2025.</span> <span class="research-publication-title">The TRACERS Fluxgate Magnetometer (MAG).</span> <span class="research-publication-journal"><em>Space Science Reviews</em> 221, 84.</span></a>
+															<a href="https://doi.org/10.1007/s11214-025-01212-3" target="_blank" rel="noopener"><span class="research-publication-authors">Strangeway, R.J., <strong>Cao, H.</strong>, Orrill, E., Caron, R.P., Pierce, D., et al. &middot; 2025</span> <span class="research-publication-title">The TRACERS Fluxgate Magnetometer (MAG).</span> <span class="research-publication-journal"><em>Space Science Reviews</em> 221, 84.</span></a>
 															<span class="research-publication-note">Describes the fluxgate magnetometer hardware supporting TRACERS measurements of Earth&apos;s near-space magnetic environment.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1007/s11214-025-01184-4" target="_blank" rel="noopener"><span class="research-publication-authors">Miles, D.M., Kletzing, C.A., Fuselier, S.A., Goodrich, K.A., Bonnell, J.W., Bounds, S., <strong>Cao, H.</strong>, et al., 2025.</span> <span class="research-publication-title">The Tandem Reconnection And Cusp Electrodynamics Reconnaissance Satellites (TRACERS) Mission.</span> <span class="research-publication-journal"><em>Space Science Reviews</em> 221, 61.</span></a>
+															<a href="https://doi.org/10.1007/s11214-025-01184-4" target="_blank" rel="noopener"><span class="research-publication-authors">Miles, D.M., Kletzing, C.A., Fuselier, S.A., Goodrich, K.A., Bonnell, J.W., Bounds, S., <strong>Cao, H.</strong>, et al. &middot; 2025</span> <span class="research-publication-title">The Tandem Reconnection And Cusp Electrodynamics Reconnaissance Satellites (TRACERS) Mission.</span> <span class="research-publication-journal"><em>Space Science Reviews</em> 221, 61.</span></a>
 															<span class="research-publication-note">Provides mission context for two-satellite cusp measurements using the UCLA magnetometer payload.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1029/2026GL123732" target="_blank" rel="noopener"><span class="research-publication-authors">Shen, Y., Strangeway, R.J., <strong>Cao, H.</strong>, et al., 2026.</span> <span class="research-publication-title">TRACERS small-scale field-aligned currents and intense GPS amplitude and phase scintillations in the nightside auroral region.</span> <span class="research-publication-journal"><em>Geophysical Research Letters</em> 53, e2026GL123732.</span></a>
+															<a href="https://doi.org/10.1029/2026GL123732" target="_blank" rel="noopener"><span class="research-publication-authors">Shen, Y., Strangeway, R.J., <strong>Cao, H.</strong>, et al. &middot; 2026</span> <span class="research-publication-title">TRACERS small-scale field-aligned currents and intense GPS amplitude and phase scintillations in the nightside auroral region.</span> <span class="research-publication-journal"><em>Geophysical Research Letters</em> 53, e2026GL123732.</span></a>
 															<span class="research-publication-note">Connects TRACERS magnetic-field observations to auroral currents and GPS scintillation.</span>
 														</li>
 														<li>
-															<a href="https://doi.org/10.1029/2026GL123404" target="_blank" rel="noopener"><span class="research-publication-authors">&Oslash;ieroset, M., Fuselier, S.A., Bonnell, J.B., <strong>Cao, H.</strong>, Chen, L.-J., Conner, H.K., et al., 2026.</span> <span class="research-publication-title">Simultaneous TRACERS and THEMIS observations of reversed cusp ion dispersions and dual-lobe reconnection.</span> <span class="research-publication-journal"><em>Geophysical Research Letters</em> 53, e2026GL123404.</span></a>
+															<a href="https://doi.org/10.1029/2026GL123404" target="_blank" rel="noopener"><span class="research-publication-authors">&Oslash;ieroset, M., Fuselier, S.A., Bonnell, J.B., <strong>Cao, H.</strong>, Chen, L.-J., Conner, H.K., et al. &middot; 2026</span> <span class="research-publication-title">Simultaneous TRACERS and THEMIS observations of reversed cusp ion dispersions and dual-lobe reconnection.</span> <span class="research-publication-journal"><em>Geophysical Research Letters</em> 53, e2026GL123404.</span></a>
 															<span class="research-publication-note">Uses coordinated spacecraft observations to interpret cusp reconnection in the TRACERS science context.</span>
 														</li>
 													</ul>
