@@ -284,6 +284,9 @@
 								instrument development to probe deep fluid motion, dynamo action, interior structure, and the space
 								environments surrounding planetary bodies.
 							</p>
+							<p class="homepage-research-question">
+								<strong>How do planets and moons work beneath their visible surfaces?</strong>
+							</p>
 						</header>
 					</section>
 
@@ -295,7 +298,10 @@
 								<div class="research-summary-layout">
 									<header class="special">
 										<h2>Research Areas</h2>
-										<p>How do planets and moons work beneath their visible surfaces?</p>
+										<p>
+											Across giant planets, ocean worlds, the Moon, and Earth&apos;s space environment, the group uses
+											physical signals measured by spacecraft and instruments to infer what cannot be observed directly.
+										</p>
 										<footer class="research-summary-footer">
 											<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="button">Explore Research</a>
 										</footer>
@@ -304,45 +310,45 @@
 									<div class="research-summary-side">
 										<ul class="research-summary-bullets">
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#planetary-interiors'); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Planetary Interiors and Deep Fluid Dynamics</span>
+													<span class="research-bullet-title">Planetary Interiors</span>
 													<span class="research-bullet-summary">
 														Gravity and magnetic measurements reveal deep winds, electrical structure, and interior dynamics.
 													</span>
 												</a>
 											</li>
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#planetary-magnetic-fields'); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Planetary Magnetic Fields and Secular Variation</span>
+													<span class="research-bullet-title">Planetary Magnetic Fields</span>
 													<span class="research-bullet-summary">
 														Dynamo models and spacecraft magnetometry connect evolving fields to fluid motion inside planets.
 													</span>
 												</a>
 											</li>
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#ocean-worlds'); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Ocean Worlds and Coupled Interior-Space Environments</span>
+													<span class="research-bullet-title">Ocean Worlds</span>
 													<span class="research-bullet-summary">
 														Magnetic induction and plasma interactions probe icy moons and coupled interior-space environments.
 													</span>
 												</a>
 											</li>
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#surface-magnetometry'); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Lunar and Planetary Surface Magnetometry</span>
+													<span class="research-bullet-title">Surface Magnetometry</span>
 													<span class="research-bullet-summary">
 														Instrument development supports long-duration magnetic measurements on the lunar surface.
 													</span>
 												</a>
 											</li>
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#space-weather'); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Space-Weather Measurements and Instrument Development</span>
+													<span class="research-bullet-title">Space Weather</span>
 													<span class="research-bullet-summary">
 														Fluxgate magnetometers help measure Earth&apos;s near-space response to solar-wind forcing.
 													</span>
