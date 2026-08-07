@@ -4721,16 +4721,16 @@ body.homepage #main .about-profile {
 
 body.homepage #main .about-profile-photo {
   max-width: 280px;
-  aspect-ratio: auto;
-  overflow: visible;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 
 body.homepage #main .about-profile-photo img {
-  height: auto;
-  object-fit: contain;
-  object-position: center center;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
   transform: none;
-  transform-origin: 50% 50%;
+  transform-origin: 50% 58%;
 }
 
 body.homepage #main .about-profile-copy {
