@@ -3930,31 +3930,17 @@ body.homepage #banner header {
 
 body.homepage #banner .homepage-intro-copy,
 body.homepage #banner header > p.homepage-intro-copy {
-	max-width: 72rem;
-	margin: 0;
+	max-width: 100%;
+	margin: 0 auto;
 	color: #46586c;
 	line-height: 1.72;
-	text-align: left;
+	text-align: center;
 }
 
 body.homepage #banner .homepage-intro-copy strong {
 	display: inline;
 	margin-bottom: 0;
 	color: #10263d;
-	font-weight: 700;
-}
-
-body.homepage #banner .homepage-research-question {
-	max-width: 46rem;
-	margin: 1.45rem 0 0 0;
-	color: #10263d;
-	font-size: clamp(1.2rem, 1.45vw, 1.45rem);
-	line-height: 1.48;
-	text-align: left;
-}
-
-body.homepage #banner .homepage-research-question strong {
-	color: inherit;
 	font-weight: 700;
 }
 
@@ -3975,7 +3961,7 @@ body.homepage #main .about-profile-photo {
 body.homepage #main .about-profile-photo img {
 	height: 100%;
 	object-fit: cover;
-	object-position: center 28%;
+	object-position: center 24%;
 	transform: none;
 	transform-origin: 50% 58%;
 }
@@ -4039,8 +4025,6 @@ body.homepage #main .about-profile-copy > .home-editor-content {
 	}
 
 	body.homepage #banner .homepage-intro-copy strong,
-	body.homepage #banner .homepage-research-question,
-	body.homepage #banner .homepage-research-question strong,
 	body.homepage .research-summary header.special p,
 	body.homepage .research-bullet-title,
 	body.homepage .research-bullet-summary {
@@ -4058,12 +4042,6 @@ body.homepage #main .about-profile-copy > .home-editor-content {
 		max-width: 20rem;
 		font-size: 1rem;
 		line-height: 1.62;
-	}
-
-	body.homepage #banner .homepage-research-question {
-		max-width: 20rem;
-		font-size: 1.08rem;
-		line-height: 1.45;
 	}
 
 	body.homepage .research-summary-layout,

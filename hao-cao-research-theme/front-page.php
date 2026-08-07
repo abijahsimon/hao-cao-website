@@ -18,7 +18,7 @@
 			name="description"
 			content="Hao Cao is an associate professor at UCLA studying planetary magnetism, deep interiors, and space environment across the solar system."
 		/>
-		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-square-photo')); ?>" />
+		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-centered-intro')); ?>" />
 		<noscript><link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/noscript.css')); ?>" /></noscript>
 			<?php wp_head(); ?>
 	</head>
@@ -283,9 +283,6 @@
 								<strong>Hao Cao studies planetary interiors and the space environment through data analysis, numerical simulations, and instrument innovation.</strong> His group combines spacecraft magnetic and gravitational measurements with theory, numerical modeling, and
 								instrument development to probe deep fluid motion, dynamo action, interior structure, and the space
 								environments surrounding planetary bodies.
-							</p>
-							<p class="homepage-research-question">
-								<strong>How do planets and moons work beneath their visible surfaces?</strong>
 							</p>
 						</header>
 					</section>
