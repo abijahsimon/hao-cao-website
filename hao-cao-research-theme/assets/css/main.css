@@ -4656,6 +4656,10 @@ body.homepage #banner h2 {
 }
 
 /* ===== Hao Cao homepage alignment refresh ===== */
+body.homepage {
+  --homepage-content-edge: clamp(1.6rem, 7vw, 7.2rem);
+}
+
 body.homepage #banner {
   text-align: left;
 }
@@ -4663,11 +4667,16 @@ body.homepage #banner {
 body.homepage #banner header,
 body.homepage .research-summary .container,
 body.homepage #main.container.special {
-  width: min(1120px, 100% - 5rem);
+  box-sizing: border-box;
+  width: auto;
+  max-width: 1120px;
+  margin-left: var(--homepage-content-edge);
+  margin-right: var(--homepage-content-edge);
 }
 
 body.homepage #banner header {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: left;
 }
 
@@ -4676,14 +4685,13 @@ body.homepage #banner header > p.homepage-intro-copy {
   max-width: 72rem;
   margin: 0;
   color: #46586c;
-  font-size: 1.12rem;
-  line-height: 1.76;
+  line-height: 1.72;
   text-align: left;
 }
 
 body.homepage #banner .homepage-intro-copy strong {
-  display: block;
-  margin-bottom: 0.35rem;
+  display: inline;
+  margin-bottom: 0;
   color: #10263d;
   font-weight: 700;
 }
@@ -4692,27 +4700,46 @@ body.homepage .research-summary header.special p {
   max-width: 36rem;
 }
 
+body.homepage #main .about-profile {
+  align-items: stretch;
+}
+
 body.homepage #main .about-profile-photo {
-  max-width: 300px;
-  aspect-ratio: 4 / 5;
+  max-width: 280px;
+  aspect-ratio: auto;
+  overflow: visible;
 }
 
 body.homepage #main .about-profile-photo img {
-  object-position: center 34%;
-  transform: scale(1.32);
-  transform-origin: 50% 38%;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
+  transform: none;
+  transform-origin: 50% 50%;
 }
 
 body.homepage #main .about-profile-copy {
+  display: flex;
+  flex-direction: column;
   padding-left: 0;
   border-left: 0;
 }
 
+body.homepage #main .about-profile-copy > p:last-child,
+body.homepage #main .about-profile-copy > .home-editor-content {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 980px) {
+  body.homepage {
+    --homepage-content-edge: clamp(1.25rem, 5vw, 3rem);
+  }
+
   body.homepage #banner header,
   body.homepage .research-summary .container,
   body.homepage #main.container.special {
-    width: min(1120px, 100% - 3rem);
+    max-width: 1120px;
   }
 }
 
@@ -4731,8 +4758,8 @@ body.homepage #main .about-profile-copy {
     max-width: none !important;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--homepage-content-edge);
+    padding-right: var(--homepage-content-edge);
   }
 
   body.homepage #banner .homepage-intro-copy,
@@ -4740,8 +4767,8 @@ body.homepage #main .about-profile-copy {
     display: block;
     width: 100%;
     max-width: 20rem !important;
-    font-size: 1rem;
-    line-height: 1.68;
+    font-size: 0.95rem;
+    line-height: 1.62;
     white-space: normal !important;
     overflow-wrap: anywhere;
     word-break: normal;
@@ -4768,8 +4795,41 @@ body.homepage #main .about-profile-copy {
     line-height: 1.62;
   }
 
+  body.homepage .research-summary-layout,
+  body.homepage .research-summary-side,
+  body.homepage .research-summary-bullets {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  body.homepage .research-summary-side,
+  body.homepage .research-summary-bullets,
+  body.homepage .research-bullet-link,
+  body.homepage #main .about-profile,
+  body.homepage #main .about-profile-copy {
+    max-width: 20rem;
+  }
+
+  body.homepage .research-bullet-link {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: 0.8rem minmax(0, 1fr);
+  }
+
+  body.homepage .research-bullet-title,
+  body.homepage .research-bullet-summary {
+    min-width: 0;
+    max-width: 100%;
+  }
+
   body.homepage #main .about-profile-photo {
     margin: 0;
     max-width: 18rem;
+  }
+
+  body.homepage #main .about-profile-copy {
+    display: block;
   }
 }
