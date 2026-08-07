@@ -63,6 +63,9 @@
 									Mission, instrument, institute, profile, and teaching resources connected to the research program.
 								</p>
 							</header>
+							<?php if (hao_cao_research_has_editor_content()) : ?>
+								<?php hao_cao_research_the_editor_content('wordpress-page-content links-editor-content'); ?>
+							<?php else : ?>
 							<a href="<?php echo esc_url(hao_cao_research_page_url('links')); ?>" class="image featured"><img src="<?php echo esc_url(hao_cao_research_theme_uri('images/research-5.png')); ?>" alt="Planetary magnetic field figure for the links page" /></a>
 							<p>
 								This page gathers external resources for students, collaborators, and visitors who want context for
@@ -120,6 +123,7 @@
 									the group&apos;s research and teaching.
 								</p>
 							</section>
+							<?php endif; ?>
 						</article>
 						<hr />
 						<div class="row">

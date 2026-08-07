@@ -60,10 +60,15 @@
 							<header>
 								<h2>Opportunities</h2>
 							</header>
-							<p>
-								The group&apos;s work sits at the intersection of planetary geophysics, space physics, fluid dynamics,
-								spacecraft data analysis, and magnetometer development. Prospective students and collaborators are
-								welcome to inquire about current opportunities that match the research themes below.
+							<?php if (hao_cao_research_has_editor_content()) : ?>
+								<?php hao_cao_research_the_editor_content('wordpress-page-content opportunities-editor-content'); ?>
+							<?php else : ?>
+							<p class="opportunities-intro">
+								Hao Cao&apos;s group welcomes students, postdoctoral scholars, research staff, and collaborators who
+								want to connect quantitative physics with planetary interiors, magnetic fields, space environments,
+								and mission-driven instrumentation. Opportunities vary with project timing and funding, but strong
+								fits often combine curiosity about planets and moons with computation, spacecraft data analysis,
+								laboratory or instrument experience, or a willingness to build those skills.
 							</p>
 							<section>
 								<header>
@@ -123,7 +128,7 @@
 									funding depend on the current research portfolio.
 								</p>
 							</section>
-							<section>
+							<section class="opportunities-contact-card">
 								<header>
 									<h3>How to Reach Out</h3>
 								</header>
@@ -137,6 +142,7 @@
 									<a href="mailto:hcao@epss.ucla.edu" class="button">Email Hao Cao</a>
 								</footer>
 							</section>
+							<?php endif; ?>
 						</article>
 					</div>
 

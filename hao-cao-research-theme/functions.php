@@ -29,8 +29,39 @@ function hao_cao_research_page_url($slug = '') {
 	return home_url('/' . $slug . '/');
 }
 
+function hao_cao_research_get_editor_content($post_id = null) {
+	$post_id = $post_id ? (int) $post_id : (int) get_queried_object_id();
+
+	if (!$post_id) {
+		return '';
+	}
+
+	return (string) get_post_field('post_content', $post_id);
+}
+
+function hao_cao_research_has_editor_content($post_id = null) {
+	$content = hao_cao_research_get_editor_content($post_id);
+
+	if (trim(wp_strip_all_tags(strip_shortcodes($content))) !== '') {
+		return true;
+	}
+
+	return (bool) preg_match('/<(img|video|iframe|embed|object|source)\b/i', $content);
+}
+
+function hao_cao_research_the_editor_content($class = 'wordpress-page-content') {
+	$content = hao_cao_research_get_editor_content();
+
+	if (trim($content) === '') {
+		return;
+	}
+
+	echo '<div class="' . esc_attr($class) . '">';
+	echo apply_filters('the_content', $content);
+	echo '</div>';
+}
+
 function hao_cao_research_body_marker() {
 	echo "\n" . '<!-- Hao Cao Research Website theme active. -->' . "\n";
 }
 add_action('wp_footer', 'hao_cao_research_body_marker');
-

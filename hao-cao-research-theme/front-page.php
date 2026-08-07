@@ -309,45 +309,45 @@
 									<div class="research-summary-side">
 										<ul class="research-summary-bullets">
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#planetary-interiors'); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Planetary Interiors</span>
+													<span class="research-bullet-title">Planetary Interiors and Deep Fluid Dynamics</span>
 													<span class="research-bullet-summary">
 														Gravity and magnetic measurements reveal deep winds, electrical structure, and interior dynamics.
 													</span>
 												</a>
 											</li>
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#planetary-magnetic-fields'); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Planetary Magnetic Fields</span>
+													<span class="research-bullet-title">Planetary Magnetic Fields and Secular Variation</span>
 													<span class="research-bullet-summary">
 														Dynamo models and spacecraft magnetometry connect evolving fields to fluid motion inside planets.
 													</span>
 												</a>
 											</li>
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#ocean-worlds'); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Ocean Worlds</span>
+													<span class="research-bullet-title">Ocean Worlds and Coupled Interior-Space Environments</span>
 													<span class="research-bullet-summary">
 														Magnetic induction and plasma interactions probe icy moons and coupled interior-space environments.
 													</span>
 												</a>
 											</li>
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#surface-magnetometry'); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Surface Magnetometry</span>
+													<span class="research-bullet-title">Lunar and Planetary Surface Magnetometry</span>
 													<span class="research-bullet-summary">
 														Instrument development supports long-duration magnetic measurements on the lunar surface.
 													</span>
 												</a>
 											</li>
 											<li class="research-bullet">
-												<a href="<?php echo esc_url(hao_cao_research_page_url('research')); ?>" class="research-bullet-link">
+												<a href="<?php echo esc_url(hao_cao_research_page_url('research') . '#space-weather'); ?>" class="research-bullet-link">
 													<span class="research-bullet-mark" aria-hidden="true"></span>
-													<span class="research-bullet-title">Space Weather</span>
+													<span class="research-bullet-title">Space-Weather Measurements and Instrument Development</span>
 													<span class="research-bullet-summary">
 														Fluxgate magnetometers help measure Earth&apos;s near-space response to solar-wind forcing.
 													</span>
@@ -377,6 +377,9 @@
 										Los Angeles.
 									</p>
 								</header>
+								<?php if (hao_cao_research_has_editor_content()) : ?>
+									<?php hao_cao_research_the_editor_content('wordpress-page-content home-editor-content'); ?>
+								<?php else : ?>
 								<p>
 									Dr. Hao Cao is an Associate Professor of Space Science at UCLA. His research treats magnetic
 									fields and gravity as windows into the hidden interiors and surrounding space environments of
@@ -384,6 +387,7 @@
 									development, with applications ranging from giant planets and icy moons to the Moon and Earth&apos;s
 									near-space environment.
 								</p>
+								<?php endif; ?>
 							</div>
 						</div>
 					</article>

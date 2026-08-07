@@ -59,11 +59,10 @@
 						<article id="main" class="teaching-page simple-content-page">
 							<header>
 								<h2>Teaching</h2>
-								<p>
-									Courses and guest lectures connect planetary physics, space weather, applied geophysics,
-									scientific computing, and the physics of planetary dynamos.
-								</p>
 							</header>
+							<?php if (hao_cao_research_has_editor_content()) : ?>
+								<?php hao_cao_research_the_editor_content('wordpress-page-content teaching-editor-content'); ?>
+							<?php else : ?>
 							<section class="teaching-section">
 								<h3>UCLA</h3>
 								<ul class="simple-list">
@@ -94,6 +93,7 @@
 									<li>Guest Lecturer, Ge 131, <strong>Planetary Structure and Evolution</strong> (2 lectures), Graduate Course, Spring 2016</li>
 								</ul>
 							</section>
+							<?php endif; ?>
 						</article>
 					</div>
 

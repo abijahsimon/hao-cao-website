@@ -60,6 +60,9 @@
 							<header>
 								<h2>Curriculum Vitae</h2>
 							</header>
+							<?php if (hao_cao_research_has_editor_content()) : ?>
+								<?php hao_cao_research_the_editor_content('wordpress-page-content cv-editor-content'); ?>
+							<?php else : ?>
 
 							<section class="cv-section">
 								<header>
@@ -217,6 +220,7 @@
 									</ul>
 								</div>
 							</section>
+							<?php endif; ?>
 						</article>
 					</div>
 

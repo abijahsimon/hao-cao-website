@@ -2,15 +2,43 @@ Hao Cao Research Website WordPress Theme
 ========================================
 
 Package:
-hao-cao-research-theme.zip
+hao-cao-research-theme-2026-08-07-editor-content-design-refresh.zip
 
 Purpose:
-This is a custom WordPress theme that preserves the current static Hao Cao research website as closely as possible. It includes the existing HTML, CSS, JavaScript, images, and video assets, adapted into WordPress template files.
+This version preserves the current static-fidelity theme output, while allowing
+routine page copy to be managed through the WordPress editor on the standalone
+site at https://haocao.epss.ucla.edu.
+
+What changed:
+1. The theme now checks whether each main WordPress page has editor content.
+2. If editor content exists, the theme displays that content inside the current
+   page layout.
+3. If editor content is empty, the theme falls back to the existing hard-coded
+   template content so the live site does not go blank after installation.
+4. The homepage keeps the custom visual hero; editor content only replaces the
+   About copy area when the homepage content is populated.
+5. Basic responsive styling was added for WordPress editor images, videos, and
+   embeds.
+6. This revision also includes Abijah-requested page refinements: shorter
+   homepage hero height, wider desktop homepage intro headline, Research page
+   section anchors and text-based related content, a cropped team-photo display,
+   improved Opportunities intro/contact styling, and tighter Teaching spacing.
+
+Pages with editor-content fallback:
+- Home/About section
+- Research
+- Publications
+- Team
+- Opportunities
+- Teaching
+- Curriculum Vitae
+- Links
 
 Install:
-1. In WordPress Network Admin or site admin with theme upload privileges, upload and install hao-cao-research-theme.zip.
-2. Activate "Hao Cao Research Website" for https://sites.epss.ucla.edu/hcao/.
-3. Confirm that the site has pages with these slugs:
+1. Upload and install the theme zip on the standalone WordPress site:
+   https://haocao.epss.ucla.edu
+2. Activate "Hao Cao Research Website".
+3. Confirm that these pages still exist with these slugs:
    - research
    - publications
    - team
@@ -18,13 +46,26 @@ Install:
    - curriculum-vitae
    - opportunities
    - links
-4. Go to Settings > Reading.
-5. Set the homepage to a static page if needed.
-6. Set the homepage page to Home.
+4. Go to Settings > Reading and confirm the homepage is set correctly.
+5. Visit https://haocao.epss.ucla.edu/publications/ and confirm the current
+   publication list still appears. Because the live page content is currently
+   empty, it should render the fallback template.
+
+Suggested workflow after installation:
+- If Abijah can access https://haocao.epss.ucla.edu/wp-admin/ as an admin or
+  editor, he can update copy by editing the appropriate WordPress page.
+- For the Publications page, once the page content is populated in WordPress,
+  the theme will show that editor-managed content instead of the fallback
+  template list.
+- If direct admin/editor access is not possible under EPSS policy, Omar can
+  advise whether there is another safe workflow for routine text updates.
 
 Notes:
-- This is a static-fidelity theme, not a block-editable rebuild.
-- Most visual content lives in template files, not the WordPress block editor.
-- The theme calls wp_head(), wp_body_open(), and wp_footer() for WordPress/plugin compatibility.
+- This is still a custom theme and not a full block-theme rebuild.
+- Existing hard-coded templates remain as fallbacks.
+- Larger visual changes, new theme layouts, custom homepage work, or custom
+  media/video behavior may still require an updated theme package and security
+  review.
+- The theme calls wp_head(), wp_body_open(), and wp_footer() for
+  WordPress/plugin compatibility.
 - The theme includes the HTML5 UP Helios license in LICENSE.txt.
-

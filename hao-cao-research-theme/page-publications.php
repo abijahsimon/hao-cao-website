@@ -60,6 +60,9 @@
 							<header>
 								<h2>Publications</h2>
 							</header>
+							<?php if (hao_cao_research_has_editor_content()) : ?>
+								<?php hao_cao_research_the_editor_content('wordpress-page-content publications-editor-content'); ?>
+							<?php else : ?>
 						<section class="publication-section selected-publications" id="selected-publications">
 							<header>
 								<h3>Selected Publications: Representative Papers</h3>
@@ -111,9 +114,14 @@
 															<p class="publication-details"><em>Planet. Sci. J.</em>, under review.</p>
 														</article>
 														<article class="publication-entry">
+															<p class="publication-authors">Wulff, P.N., <strong>Cao, H.</strong>, Aurnou, J.M. 2026.</p>
+															<p class="publication-title">A new scaling law for non-dipolar magnetic fields in rapidly rotating stars and planets</p>
+															<p class="publication-details"><em>ApJ</em> 1006 226. <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae81a0" target="_blank" rel="noopener">https://iopscience.iop.org/article/10.3847/1538-4357/ae81a0</a> &amp; <a href="https://doi.org/10.48550/arXiv.2606.07484" target="_blank" rel="noopener">arXiv:2606.07484</a></p>
+														</article>
+														<article class="publication-entry">
 															<p class="publication-authors">Monville, R., Guervilly, C., <strong>Cao, H.</strong>, Aurnou, J.M., 2026.</p>
 															<p class="publication-title">Thermal image velocimetry for rapidly rotating fluid dynamics</p>
-															<p class="publication-details"><em>APS Open Science</em>, accepted. <a href="https://doi.org/10.1103/1jkc-jrq8" target="_blank" rel="noopener">doi:10.1103/1jkc-jrq8</a></p>
+															<p class="publication-details"><em>APS Open Science</em> 1, 000082. <a href="https://doi.org/10.1103/1jkc-jrq8" target="_blank" rel="noopener">doi:10.1103/1jkc-jrq8</a></p>
 														</article>
 														<article class="publication-entry">
 															<p class="publication-authors">Shen, Y., Strangeway, R.J., <strong>Cao, H.</strong>, &#8230;, et al., 2026.</p>
@@ -124,11 +132,6 @@
 															<p class="publication-authors">Øieroset, M., Fuselier, S.A., Bonnell, J.B., &#8230;, <strong>Cao, H.</strong>, Chen, L.-J., Conner, H.K., &#8230;, 2026.</p>
 															<p class="publication-title">Simultaneous TRACERS and THEMIS observations of reversed cusp ion dispersions and dual-lobe reconnection</p>
 															<p class="publication-details"><em>Geophysical Research Letters</em> 53, e2026GL123404. <a href="https://doi.org/10.1029/2026GL123404" target="_blank" rel="noopener">doi:10.1029/2026GL123404</a></p>
-														</article>
-														<article class="publication-entry">
-															<p class="publication-authors">Wulff, P.N., <strong>Cao, H.</strong>, Aurnou, J.M. 2026.</p>
-															<p class="publication-title">A new scaling law for non-dipolar magnetic fields in rapidly rotating stars and planets</p>
-															<p class="publication-details"><em>ApJ</em>, accepted. <a href="https://doi.org/10.48550/arXiv.2606.07484" target="_blank" rel="noopener">arXiv:2606.07484</a></p>
 														</article>
 														<article class="publication-entry">
 															<p class="publication-authors">Dunnigan, A.H., Liu, D., Steinbrügge, G.B., Rivoldini, A., Dumberry, M., <strong>Cao, H.</strong>, Soderlund, K.M. 2026.</p>
@@ -483,6 +486,7 @@
 									</div>
 								</section>
 						</section>
+							<?php endif; ?>
 						</article>
 					</div>
 

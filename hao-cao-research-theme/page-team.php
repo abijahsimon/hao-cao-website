@@ -60,6 +60,9 @@
 							<header>
 								<h2>Team</h2>
 							</header>
+							<?php if (hao_cao_research_has_editor_content()) : ?>
+								<?php hao_cao_research_the_editor_content('wordpress-page-content team-editor-content'); ?>
+							<?php else : ?>
 							<figure class="team-photo">
 								<img src="<?php echo esc_url(hao_cao_research_theme_uri('images/HaoCao_GroupPhoto_Nov2025_focus.jpg')); ?>" alt="Hao Cao research team group photo, 2025" />
 								<figcaption>
@@ -107,6 +110,7 @@
 									<li>Dr. Chuan Qin (2022 &ndash; 2025)</li>
 								</ul>
 							</section>
+							<?php endif; ?>
 						</article>
 					</div>
 
