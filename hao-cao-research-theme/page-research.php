@@ -18,7 +18,7 @@
 			name="description"
 			content="Research themes in Hao Cao's group at UCLA, including planetary interiors, magnetic fields, ocean worlds, lunar magnetometry, and space-weather instrumentation."
 		/>
-		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-research-typography-polish')); ?>" />
+		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260807-research-reference-layout')); ?>" />
 		<noscript><link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/noscript.css')); ?>" /></noscript>
 			<?php wp_head(); ?>
 	</head>
