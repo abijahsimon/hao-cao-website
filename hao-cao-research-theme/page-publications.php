@@ -18,7 +18,7 @@
 			name="description"
 			content="Publications from Hao Cao, including peer-reviewed papers, study reports, and white papers in planetary magnetism, interiors, and mission science."
 		/>
-		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260602-content-edits')); ?>" />
+		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260808-heading-spacing-preview')); ?>" />
 		<noscript><link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/noscript.css')); ?>" /></noscript>
 			<?php wp_head(); ?>
 	</head>
@@ -65,7 +65,7 @@
 							<?php else : ?>
 						<section class="publication-section selected-publications" id="selected-publications">
 							<header>
-								<h3>Selected Publications: Representative Papers</h3>
+								<h3>Selected Publications</h3>
 							</header>
 							<div class="publication-list">
 								<article class="publication-entry">
