@@ -2,7 +2,7 @@ Hao Cao Research Website WordPress Theme
 ========================================
 
 Package:
-hao-cao-research-theme-2026-08-09-editor-content-design-refresh.zip
+hao-cao-research-theme-2026-08-09-omar-install.zip
 
 Purpose:
 This version preserves the current static-fidelity theme output, while allowing
