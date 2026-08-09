@@ -2,7 +2,7 @@ Hao Cao Research Website WordPress Theme
 ========================================
 
 Package:
-hao-cao-research-theme-2026-08-07-editor-content-design-refresh.zip
+hao-cao-research-theme-2026-08-09-editor-content-design-refresh.zip
 
 Purpose:
 This version preserves the current static-fidelity theme output, while allowing
@@ -21,8 +21,10 @@ What changed:
    embeds.
 6. This revision also includes Abijah-requested page refinements: shorter
    homepage hero height, wider desktop homepage intro headline, Research page
-   section anchors and text-based related content, a cropped team-photo display,
-   improved Opportunities intro/contact styling, and tighter Teaching spacing.
+   section anchors and text-based related resources, a cropped team-photo
+   display, improved Opportunities intro/contact styling, tighter Teaching and
+   CV spacing, a simplified Selected Publications heading, and consistent
+   secondary-page heading/header spacing.
 
 Pages with editor-content fallback:
 - Home/About section
