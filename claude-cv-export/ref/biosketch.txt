@@ -1,0 +1,90 @@
+*Identifying Information 
+*Name: (Last Name, First Name, and Middle Name, including any applicable suffix)
+Persistent Identifier (PID) of the Senior/Key Person: Enter the PID of the senior/key person. The PID is a unique, open digital identifier that distinguishes the individual from every other researcher with the same or a similar name.
+*Position Title: Assistant Professor
+Enter the current position title of the senior/key person.
+*Organization and Location
+Name: University of California, Los AngelesEnter the name of the primary organization of the senior/key person.
+Location: Los Angeles, CA, USA
+Enter the City, State/Province, and Country where the primary organization is located. If the State/Province is not applicable, enter N/A.
+*Professional Preparation
+Organization: University of California, Los Angeles
+Location: Los Angeles, CA, USA
+Degrees Received: PhD, MS (do these need to be separated?)
+Start Date: Jun 2011
+End Date: Jun 2014
+Field of Study: Geophysics and Space Physics
+Organization: University of Science and Technology of China
+Location: Hefei, Anhui Province, China
+Degree Received: BS
+Start Date: Sep 2005
+End Date: Jun 2009
+Field of Study: Geophysics and Space Physics
+A list of the individual’s professional preparation (e.g., education and training), listed in reverse chronological order by start date. Include all postdoctoral and fellowship training, as applicable, listing each separately. Also include the baccalaureate degree or other initial professional education.
+*Appointments and Positions
+Start Date: 2022
+End Date: Present
+Appointment or Position Title: Assistant Professor
+Name of Organization: University of California, Los Angeles
+Department: Department of Earth, Planetary, and Space Sciences
+Location of Organization: Los Angeles, CA, USA
+Start Date: 2017
+End Date: 2022
+Appointment or Position Title: Research Associate
+Name of Organization: Harvard University
+Department: Department of Earth and Planetary Sciences
+Location of Organization: Cambridge, MA, USA
+Start Date: 2014
+End Date: 2017
+Appointment or Position Title: Postdoctoral Scholar
+Name of Organization: California Institute of Technology
+Department: Division of Geological and Planetary Sciences
+Location of Organization: Pasadena, CA, USA
+A list, in reverse chronological order by start date, of all the individual’s academic, professional, or institutional appointments and positions, beginning with the current appointment (including the associated organization and location). Appointments and positions include any titled academic, professional, or institutional position whether or not remuneration is received, and whether full-time, part-time, or voluntary (including adjunct, visiting, or honorary).
+Senior/key persons must only identify all domestic and foreign professional appointments and positions outside of the primary organization for a period up to three years from the date the applicant submits the application to the agency for funding consideration.
+For each entry provide:
+  Start date: YYYY
+  End date: YYYY
+  Appointment or Position Title:
+  Name of organization:
+  Department (if applicable):
+  Location of organization: City, State/Province, Country
+*Products
+Selected Peer-Reviewed Publications
+Agiwal, O., Cao, H., Hsu, H.W., et al., 2024. Current Events at Saturn: Ring-planet
+Electromagnetic Coupling. Planet. Sci. J. 5, 134. doi:10.3847/PSJ/ad4343
+Bloxham, J., Cao, H., Stevenson, D.J., et al., 2024. A rapidly time-varying equatorial jet in
+Jupiter’s deep interior. Nature 627, 64-66. doi:10.1038/s41586-024-07046-3
+Cao, H., Bloxham, J., Park, R.S., et al., 2023. Strong resemblance between surface and deep zonal winds inside Jupiter revealed by high-degree gravity moments. The Astrophys. J. 959, 78.
+doi:10.3847/1538-4357/ad0cbb
+Cao, H., Dougherty, M.K., Hunt, G.J., et al., 2023. Saturn’s Magnetic Field at Unprecedented
+Detail Achieved by Cassini’s Close Encounters. “Saturn after the Cassini Grand Finale” edited by Kevin Baines, Michael Flasar, Norbert Krupp, and Thomas Stallard, Cambridge University Press. arXiv:2301.02756
+Yadav, R.K., Cao, H., Bloxham, J., 2022. A Global Simulation of the Dynamo, Zonal Jets, and
+Vortices on Saturn. The Astrophys. J. 940, 185. doi:10.3847/1538-4357/ac9d94
+Agiwal, O., Cao, H., Cowley,S .W.H., et al., 2021. Constraining the Temporal Variability of
+Neutral Winds in Saturn’s Low-Latitude Ionosphere using Magnetic Field Measurements. JGR:
+Planets 126, e2020JE006578. doi:10.1029/2020JE006578
+Cao, H., Dougherty, M.K., Hunt, G.J., et al., 2020. The landscape of Saturn’s internal magnetic
+field from the Cassini Grand Finale. Icarus 344, 113541. doi:10.1016/j.icarus.2019.113541
+Research Website: https://sites.epss.ucla.edu/hcao/
+A list of products that demonstrate the individual’s qualifications to carry out the project as proposed. It is up to the individual to determine how to best organize this listing to demonstrate their ability to carry out the project. Acceptable products must be citable and accessible including but not limited to:
+·  publications, conference papers, and presentations;
+·  website(s) or other Internet site(s);
+·  technologies or techniques;
+·  inventions, patents, patent applications, and/or licenses; and
+·  other products, such as data, databases, or datasets, physical collections, audio or video products, software, models, educational aids or curricula, instruments or equipment, research material, interventions (e.g., clinical or educational), or new business creation.
+Each product must include full citation information including:
+·  names of authors;
+·  product title;
+·  date of publication or release;
+·  website URL;
+·  other persistent identifier (if available); and
+·  other relevant citation information (e.g., in the case of publications, title of enclosing work such as journal or book, volume, issue, pages).
+If any of the items specified above is not applicable, enter N/A.
+Senior/key persons who wish to include publications in the products section of the biographical sketch that include multiple authors may, at their discretion, choose to list one or more of the authors and then "et al" in lieu of including the complete listing of authors' names.
+*Certification
+I certify that the information provided is current, accurate, and complete. This includes but is not limited to information related to domestic and foreign appointments and positions.
+I also certify that, at the time of submission, I am not a party to a malign foreign talent recruitment program.
+Misrepresentations and/or omissions may be subject to prosecution and liability pursuant to, but not limited to, 18 U.S.C. §§ 287, 1001, 1031 and 31 U.S.C. §§ 3729-3733 and 3802.
+Signature[1]: HAO CAO
+Date: 02/25/2025

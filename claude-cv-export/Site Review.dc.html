@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" />
+<style>
+doc-page:not(:defined) { visibility: hidden; }
+a { color: #235f92; }
+a:hover { color: #8a3d33; }
+</style>
+<script src="./doc-page.js"></script>
+</helmet>
+
+<doc-page margin="0.8in">
+
+  <div style="font-family: 'Source Sans Pro', sans-serif; color: #46586c; font-size: 10.5pt; line-height: 1.62;">
+
+    <header style="border-bottom: 2px solid #10263d; padding-bottom: 0.85rem; margin-bottom: 1.6rem;">
+      <p style="margin: 0 0 0.5rem 0; font-size: 8.5pt; letter-spacing: 0.14em; text-transform: uppercase; color: #64758a;">Review &amp; improvement plan</p>
+      <h1 style="margin: 0; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: 25pt; line-height: 1.12; color: #10263d;">Hao Cao group site</h1>
+      <p style="margin: 0.55rem 0 0 0; font-size: 11pt; color: #5b6a7d;">Component-by-component test of the current build, followed by a prioritised list of changes for each page.</p>
+      <p style="margin: 0.7rem 0 0 0; font-size: 9pt; color: #64758a;">Tested against the live homepage build and the shared stylesheet and scripts (<span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">main.css</span>, 5,814 lines &middot; <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">main.js</span>) at 1280&thinsp;&times;&thinsp;540, and against the 980 / 736&nbsp;px breakpoint rules.</p>
+    </header>
+
+    <section style="margin-bottom: 1.9rem;">
+      <h2 style="margin: 0 0 0.7rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">What the site has to do</h2>
+      <p style="margin: 0 0 0.8rem 0;">Five audiences were named for this site, and they arrive wanting different things. Every recommendation below is judged against whether it helps one of them finish their errand.</p>
+      <div style="display: grid; grid-template-columns: 10.5rem 1fr; gap: 0.5rem 1.1rem; font-size: 9.8pt; border-top: 1px solid rgba(24,55,92,0.14); padding-top: 0.7rem;">
+        <div style="font-weight: 700; color: #10263d;">Grad students &amp; postdocs</div>
+        <div>Is he taking students, what would I work on, who else is in the group, where did they go afterwards, and how do I make contact?</div>
+        <div style="font-weight: 700; color: #10263d;">Peer researchers</div>
+        <div>Recent papers with resolvable links, which missions and datasets, and what the group can model or measure that mine cannot.</div>
+        <div style="font-weight: 700; color: #10263d;">Funders &amp; review panels</div>
+        <div>Track record, current support, instrument deliverables, students trained &mdash; and a CV they can download as a PDF.</div>
+        <div style="font-weight: 700; color: #10263d;">Public &amp; press</div>
+        <div>One sentence they can quote, one image they can use, and a named contact.</div>
+        <div style="font-weight: 700; color: #10263d;">Department &amp; admin</div>
+        <div>Correct title, office, phone, courses taught, and service &mdash; all current.</div>
+      </div>
+      <p style="margin: 0.95rem 0 0 0; padding: 0.7rem 0.85rem; background: #f4f9fd; border-left: 3px solid #173861; font-size: 9.8pt;"><strong style="color: #10263d;">The headline finding.</strong> Nothing is broken in a way a visitor would call broken &mdash; the hero, the scroll scrub, the mobile menu and every link behave. The real costs are elsewhere: the homepage ships <strong>12.7&nbsp;MB</strong> to say four sentences, and it offers a visitor exactly one destination.</p>
+    </section>
+
+    <section style="margin-bottom: 1.9rem; break-inside: avoid;">
+      <h2 style="margin: 0 0 0.75rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">Component check</h2>
+      <table style="width: 100%; border-collapse: collapse; font-size: 9.5pt;">
+        <thead>
+          <tr>
+            <th style="text-align: left; padding: 0.4rem 0.6rem 0.4rem 0; border-bottom: 1.5px solid #10263d; color: #10263d; font-size: 8.5pt; letter-spacing: 0.08em; text-transform: uppercase; width: 12rem;">Component</th>
+            <th style="text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1.5px solid #10263d; color: #10263d; font-size: 8.5pt; letter-spacing: 0.08em; text-transform: uppercase; width: 5.2rem;">Result</th>
+            <th style="text-align: left; padding: 0.4rem 0 0.4rem 0.6rem; border-bottom: 1.5px solid #10263d; color: #10263d; font-size: 8.5pt; letter-spacing: 0.08em; text-transform: uppercase;">Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Hero video &amp; scroll scrub</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #2f6b46; font-weight: 700;">Works</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">Plays a 0.35&thinsp;s intro, pauses, then scrubs 0.32&thinsp;s&nbsp;&rarr;&nbsp;4.88&thinsp;s of a 5.04&thinsp;s clip across the hero&rsquo;s height. Parallax offset and scale track the same eased progress. Smooth, no dropped frames.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Scroll-down cue</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #2f6b46; font-weight: 700;">Works</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">Anchors to <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">#banner</span> through scrolly; target exists; carries an aria-label.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Mobile menu</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #2f6b46; font-weight: 700;">Works</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">The toggle button and slide-in panel are built at run time with all seven links present and correctly ordered.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Reduced motion</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #2f6b46; font-weight: 700;">Works</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">Handled twice over &mdash; the animations are suppressed in CSS, and the video source carries a media condition so the file is never even fetched. Genuinely well done.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Research-area rows</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #2f6b46; font-weight: 700;">Works</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">70&thinsp;px rows, hover nudge, dedicated focus ring. Comfortably above the 44&thinsp;px touch minimum.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Links &amp; images</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #2f6b46; font-weight: 700;">Works</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">All 27 links resolve; both external links open in a new tab with <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">rel="noopener"</span>; the portrait has real alt text.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Page weight</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #a03027; font-weight: 700;">Defect</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;"><strong>12.7&nbsp;MB on first load</strong>, of which 12.68&nbsp;MB is the hero MP4 fetched in full because it is marked <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">preload="auto"</span>.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Hidden SVG hero</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #a03027; font-weight: 700;">Defect</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">The hand-built SVG hero is set to <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">display:none</span> whenever the video is present &mdash; but its 1.0&nbsp;MB cutaway PNG still downloads, and the dipole field-line maths still runs and injects 16 paths into the hidden node on every load.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Subpage header band</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #5b6a7d; font-weight: 700;">Dead asset</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">A 2.6&nbsp;MB <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">header.jpg</span> sits in the repository, but the subpage rule replaces it with gradients and an inline SVG, so it is never painted and &mdash; verified on a probe page &mdash; never downloaded. Safe to delete; costs visitors nothing today.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Main nav hit area</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #8a5a12; font-weight: 700;">Fragile</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">The list sets <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">line-height:0</span>, so each nav anchor computes to <strong>0&thinsp;px tall</strong> and only the overflowing glyphs catch the tap &mdash; roughly a 13&thinsp;px band inside a 26&thinsp;px item. It works with a mouse and is a poor target on a phone.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Pinch zoom</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #8a5a12; font-weight: 700;">Fails WCAG</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">The viewport tag sets <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">user-scalable=no</span>, blocking pinch zoom (WCAG 1.4.4). Inherited from the template; no reason to keep it.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Fonts &amp; icons</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #8a5a12; font-weight: 700;">Wasteful</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">Six Source Sans faces are imported, and all three Font Awesome families load (164&nbsp;KB) to draw about five solid glyphs.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Share &amp; search metadata</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #8a5a12; font-weight: 700;">Missing</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">No Open Graph or Twitter tags, no canonical URL, no favicon, no structured data, and no <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">lang</span> on the html element. Links pasted into Slack or email render as bare text.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Contrast</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #8a5a12; font-weight: 700;">Marginal</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">Footer copyright sits at 3.79:1 (below the 4.5:1 minimum); the About subhead at 4.64:1 only just clears it. Body copy and buttons are fine.</td>
+          </tr>
+          <tr>
+            <td style="padding: 0.5rem 0.6rem 0.5rem 0; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #10263d; font-weight: 600;">Stylesheet hygiene</td>
+            <td style="padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top; color: #5b6a7d; font-weight: 700;">Drifting</td>
+            <td style="padding: 0.5rem 0 0.5rem 0.6rem; border-bottom: 1px solid rgba(24,55,92,0.12); vertical-align: top;">116&nbsp;KB across four stacked &ldquo;refresh&rdquo; passes that re-override the same selectors, plus rules for markup that no longer exists (a homepage button row, a banner heading, a hero contact block). Harmless today, expensive to change safely.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin: 0.8rem 0 0 0; font-size: 9pt; color: #64758a;">Scope note: only the homepage markup was available to test in the browser. Findings for the other six pages below are drawn from the shared stylesheet and scripts they all load, so they are structural rather than content-specific &mdash; re-attach the folder and I will verify each page&rsquo;s markup directly.</p>
+    </section>
+
+    <section style="margin-bottom: 1.9rem;">
+      <h2 style="margin: 0 0 0.35rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">Fixes that apply to every page</h2>
+      <p style="margin: 0 0 0.9rem 0; font-size: 9.5pt; color: #64758a;">These live in the shared head, stylesheet and scripts, so each one is a single edit that improves all seven pages.</p>
+
+      <div style="display: grid; gap: 0.75rem;">
+        <div style="display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; break-inside: avoid;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #a03027; letter-spacing: 0.06em; padding-top: 0.15rem;">P0</div>
+          <div>
+            <div style="color: #10263d; font-weight: 700; font-size: 10.5pt;">Stop shipping the hero video eagerly</div>
+            <div>Switch to <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">preload="metadata"</span>, re-encode at 1280&thinsp;px wide, and add a WebM source. A clip this short should land near 1.5&ndash;2&nbsp;MB. The poster already carries the first frame, so nothing is lost visually while it streams. This one change removes about 85% of the homepage&rsquo;s bytes.</div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; break-inside: avoid;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #5b6a7d; letter-spacing: 0.06em; padding-top: 0.15rem;">P2</div>
+          <div>
+            <div style="color: #10263d; font-weight: 700; font-size: 10.5pt;">Delete the orphaned header image</div>
+            <div>The 2.6&nbsp;MB <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">header.jpg</span> is fully overridden by the subpage gradient rule and never reaches a browser. It is repository clutter rather than a performance problem &mdash; delete the file and the stale rule that references it.</div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; break-inside: avoid;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #a03027; letter-spacing: 0.06em; padding-top: 0.15rem;">P0</div>
+          <div>
+            <div style="color: #10263d; font-weight: 700; font-size: 10.5pt;">Delete the unused SVG hero, or bring it back</div>
+            <div>Roughly 190 lines of markup, 300 lines of field-line maths and a 1&nbsp;MB PNG are being downloaded and executed for something no visitor sees. Either remove all three, or keep the SVG as the reduced-motion and slow-connection fallback and load the PNG only when it is actually shown. Worth deciding deliberately &mdash; it is a lovely piece of work to have hidden.</div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; break-inside: avoid;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #8a5a12; letter-spacing: 0.06em; padding-top: 0.15rem;">P1</div>
+          <div>
+            <div style="color: #10263d; font-weight: 700; font-size: 10.5pt;">Make the nav a real target</div>
+            <div>Give the anchors their own padding and a normal line-height instead of leaning on the list&rsquo;s zero line-height, so each item is at least 44&thinsp;px tall. Add <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">aria-current="page"</span> to the active item &mdash; the highlight is currently visual only.</div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; break-inside: avoid;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #8a5a12; letter-spacing: 0.06em; padding-top: 0.15rem;">P1</div>
+          <div>
+            <div style="color: #10263d; font-weight: 700; font-size: 10.5pt;">Add share and search metadata</div>
+            <div>Per page: a canonical URL, a distinct title and description, Open Graph and Twitter tags with the Jupiter poster as the share image, a favicon, and one JSON-LD Person block naming the affiliation and ORCID. For a site whose traffic arrives via pasted links and search, this is the cheapest reach available.</div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; break-inside: avoid;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #8a5a12; letter-spacing: 0.06em; padding-top: 0.15rem;">P1</div>
+          <div>
+            <div style="color: #10263d; font-weight: 700; font-size: 10.5pt;">Accessibility pass</div>
+            <div>Remove <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">user-scalable=no</span>; add <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">lang="en"</span> to the html element and <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">lang="zh"</span> on 曹浩; add a skip-to-content link; lift the footer copyright to at least 4.5:1; and promote the research rows&rsquo; focus ring to a site-wide default so keyboard users see the same indicator everywhere.</div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; break-inside: avoid;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #8a5a12; letter-spacing: 0.06em; padding-top: 0.15rem;">P1</div>
+          <div>
+            <div style="color: #10263d; font-weight: 700; font-size: 10.5pt;">Make the email a link</div>
+            <div>The address is written as <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">hcao [at] epss.ucla.edu</span> with no mailto anywhere on the site. Spam obfuscation stopped being effective years ago, and it costs a real click for every student and journalist. A plain mailto in the footer and on Opportunities &mdash; with a subject line pre-filled on the latter &mdash; is the single easiest conversion win here.</div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; break-inside: avoid;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #5b6a7d; letter-spacing: 0.06em; padding-top: 0.15rem;">P2</div>
+          <div>
+            <div style="color: #10263d; font-weight: 700; font-size: 10.5pt;">Subset the fonts, add a real footer, stamp a date</div>
+            <div>Load two Source Sans weights instead of six and subset Font Awesome to the glyphs in use. Repeat the nav in the footer so visitors reaching the bottom of a long page have somewhere to go, and add a &ldquo;last updated&rdquo; date &mdash; on an academic site, freshness is a credibility signal.</div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 2.4rem 1fr; gap: 0.9rem; break-inside: avoid;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #5b6a7d; letter-spacing: 0.06em; padding-top: 0.15rem;">P2</div>
+          <div>
+            <div style="color: #10263d; font-weight: 700; font-size: 10.5pt;">Consolidate the stylesheet</div>
+            <div>Flatten the four stacked refinement passes into one, delete the rules whose markup is gone, and drop the <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">!important</span> chains they created. Do this before any redesign, not after &mdash; otherwise every future change needs a fifth override layer.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-bottom: 1.9rem; break-inside: avoid;">
+      <h2 style="margin: 0 0 0.35rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">Home</h2>
+      <p style="margin: 0 0 0.9rem 0; font-size: 9.5pt; color: #64758a;">The one page every audience sees. It currently establishes who he is beautifully, and then offers one door.</p>
+      <ul style="margin: 0; padding-left: 1.15rem;">
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Give the page more than one exit.</strong> Six of the seven content links point at <span style="font-family: ui-monospace, Menlo, monospace; font-size: 8.5pt;">research.html</span> &mdash; the five area rows and the button. Publications, Team and Opportunities are reachable only from the top nav. The stylesheet already contains a homepage button row that the markup dropped; bring it back as three primary links: Research, Publications, and Join the group.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Say whether you are recruiting, above the fold of the second screen.</strong> This is the first question a prospective student has and the site never answers it on the homepage. One line with a date &mdash; &ldquo;Recruiting one PhD student for Fall 2027&rdquo; &mdash; outperforms every other change on this list for that audience.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Add a short news list.</strong> Four to six dated one-liners: papers out, missions, students graduating, instruments delivered. It answers &ldquo;is this group active?&rdquo; for peers and panels at a glance, and it is the section that makes the site worth revisiting.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Name the missions in the research rows.</strong> &ldquo;Planetary Interiors&rdquo; and &ldquo;Ocean Worlds&rdquo; are categories, not evidence. Juno, Cassini, Europa Clipper, lunar surface magnetometry &mdash; whichever are accurate &mdash; tell a reviewer in three words what the abstract takes a paragraph to convey.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Break up the intro paragraph.</strong> Seventy-one words centred at 1.5em is a wall, and on phones the stylesheet squeezes it into a 17.5&thinsp;rem column. Lead with the bolded sentence as a standalone line, then set the remainder smaller and left-aligned like every other block on the page.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Give the banner a heading.</strong> It is currently an orphan paragraph between the H1 and &ldquo;Research Areas&rdquo; &mdash; the stylesheet still has styles for the heading that was removed. Screen-reader users navigating by heading skip straight past the site&rsquo;s thesis statement.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Top-align the About copy.</strong> It is pushed down with an auto margin, so at wide widths the paragraph drifts away from its own heading and away from the portrait.</li>
+        <li><strong style="color: #10263d;">Consider the group photo here.</strong> A lab site that shows only one face reads as one person. The team photo below the About block would do more recruiting work than any copy change.</li>
+      </ul>
+    </section>
+
+    <section style="margin-bottom: 1.9rem; break-inside: avoid;">
+      <h2 style="margin: 0 0 0.35rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">Research</h2>
+      <p style="margin: 0 0 0.9rem 0; font-size: 9.5pt; color: #64758a;">The destination of nearly every homepage link, so it carries most of the site&rsquo;s explanatory load.</p>
+      <ul style="margin: 0; padding-left: 1.15rem;">
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">One figure per research area.</strong> This is the most visual science on the site and the page has no figure styles at all in the stylesheet &mdash; strong evidence it is running as unillustrated prose. A field-line map, a gravity profile, an induction response: one image with a real caption per area, credited to the paper it came from.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Two registers per area, not one.</strong> A plain-language sentence a journalist or first-year can use, then the technical detail. Right now every audience gets the same middle register.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Link each area to its papers.</strong> A &ldquo;key papers&rdquo; line under each section, deep-linked into the anchor on Publications, closes the loop peers came for.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Name missions, instruments and funders explicitly.</strong> Reviewers and panels scan for these. A short &ldquo;support&rdquo; line per area does more than a paragraph of description.</li>
+        <li><strong style="color: #10263d;">End each area with a way in.</strong> &ldquo;Interested in this? Here is what a first project looks like&rdquo; plus a contact link, aimed straight at Opportunities.</li>
+      </ul>
+    </section>
+
+    <section style="margin-bottom: 1.9rem; break-inside: avoid;">
+      <h2 style="margin: 0 0 0.35rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">Publications</h2>
+      <p style="margin: 0 0 0.9rem 0; font-size: 9.5pt; color: #64758a;">Built as year-grouped entries with authors, title and journal details. Structurally sound; the gains are in navigation and signalling.</p>
+      <ul style="margin: 0; padding-left: 1.15rem;">
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">A selected-publications tier at the top.</strong> Five or six papers with a line each on why they matter. A reverse-chronological list asks the reader to already know which papers count; most visitors do not.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">A DOI on every entry.</strong> Verify no entry is a dead end &mdash; this is the one page where a broken link costs real credibility with peers.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">A sticky year rail.</strong> Long lists need a jump-to-year strip; the year headings are already there to anchor to.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Mark up authorship.</strong> Bold his own name, and mark student and postdoc first authors with a footnoted symbol. For a prospective student, a page full of student first authors is the most persuasive thing on the site &mdash; and it costs one legend line.</li>
+        <li><strong style="color: #10263d;">Export links at the top.</strong> Google Scholar, ORCID, ADS and a BibTeX file. Peers and admin both arrive wanting to leave with a citation.</li>
+      </ul>
+    </section>
+
+    <section style="margin-bottom: 1.9rem; break-inside: avoid;">
+      <h2 style="margin: 0 0 0.35rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">Team</h2>
+      <p style="margin: 0 0 0.9rem 0; font-size: 9.5pt; color: #64758a;">A group photo above rosters grouped by role. The most under-used page relative to its recruiting value.</p>
+      <ul style="margin: 0; padding-left: 1.15rem;">
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">People, not a list of names.</strong> A card each: photo, role, one line on what they work on, and a link out to their site or Scholar. Applicants are trying to picture themselves in the group; names alone don&rsquo;t let them.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Alumni with placements.</strong> Where former students and postdocs went next is the strongest evidence a group can publish, and it is also what panels look for under training record. If the page has no alumni section, this is the highest-value addition on the whole site.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Show openings inline.</strong> An &ldquo;open position&rdquo; card in the roster, linking to Opportunities, catches the visitor at the moment they are already imagining joining.</li>
+        <li><strong style="color: #10263d;">Caption the group photo with names and a date.</strong> It is currently decoration; with names it becomes a record.</li>
+      </ul>
+    </section>
+
+    <section style="margin-bottom: 1.9rem; break-inside: avoid;">
+      <h2 style="margin: 0 0 0.35rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">Opportunities</h2>
+      <p style="margin: 0 0 0.9rem 0; font-size: 9.5pt; color: #64758a;">An intro paragraph plus a contact card with a button. This page has one job and should be judged only on whether people finish it.</p>
+      <ul style="margin: 0; padding-left: 1.15rem;">
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">State status, per role, with dates.</strong> PhD, postdoc, undergraduate and visiting, each marked open or closed with the cycle and deadline. Ambiguity here reads as &ldquo;not really hiring&rdquo; and costs applications silently.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Say what to send.</strong> A four-item list &mdash; CV, a paragraph on interests, transcript, references &mdash; plus a mailto with the subject pre-filled. Removing the guesswork is what raises application quality.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Name the funding route and the degree programme.</strong> International applicants in particular need to know which UCLA programme to apply through and whether support is available; missing this is the most common reason a good applicant self-eliminates.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Add two or three example first projects.</strong> Concrete beats general: it lets a candidate write a specific letter, which is easier for them and more useful to you.</li>
+        <li><strong style="color: #10263d;">Stamp the page with a review date</strong> so nobody wonders whether the posting is from two cycles ago.</li>
+      </ul>
+    </section>
+
+    <section style="margin-bottom: 1.9rem; break-inside: avoid;">
+      <h2 style="margin: 0 0 0.35rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">Teaching</h2>
+      <p style="margin: 0 0 0.9rem 0; font-size: 9.5pt; color: #64758a;">Sectioned lists. Read mainly by enrolled students and by department admin, with occasional weight on a tenure or award file.</p>
+      <ul style="margin: 0; padding-left: 1.15rem;">
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Course number, title, term and level on one line</strong> &mdash; the four things a student checks before clicking anything.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Separate current from past.</strong> &ldquo;Teaching this term&rdquo; first, then an archive. A single undifferentiated list makes every entry look equally live.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">One line on what each course covers,</strong> plus a syllabus link where one can be public. Students shopping courses are the primary audience.</li>
+        <li><strong style="color: #10263d;">Add mentoring and outreach.</strong> Undergraduate research supervision and public talks belong here rather than buried in the CV; both count toward the training record panels ask about.</li>
+      </ul>
+    </section>
+
+    <section style="margin-bottom: 1.9rem; break-inside: avoid;">
+      <h2 style="margin: 0 0 0.35rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">CV</h2>
+      <p style="margin: 0 0 0.9rem 0; font-size: 9.5pt; color: #64758a;">A clean two-column layout of labelled sections. Its audience &mdash; panels and admin &mdash; usually wants a file, not a page.</p>
+      <ul style="margin: 0; padding-left: 1.15rem;">
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">A PDF download at the top, with its date in the link text.</strong> Reviewers attach files to their notes; a web page cannot be attached. This is the single most requested thing on any academic CV page.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">A print stylesheet.</strong> Someone will print this page. Drop the header band and nav, set type in points, and keep sections from breaking mid-entry.</li>
+        <li style="margin-bottom: 0.6rem;"><strong style="color: #10263d;">Lead with funding and honours.</strong> Grants, awards and service are what a panel reads first; education and employment can follow.</li>
+        <li><strong style="color: #10263d;">Cross-link rather than duplicate.</strong> Point the publications section at the Publications page instead of maintaining two lists that will diverge.</li>
+      </ul>
+    </section>
+
+    <section style="break-inside: avoid;">
+      <h2 style="margin: 0 0 0.7rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 15pt; color: #10263d;">Suggested order</h2>
+      <div style="display: grid; grid-template-columns: 1.6rem 1fr; gap: 0.55rem 0.9rem; font-size: 10pt;">
+        <div style="font-family: Georgia, serif; color: #173861; font-size: 12pt;">1</div>
+        <div><strong style="color: #10263d;">Weight and metadata</strong> &mdash; the video, the hidden SVG and its 1&nbsp;MB PNG, the head tags. Roughly a day, no design decisions, and it makes the homepage usable on a phone on cellular data.</div>
+        <div style="font-family: Georgia, serif; color: #173861; font-size: 12pt;">2</div>
+        <div><strong style="color: #10263d;">Access and contact</strong> &mdash; nav targets, pinch zoom, focus rings, contrast, a real mailto. Small, mechanical, and it removes every excuse a visitor has to give up.</div>
+        <div style="font-family: Georgia, serif; color: #173861; font-size: 12pt;">3</div>
+        <div><strong style="color: #10263d;">Homepage routing</strong> &mdash; primary links, a recruiting line, a news list. This is where the site starts converting rather than just informing.</div>
+        <div style="font-family: Georgia, serif; color: #173861; font-size: 12pt;">4</div>
+        <div><strong style="color: #10263d;">Content depth per page</strong> &mdash; Opportunities and Team first, since they carry the recruiting goal; then Research figures; then Publications tiering and the CV PDF.</div>
+        <div style="font-family: Georgia, serif; color: #173861; font-size: 12pt;">5</div>
+        <div><strong style="color: #10263d;">Stylesheet consolidation</strong> &mdash; before any visual redesign, so the next change does not need a fifth override layer.</div>
+      </div>
+      <p style="margin: 1.2rem 0 0 0; padding-top: 0.8rem; border-top: 1px solid rgba(24,55,92,0.14); font-size: 9.5pt; color: #64758a;">Open questions I would want answered before implementing: is the group currently recruiting, and for which roles? Which missions and instruments can be named publicly? Is there an alumni list with placements? And is there a current CV PDF to link?</p>
+    </section>
+
+  </div>
+</doc-page>
+</x-dc>
+</body>
+</html>

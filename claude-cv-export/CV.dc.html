@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="description" content="Curriculum vitae of Hao Cao, Associate Professor of Earth, Planetary, and Space Sciences at UCLA." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" />
+<style>
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+html, body { margin: 0; padding: 0; background: #f0f4f4; }
+a { color: #235f92; }
+a:hover { color: #8a3d33; }
+@keyframes secondaryFieldPulse {
+  0%, 100% { transform: scale(1) translate3d(0, 0, 0); opacity: 0.58; }
+  50% { transform: scale(1.04) translate3d(-0.6%, 0.4%, 0); opacity: 0.66; }
+}
+@media (prefers-reduced-motion: reduce) { [data-fieldpulse] { animation: none !important; transform: none !important; } }
+@media screen and (max-width: 736px) {
+  [data-band] { min-height: 148px !important; padding: 4.6rem 1rem 1.4rem 1rem !important; }
+  [data-cv-section] { grid-template-columns: 1fr !important; gap: 0.5rem !important; }
+  [data-content] { width: calc(100% - 2.5rem) !important; }
+  [data-seminars] { column-count: 1 !important; }
+}
+@media print {
+  [data-band], [data-footer], [data-pdf-note] { display: none !important; }
+  [data-content] { width: 100% !important; padding: 0 !important; }
+  [data-page] { font-size: 10pt !important; background: #fff !important; }
+  [data-cv-section] { break-inside: avoid; }
+}
+</style>
+</helmet>
+
+<div data-page="true" style="background: #f0f4f4; color: #46586c; font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 17px; line-height: 1.75;">
+
+  <a href="#content" style="position: absolute; left: -9999px; top: 0; z-index: 20; padding: 0.75rem 1.15rem; background: #10263d; color: #fff; text-decoration: none; font-size: 0.9rem;" style-focus="left: 0.75rem; top: 0.75rem;">Skip to content</a>
+
+  <div data-band="true" style="position: relative; min-height: 220px; padding: 5.8rem 1.5rem 2.2rem 1.5rem; overflow: hidden; background-color: #020511; background-image: linear-gradient(180deg, rgba(2,5,17,0.96) 0%, rgba(4,10,28,0.9) 52%, rgba(7,16,38,0.96) 100%), radial-gradient(ellipse 24% 130% at 103% 54%, rgba(91,132,205,0.2) 0%, rgba(40,68,138,0.12) 38%, rgba(2,5,17,0) 72%); color: #fff; text-align: center;">
+
+    <div data-fieldpulse="true" style="position: absolute; inset: 0; pointer-events: none; opacity: 0.58; background-image: radial-gradient(circle at 18% 40%, rgba(220,232,255,0.32) 0 1px, transparent 1.6px), radial-gradient(circle at 34% 68%, rgba(220,232,255,0.22) 0 1px, transparent 1.5px), radial-gradient(circle at 72% 30%, rgba(220,232,255,0.28) 0 1px, transparent 1.6px), radial-gradient(circle at 88% 72%, rgba(220,232,255,0.22) 0 1px, transparent 1.5px); transform-origin: 70% 50%; animation: secondaryFieldPulse 18s ease-in-out infinite;"></div>
+    <div style="position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(2,5,17,0.86) 0%, rgba(2,5,17,0.22) 42%, rgba(2,5,17,0.72) 100%), linear-gradient(90deg, rgba(2,5,17,0.72) 0%, rgba(2,5,17,0.26) 46%, rgba(2,5,17,0.1) 100%);"></div>
+
+    <nav aria-label="Main" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 4; padding: 1.15em 0 1.05em 0; text-align: center; background: linear-gradient(180deg, rgba(2,5,17,0.86) 0%, rgba(2,5,17,0.46) 68%, rgba(2,5,17,0) 100%);">
+      <ul style="display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0.15rem; margin: 0; padding: 0 1em; list-style: none; border-left: solid 1px rgba(160,185,226,0.32); border-right: solid 1px rgba(160,185,226,0.32);">
+        <li style="margin: 0;"><a href="Home v2.dc.html" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.92rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.06);">Home</a></li>
+        <li style="margin: 0;"><a href="Research v2.dc.html" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.08);">Research</a></li>
+        <li style="margin: 0;"><a href="https://sites.epss.ucla.edu/hcao/publications/" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.08);">Publications</a></li>
+        <li style="margin: 0;"><a href="Team.dc.html" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.92rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.06);">Team</a></li>
+        <li style="margin: 0;"><a href="https://sites.epss.ucla.edu/hcao/teaching/" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.08);">Teaching</a></li>
+        <li style="margin: 0;"><a href="CV.dc.html" aria-current="page" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.92rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px rgba(177,205,255,0.36); border-radius: 0.5em; background: rgba(18,31,61,0.34); text-shadow: 0 1px 12px rgba(0,0,0,0.65);">CV</a></li>
+      </ul>
+    </nav>
+
+    <div style="position: relative; z-index: 2; max-width: 980px; margin: 0 auto;">
+      <h1 style="margin: 0; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(2rem, 3vw, 2.75rem); line-height: 1; color: #fff; text-shadow: 0 0 20px rgba(90,135,255,0.22), 0 2px 18px rgba(0,0,0,0.62);">Curriculum Vitae</h1>
+      <p style="max-width: 42rem; margin: 0.75rem auto 0 auto; color: rgba(235,242,255,0.82); font-size: 0.98rem; letter-spacing: 0.03em; line-height: 1.5; text-shadow: 0 2px 14px rgba(0,0,0,0.72);">Hao Cao &mdash; Associate Professor, Earth, Planetary, and Space Sciences, UCLA.</p>
+    </div>
+  </div>
+
+  <main id="content" data-content="true" style="display: block; width: min(1120px, 100% - 5rem); margin: 0 auto; padding: 3.2em 0 5em 0;">
+
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.9rem 1.4rem; margin: 0 0 2.6rem 0; padding-bottom: 1.6rem; border-bottom: 1px solid rgba(24,55,92,0.14);">
+      <a href="CV%20Print.dc.html" style="display: inline-block; padding: 0.9em 1.9em; background: #173861; color: #fff; text-decoration: none; font-size: 0.82rem; font-weight: 400; letter-spacing: 0.11em; text-transform: uppercase; border: 1px solid #173861;" style-hover="background: #10263d; border-color: #10263d;">Download CV (PDF)</a>
+      <span data-pdf-note="true" style="font-size: 0.88rem; color: #64758a;">Updated August 2026</span>
+    </div>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Research Interests</h2></header>
+      <ul style="list-style: none; margin: 0; padding: 0;">
+        <li style="margin: 0.3rem 0; padding-left: 1rem; position: relative; line-height: 1.6;" style-before="content: ''; position: absolute; left: 0; top: 0.62em; width: 0.3rem; height: 0.3rem; border-radius: 50%; background: rgba(63,102,145,0.6);">Planetary geophysics and space environment</li>
+        <li style="margin: 0.3rem 0; padding-left: 1rem; position: relative; line-height: 1.6;" style-before="content: ''; position: absolute; left: 0; top: 0.62em; width: 0.3rem; height: 0.3rem; border-radius: 50%; background: rgba(63,102,145,0.6);">Planetary magnetism and dynamos</li>
+        <li style="margin: 0.3rem 0; padding-left: 1rem; position: relative; line-height: 1.6;" style-before="content: ''; position: absolute; left: 0; top: 0.62em; width: 0.3rem; height: 0.3rem; border-radius: 50%; background: rgba(63,102,145,0.6);">Gravitational and electromagnetic sounding of planetary interiors</li>
+        <li style="margin: 0.3rem 0; padding-left: 1rem; position: relative; line-height: 1.6;" style-before="content: ''; position: absolute; left: 0; top: 0.62em; width: 0.3rem; height: 0.3rem; border-radius: 50%; background: rgba(63,102,145,0.6);">Planetary exploration &mdash; space missions and space-based magnetometry</li>
+      </ul>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Honors and Awards</h2></header>
+      <div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Sloan Research Fellowship in Physics</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">Alfred P. Sloan Foundation, 2025</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Certificate of Distinction in Teaching</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">Harvard University, March 2022</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">NASA Group Achievement Award</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">Cassini MAG Team, NASA, August 2018</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Eugene B. Waggoner Scholarship</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">UCLA, September 2012</span></div>
+        <div style="margin: 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">NASA Earth and Space Science Fellowship</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">NASA, May 2012</span></div>
+      </div>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Participation in Space Missions</h2></header>
+      <div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Deputy Instrument Lead / Co-I &mdash; NASA TRACERS MAG Team</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">February 2024 &ndash; present</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Co-Investigator &mdash; ESA JUICE J-MAG Team</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">January 2016 &ndash; present</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Member &mdash; Juno Science Team</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">August 2014 &ndash; present</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Cassini Participating Scientist &mdash; Cassini Mission</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">March 2015 &ndash; September 2017</span></div>
+        <div style="margin: 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Member &mdash; Cassini MAG Team</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">June 2014 &ndash; September 2017</span></div>
+      </div>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Scientific Instrument Development</h2></header>
+      <div>
+        <div style="margin: 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Principal Investigator &mdash; NASA DALI Project L-MAG (Lunar Magnetometer)</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">April 2024 &ndash; present</span></div>
+      </div>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Academic Appointments</h2></header>
+      <div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Associate Professor &mdash; University of California, Los Angeles</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">July 2026 &ndash; present</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Assistant Professor &mdash; University of California, Los Angeles</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">July 2022 &ndash; June 2026</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Research Associate &mdash; Harvard University</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">September 2017 &ndash; June 2022</span></div>
+        <div style="margin: 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Postdoctoral Scholar &mdash; California Institute of Technology</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">August 2014 &ndash; September 2017</span></div>
+      </div>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Education</h2></header>
+      <div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Ph.D., Geophysics and Space Physics</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">University of California, Los Angeles, June 2014</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">M.S., Geophysics and Space Physics</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">University of California, Los Angeles, June 2011</span></div>
+        <div style="margin: 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">B.S., Geophysics and Space Physics</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">University of Science and Technology of China, June 2009</span></div>
+      </div>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Visiting Positions</h2></header>
+      <div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Simons Fellow &mdash; Isaac Newton Institute for Mathematical Sciences, University of Cambridge</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">September &ndash; December 2022</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Associate &mdash; Harvard University</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">July 2022 &ndash; July 2024</span></div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Academic Visitor in Physics &mdash; Imperial College London</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">February 2018 &ndash; present</span></div>
+        <div style="margin: 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Visitor in Planetary Science &mdash; California Institute of Technology</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">September 2017 &ndash; September 2020</span></div>
+      </div>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">National and International Committees</h2></header>
+      <div>
+        <div style="margin: 0 0 0.95rem 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">Member, JUICE&ndash;Clipper Steering Committee</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">ESA JUICE Project and NASA Europa Clipper Project, April 2025 &ndash; present</span></div>
+        <div style="margin: 0; padding-left: 1rem; border-left: 2px solid rgba(24,55,92,0.16);"><strong style="display: block; color: #10263d; font-weight: 600;">UCLA Representative to the Council of Institutions</strong><span style="display: block; color: #64758a; font-size: 0.93rem;">Universities Space Research Association, March 2023 &ndash; May 2026</span></div>
+      </div>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Professional Service</h2></header>
+      <div>
+        <p style="margin: 0 0 0.9rem 0; line-height: 1.72;"><strong style="color: #10263d; font-weight: 600;">Conference and meeting roles.</strong> SOC Co-chair, NASA TRACERS Science Team Meeting (2024). LOC Co-chair, Russell Symposium (2024). SOC Member, DPS55/EPSC, San Antonio (2023). Session Convener or Chair, AGU Fall Meeting (2018, 2023&ndash;2025), DPS55/EPSC (2023), DPS48/EPSC11, Pasadena (2016).</p>
+        <p style="margin: 0; line-height: 1.72;"><strong style="color: #10263d; font-weight: 600;">Journal referee.</strong> <span style="color: #5b6a7d;">Nature; Nature Astronomy; Nature Geoscience; Nature Communications; Proceedings of the National Academy of Sciences; Space Science Reviews; The Astrophysical Journal; Icarus; JGR&nbsp;Planets; Geophysical Research Letters; Earth and Planetary Science Letters; Progress in Earth and Planetary Science; Monthly Notices of the Royal Astronomical Society; Scientific Reports; Advances in Space Research; Atmosphere; Earth and Planetary Physics; Frontiers in Physics.</span></p>
+      </div>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Invited Seminars and Colloquia</h2></header>
+      <ul data-seminars="true" style="list-style: none; margin: 0; padding: 0; column-count: 2; column-gap: 2.2rem; font-size: 0.93rem;">
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Caltech, Planetary Science Seminar &mdash; <span style="color: #64758a;">Apr 2026</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Imperial College London, Physics Department Seminar &mdash; <span style="color: #64758a;">Nov 2025</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">UC Berkeley, CIPS Seminar &mdash; <span style="color: #64758a;">Apr 2025</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Caltech, Planetary Science Seminar &mdash; <span style="color: #64758a;">Feb 2023</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Jet Propulsion Laboratory, ICE Seminar &mdash; <span style="color: #64758a;">Jan 2023</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">University of Washington, ESS Colloquium &mdash; <span style="color: #64758a;">Apr 2022</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">UCLA, Space Physics Seminar &mdash; <span style="color: #64758a;">Feb 2022</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">ETH Z&uuml;rich, Earth Sciences ERC Seminar &mdash; <span style="color: #64758a;">Jan 2021</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">UC Berkeley, Astronomy/EPS Joint Colloquium &mdash; <span style="color: #64758a;">Nov 2019</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Boston University, Center for Space Physics Seminar &mdash; <span style="color: #64758a;">Mar 2019</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Georgia Institute of Technology, EAS Seminar &mdash; <span style="color: #64758a;">Feb 2019</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Imperial College London, Space &amp; Atmospheric Physics Seminar &mdash; <span style="color: #64758a;">Mar 2018</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">University of Leicester, Astro Seminar &mdash; <span style="color: #64758a;">Mar 2018</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">University of Cambridge, DAMTP Astrophysics Seminar &mdash; <span style="color: #64758a;">Feb 2018</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">MIT, EAPS Planetary Lunch &mdash; <span style="color: #64758a;">Feb 2018</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Cornell, Astronomy and Space Sciences Special Seminar &mdash; <span style="color: #64758a;">Feb 2018</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Cornell, Astronomy and Space Sciences Colloquium &mdash; <span style="color: #64758a;">Feb 2018</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Harvard, EPS GSPD Seminar &mdash; <span style="color: #64758a;">Feb 2018</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Carnegie DTM, Astro Seminar &mdash; <span style="color: #64758a;">Jan 2018</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Imperial College London, Space &amp; Atmospheric Physics Seminar &mdash; <span style="color: #64758a;">Nov 2017</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">UT Austin, Institute of Geophysics Seminar &mdash; <span style="color: #64758a;">Nov 2016</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Jet Propulsion Laboratory, Planetary Science Seminar &mdash; <span style="color: #64758a;">Sep 2016</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">UC Santa Cruz, Whole Earth Seminar &mdash; <span style="color: #64758a;">Feb 2016</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">UCLA, Planet Lunch &mdash; <span style="color: #64758a;">Jan 2016</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">High Altitude Observatory, Boulder, Colloquium &mdash; <span style="color: #64758a;">Apr 2015</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">Caltech, Yuk Lunch Seminar &mdash; <span style="color: #64758a;">Mar 2015</span></li>
+        <li style="margin: 0.22rem 0; line-height: 1.55; break-inside: avoid;">UCLA, iPLEX Lunch Seminar &mdash; <span style="color: #64758a;">May 2013</span></li>
+      </ul>
+    </section>
+
+    <section data-cv-section="true" style="display: grid; grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr); gap: 0.6rem 2.6rem; padding: 1.4rem 0; border-top: 1px solid rgba(24,55,92,0.14); border-bottom: 1px solid rgba(24,55,92,0.14);">
+      <header><h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.32rem; letter-spacing: 0.01em; color: #10263d;">Publications</h2></header>
+      <p style="margin: 0; line-height: 1.72;">The full, maintained publication list lives on the <a href="https://sites.epss.ucla.edu/hcao/publications/" style="color: #235f92; border-bottom: 1px solid rgba(35,95,146,0.26); text-decoration: none;" style-hover="color: #8a3d33; border-bottom-color: transparent;">Publications page</a>, with DOIs for every entry. It is not duplicated here.</p>
+    </section>
+  </main>
+
+  <div data-footer="true" style="position: relative; overflow: hidden; padding: 4.7em 0 4.2em 0; background: #2b252c; color: #fff;">
+    <div style="width: min(980px, 100% - 4rem); margin: 0 auto; text-align: center;">
+      <nav aria-label="Footer" style="margin: 0 0 2.4em 0;">
+        <ul style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.4rem; margin: 0; padding: 0; list-style: none; font-size: 0.9rem;">
+          <li><a href="Home v2.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Home</a></li>
+          <li><a href="Research v2.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Research</a></li>
+          <li><a href="https://sites.epss.ucla.edu/hcao/publications/" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Publications</a></li>
+          <li><a href="Team.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Team</a></li>
+          <li><a href="https://sites.epss.ucla.edu/hcao/teaching/" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Teaching</a></li>
+          <li><a href="CV.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">CV</a></li>
+        </ul>
+      </nav>
+      <h2 style="margin: 0 0 1em 0; color: #fff; font-size: 1.25em; font-weight: 400;">Contact</h2>
+      <p style="margin: 0 0 3em 0;">Hao Cao<br />Associate Professor, Department of Earth, Planetary, and Space Sciences<br />University of California, Los Angeles<br /><a href="mailto:hcao@epss.ucla.edu" style="color: inherit; border-bottom: solid 1px rgba(128,128,128,0.22); text-decoration: none;" style-hover="color: #ef8376; border-bottom-color: transparent;">hcao@epss.ucla.edu</a> &nbsp;|&nbsp; <a href="tel:+13107949467" style="color: inherit; border-bottom: solid 1px rgba(128,128,128,0.22); text-decoration: none;" style-hover="color: #ef8376; border-bottom-color: transparent;">310-794-9467</a><br />4859 Slichter Hall, 595 Charles Young Drive East, Los Angeles, CA 90095-1567</p>
+      <p style="margin: 0; color: rgba(190,190,190,0.9); font-size: 0.8em;">&copy; Hao Cao. Planetary magnetism and interiors research at UCLA.</p>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    document.documentElement.lang = 'en';
+    var q = window.location.search;
+    if (!q) return;
+    document.querySelectorAll('a[href$=".dc.html"]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (!href || /^(https?:|\/\/|mailto:|tel:)/i.test(href) || href.indexOf('?') !== -1) return;
+      a.setAttribute('href', href + q);
+    });
+  }
+}
+</script>
+</body>
+</html>

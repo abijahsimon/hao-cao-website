@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Research themes in Hao Cao's group at UCLA, including planetary interiors, magnetic fields, ocean worlds, lunar magnetometry, and space-weather instrumentation." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" />
+<style>
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+html, body { margin: 0; padding: 0; background: #f0f4f4; }
+a { color: #235f92; }
+a:hover { color: #8a3d33; }
+:focus-visible { outline: 2px solid rgba(58, 97, 140, 0.65); outline-offset: 4px; }
+@keyframes secondaryFieldPulse {
+  0%, 100% { transform: scale(1) translate3d(0, 0, 0); opacity: 0.58; }
+  50% { transform: scale(1.04) translate3d(-0.6%, 0.4%, 0); opacity: 0.66; }
+}
+@media (prefers-reduced-motion: reduce) { [data-fieldpulse] { animation: none !important; } }
+@media screen and (max-width: 980px) {
+  [data-theme-grid] { grid-template-columns: 1fr !important; gap: 1.6rem !important; }
+  [data-related] { grid-template-columns: 1fr !important; gap: 1.8rem !important; }
+}
+@media screen and (max-width: 736px) {
+  [data-band] { min-height: 148px !important; padding: 4.6rem 1rem 1.4rem 1rem !important; }
+  [data-content] { width: calc(100% - 2.5rem) !important; }
+  [data-jump] { gap: 0.4rem 0.9rem !important; }
+}
+</style>
+</helmet>
+
+<div style="background: #f0f4f4; color: #46586c; font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 17px; line-height: 1.7;">
+
+  <a href="#content" style="position: absolute; left: -9999px; top: 0; z-index: 30; padding: 0.75rem 1.15rem; background: #10263d; color: #fff; text-decoration: none; font-size: 0.95rem;" style-focus="left: 0.75rem; top: 0.75rem;">Skip to content</a>
+
+  <div data-band="true" style="position: relative; min-height: 220px; padding: 5.8rem 1.5rem 2.2rem 1.5rem; overflow: hidden; background-color: #020511; background-image: linear-gradient(180deg, rgba(2,5,17,0.96) 0%, rgba(4,10,28,0.9) 52%, rgba(7,16,38,0.96) 100%), radial-gradient(ellipse 24% 130% at 103% 54%, rgba(91,132,205,0.2) 0%, rgba(40,68,138,0.12) 38%, rgba(2,5,17,0) 72%); color: #fff; text-align: center;">
+
+    <div data-fieldpulse="true" style="position: absolute; inset: 0; z-index: 0; pointer-events: none; opacity: 0.58; background-image: radial-gradient(circle at 18% 40%, rgba(220,232,255,0.32) 0 1px, transparent 1.6px), radial-gradient(circle at 34% 68%, rgba(220,232,255,0.22) 0 1px, transparent 1.5px), radial-gradient(circle at 72% 30%, rgba(220,232,255,0.28) 0 1px, transparent 1.6px), radial-gradient(circle at 88% 72%, rgba(220,232,255,0.22) 0 1px, transparent 1.5px); transform-origin: 70% 50%; animation: secondaryFieldPulse 18s ease-in-out infinite;"></div>
+    <div style="position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(180deg, rgba(2,5,17,0.86) 0%, rgba(2,5,17,0.22) 42%, rgba(2,5,17,0.72) 100%), linear-gradient(90deg, rgba(2,5,17,0.72) 0%, rgba(2,5,17,0.26) 46%, rgba(2,5,17,0.1) 100%);"></div>
+
+    <nav aria-label="Main" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 6; padding: 1.15em 0 1.05em 0; text-align: center; background: linear-gradient(180deg, rgba(2,5,17,0.86) 0%, rgba(2,5,17,0.46) 68%, rgba(2,5,17,0) 100%);">
+      <ul style="display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0.15rem; margin: 0; padding: 0 1em; list-style: none; border-left: solid 1px rgba(160,185,226,0.32); border-right: solid 1px rgba(160,185,226,0.32);">
+        <li style="margin: 0;"><a href="Home v2.dc.html" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.08);">Home</a></li>
+        <li style="margin: 0;"><a href="Research v2.dc.html" aria-current="page" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px rgba(177,205,255,0.36); border-radius: 0.5em; background: rgba(18,31,61,0.34); text-shadow: 0 1px 12px rgba(0,0,0,0.65);">Research</a></li>
+        <li style="margin: 0;"><a href="https://sites.epss.ucla.edu/hcao/publications/" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.08);">Publications</a></li>
+        <li style="margin: 0;"><a href="Team.dc.html" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.08);">Team</a></li>
+        <li style="margin: 0;"><a href="https://sites.epss.ucla.edu/hcao/teaching/" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.08);">Teaching</a></li>
+        <li style="margin: 0;"><a href="CV.dc.html" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.94); text-decoration: none; font-size: 0.95rem; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 1px 12px rgba(0,0,0,0.65);" style-hover="background: rgba(255,255,255,0.08);">CV</a></li>
+      </ul>
+    </nav>
+
+    <div style="position: relative; z-index: 2; max-width: 980px; margin: 0 auto;">
+      <h1 style="margin: 0; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(2rem, 3vw, 2.75rem); line-height: 1; color: #fff; text-shadow: 0 0 20px rgba(90,135,255,0.22), 0 2px 18px rgba(0,0,0,0.62);">Research</h1>
+      <p style="max-width: 42rem; margin: 0.75rem auto 0 auto; color: rgba(235,242,255,0.82); font-size: 0.95rem; letter-spacing: 0.03em; line-height: 1.5; text-shadow: 0 2px 14px rgba(0,0,0,0.72);">Five themes, from the interiors of giant planets to Earth&apos;s near-space environment.</p>
+    </div>
+  </div>
+
+  <main id="content" data-content="true" style="display: block; width: min(1080px, 100% - 5rem); margin: 0 auto; padding: 3.2em 0 5em 0;">
+
+    <p style="margin: 0 0 2rem 0; max-width: 48rem; font-size: 1.05rem; line-height: 1.8; color: #46586c;">The group treats magnetic fields and gravity as measurable signals that carry information about places no instrument can reach directly &mdash; the metallic interiors of giant planets, the oceans beneath ice shells, and the plasma environments spacecraft fly through. Each theme below pairs the science with the missions that supply the data and the papers that report the results.</p>
+
+    <nav aria-label="Research themes" data-jump="true" style="display: flex; flex-wrap: wrap; gap: 0.5rem 1.1rem; margin: 0 0 3.2rem 0; padding: 1rem 0; border-top: 1px solid rgba(24,55,92,0.2); border-bottom: 1px solid rgba(24,55,92,0.2); font-size: 0.95rem;">
+      <a href="#planetary-interiors" style="color: #235f92; text-decoration: none; border-bottom: 1px solid rgba(35,95,146,0.26);" style-hover="color: #8a3d33; border-bottom-color: transparent;">Planetary Interiors</a>
+      <a href="#planetary-magnetic-fields" style="color: #235f92; text-decoration: none; border-bottom: 1px solid rgba(35,95,146,0.26);" style-hover="color: #8a3d33; border-bottom-color: transparent;">Planetary Magnetic Fields</a>
+      <a href="#ocean-worlds" style="color: #235f92; text-decoration: none; border-bottom: 1px solid rgba(35,95,146,0.26);" style-hover="color: #8a3d33; border-bottom-color: transparent;">Ocean Worlds</a>
+      <a href="#surface-magnetometry" style="color: #235f92; text-decoration: none; border-bottom: 1px solid rgba(35,95,146,0.26);" style-hover="color: #8a3d33; border-bottom-color: transparent;">Surface Magnetometry</a>
+      <a href="#space-weather" style="color: #235f92; text-decoration: none; border-bottom: 1px solid rgba(35,95,146,0.26);" style-hover="color: #8a3d33; border-bottom-color: transparent;">Space Weather</a>
+    </nav>
+
+    <article id="planetary-interiors" style="margin: 0 0 4rem 0; scroll-margin-top: 1.5rem;">
+      <div data-theme-grid="true" style="display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 2.6rem; align-items: start;">
+        <div>
+          <h2 style="margin: 0 0 0.5rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2; color: #10263d;">Planetary Interiors</h2>
+          <p style="margin: 0 0 1rem 0; font-size: 1.05rem; line-height: 1.6; color: #173861;">How deep do a planet&apos;s winds go? Gravity tells us.</p>
+          <p style="margin: 0 0 1rem 0; font-size: 0.98rem; line-height: 1.75;">Gravity and magnetic measurements reveal deep winds, electrical structure, and interior dynamics. Spacecraft gravity fields, magnetic constraints, and geophysical modeling help infer how atmospheric jets extend below cloud tops, how conducting fluids move inside giant planets, and what those hidden motions reveal about planetary structure and evolution.</p>
+          <p style="margin: 0; font-size: 0.95rem; color: #5b6a7d;"><strong style="color: #10263d; font-weight: 600;">Data from</strong> &nbsp;NASA Juno &mdash; Hao Cao has been a member of the Juno Science Team since 2014.</p>
+        </div>
+        <figure style="margin: 0;">
+          <img src="images/research-4.png" alt="Meridional cross-section of a rotating spherical shell with zonal flow contours, alternating red and blue bands indicating flow direction" style="display: block; width: 100%; height: auto; background: #fff; border: 1px solid rgba(24,55,92,0.14);" />
+          <figcaption style="margin: 0.7rem 0 0 0; font-size: 0.95rem; line-height: 1.6; color: #5b6a7d;">Zonal flow through a rotating shell, shown in meridional cross-section. <em>Caption and source citation to confirm.</em></figcaption>
+        </figure>
+      </div>
+
+      <div data-related="true" style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 2.6rem; margin: 1.8rem 0 0 0; padding-top: 1.4rem; border-top: 1px solid rgba(24,55,92,0.14);">
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Key publications</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.3847/1538-4357/ad0cbb" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;"><strong style="color: #10263d;">Cao, H.</strong>, Bloxham, J., Park, R.S., et al. &middot; 2023 &mdash; Strong resemblance between surface and deep zonal winds inside Jupiter revealed by high-degree gravity moments. <em>The Astrophysical Journal</em> 959, 78.</a><span style="display: block; color: #5b6a7d;">Uses high-degree Juno gravity moments to connect visible winds with deep interior flow.</span></li>
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1029/2021JE007138" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Bloxham, J., Moore, K.M., Kulowski, L., <strong style="color: #10263d;">Cao, H.</strong>, et al. &middot; 2022 &mdash; Differential Rotation in Jupiter&apos;s Interior Revealed by Simultaneous Inversion for the Magnetic Field and Zonal Flux Velocity. <em>JGR: Planets</em> 127, e2021JE007138.</a><span style="display: block; color: #5b6a7d;">Combines magnetic-field inversion and zonal-flow modeling to constrain Jupiter&apos;s interior rotation.</span></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1029/2019JE006165" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Kulowski, L., <strong style="color: #10263d;">Cao, H.</strong>, Bloxham, J. &middot; 2020 &mdash; Contributions to Jupiter&apos;s gravity field from dynamics in the dynamo region. <em>JGR: Planets</em> 125, e2019JE006165.</a><span style="display: block; color: #5b6a7d;">Links gravity signals to dynamics in Jupiter&apos;s electrically conducting dynamo region.</span></li>
+          </ul>
+        </section>
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Background and media</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://www.mathinstitutes.org/videos/22687" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Giant Planet Interior Dynamics: Recent Progress and Open Questions</a><span style="display: block; color: #5b6a7d;">Video of Hao Cao&apos;s January 2025 IPAM talk.</span></li>
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://www.missionjuno.swri.edu/news/jupiters-jetstreams-are-unearthly" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Juno findings: Jupiter&apos;s jet-streams are unearthly</a><span style="display: block; color: #5b6a7d;">NASA summary of the gravity results behind the deep-wind work.</span></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://science.nasa.gov/mission/juno/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">NASA Juno mission overview</a></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <article id="planetary-magnetic-fields" style="margin: 0 0 4rem 0; padding-top: 2rem; border-top: 1px solid rgba(24,55,92,0.2); scroll-margin-top: 1.5rem;">
+      <div data-theme-grid="true" style="display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 2.6rem; align-items: start;">
+        <div>
+          <h2 style="margin: 0 0 0.5rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2; color: #10263d;">Planetary Magnetic Fields</h2>
+          <p style="margin: 0 0 1rem 0; font-size: 1.05rem; line-height: 1.6; color: #173861;">A planet&apos;s magnetic field is a readout of the fluid moving inside it.</p>
+          <p style="margin: 0 0 1rem 0; font-size: 0.98rem; line-height: 1.75;">Dynamo models and spacecraft magnetometry connect evolving fields to fluid motion inside planets. Magnetic-field geometry and time variation from missions such as Juno and Cassini provide constraints on planetary dynamos, secular variation, and the electrically conducting regions where deep flows generate observable magnetic signals.</p>
+          <p style="margin: 0; font-size: 0.95rem; color: #5b6a7d;"><strong style="color: #10263d; font-weight: 600;">Data from</strong> &nbsp;NASA Juno &middot; Cassini MAG, where Hao Cao was a team member and Participating Scientist &middot; ESA JUICE J-MAG, as Co-Investigator.</p>
+        </div>
+        <figure style="margin: 0;">
+          <img src="images/research-1.jpg" alt="Cross-section of Saturn showing a deep dynamo region and possible stable layer, surrounded by magnetic field lines and auroral field-aligned currents coloured by azimuthal field strength" style="display: block; width: 100%; height: auto; background: #fff; border: 1px solid rgba(24,55,92,0.14);" />
+          <figcaption style="margin: 0.7rem 0 0 0; font-size: 0.95rem; line-height: 1.6; color: #5b6a7d;">Saturn&apos;s deep dynamo and possible stable layer, with magnetic field lines and auroral field-aligned currents coloured by azimuthal field strength. <em>Caption and source citation to confirm.</em></figcaption>
+        </figure>
+      </div>
+
+      <div data-related="true" style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 2.6rem; margin: 1.8rem 0 0 0; padding-top: 1.4rem; border-top: 1px solid rgba(24,55,92,0.14);">
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Key publications</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1038/s41586-024-07046-3" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Bloxham, J., <strong style="color: #10263d;">Cao, H.</strong>, Stevenson, D.J., et al. &middot; 2024 &mdash; A rapidly time-varying equatorial jet in Jupiter&apos;s deep interior. <em>Nature</em> 627, 64&ndash;66.</a><span style="display: block; color: #5b6a7d;">Interprets Juno magnetic-field variation as evidence for a deep, time-varying equatorial jet.</span></li>
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1038/s41550-019-0772-5" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Moore, K.M., <strong style="color: #10263d;">Cao, H.</strong>, Bloxham, J., et al. &middot; 2019 &mdash; Time-variation of Jupiter&apos;s internal magnetic field consistent with zonal wind advection. <em>Nature Astronomy</em> 3, 730&ndash;735.</a><span style="display: block; color: #5b6a7d;">Connects secular variation in Jupiter&apos;s internal field to zonal wind advection.</span></li>
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1016/j.icarus.2019.113541" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;"><strong style="color: #10263d;">Cao, H.</strong>, Dougherty, M.K., Hunt, G.J., et al. &middot; 2020 &mdash; The landscape of Saturn&apos;s internal magnetic field from the Cassini Grand Finale. <em>Icarus</em> 344, 113541.</a><span style="display: block; color: #5b6a7d;">Uses Cassini Grand Finale magnetometry to resolve fine-scale structure in Saturn&apos;s internal field.</span></li>
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1126/science.aat5434" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Dougherty, M.K., <strong style="color: #10263d;">Cao, H.</strong>, Khurana, K.K., et al. &middot; 2018 &mdash; Saturn&apos;s magnetic field revealed by the Cassini Grand Finale. <em>Science</em> 362, eaat5434.</a><span style="display: block; color: #5b6a7d;">Reports the close-in Saturn magnetic-field measurements central to the dynamo work.</span></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1002/2014GL060196" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;"><strong style="color: #10263d;">Cao, H.</strong>, Aurnou, J.M., Wicht, J., et al. &middot; 2014 &mdash; A dynamo explanation for Mercury&apos;s anomalous magnetic field. <em>Geophysical Research Letters</em> 41, 4127&ndash;4134.</a><span style="display: block; color: #5b6a7d;">Extends comparative planetary dynamo work to Mercury.</span></li>
+          </ul>
+        </section>
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Background and media</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://www.youtube.com/watch?v=SRmGf0AUHR8" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">The Magnetic Fields of Mercury, Ganymede, and Saturn</a><span style="display: block; color: #5b6a7d;">Newton Institute seminar by Hao Cao.</span></li>
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://www.jpl.nasa.gov/news/nasas-juno-finds-changes-in-jupiters-magnetic-field/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Juno finds changes in Jupiter&apos;s magnetic field</a></li>
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://svs.gsfc.nasa.gov/13007/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Jupiter Magnetic Tour</a><span style="display: block; color: #5b6a7d;">NASA visualization of the dynamo and field geometry.</span></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://science.nasa.gov/mission/cassini/grand-finale/overview/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Cassini Grand Finale overview</a></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <article id="ocean-worlds" style="margin: 0 0 4rem 0; padding-top: 2rem; border-top: 1px solid rgba(24,55,92,0.2); scroll-margin-top: 1.5rem;">
+      <div data-theme-grid="true" style="display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 2.6rem; align-items: start;">
+        <div>
+          <h2 style="margin: 0 0 0.5rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2; color: #10263d;">Ocean Worlds</h2>
+          <p style="margin: 0 0 1rem 0; font-size: 1.05rem; line-height: 1.6; color: #173861;">A salty ocean under ice responds to a changing magnetic field &mdash; and that response is measurable from orbit.</p>
+          <p style="margin: 0 0 1rem 0; font-size: 0.98rem; line-height: 1.75;">Magnetic induction and plasma interactions probe icy moons and coupled interior&ndash;space environments. Electromagnetic responses help characterize subsurface oceans, ice shells, and the plasma environments around moons such as Europa, Ganymede, and Callisto, linking interior structure with the surrounding magnetospheric system.</p>
+          <p style="margin: 0; font-size: 0.95rem; color: #5b6a7d;"><strong style="color: #10263d; font-weight: 600;">Data from</strong> &nbsp;ESA JUICE J-MAG, as Co-Investigator &middot; NASA Europa Clipper, via the JUICE&ndash;Clipper Steering Committee.</p>
+        </div>
+        <figure style="margin: 0;">
+          <div style="width: 100%; aspect-ratio: 4 / 3; border: 1px solid rgba(24,55,92,0.16); background-color: #eef3f8; background-image: repeating-linear-gradient(135deg, rgba(24,55,92,0.055) 0 10px, rgba(24,55,92,0) 10px 20px); display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 0.95rem; color: #5b6a7d; text-align: center; padding: 1rem;">induction response or moon&ndash;plasma interaction figure</span>
+          </div>
+          <figcaption style="margin: 0.7rem 0 0 0; font-size: 0.95rem; line-height: 1.6; color: #5b6a7d;">No figure in the repository fits this theme yet.</figcaption>
+        </figure>
+      </div>
+
+      <div data-related="true" style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 2.6rem; margin: 1.8rem 0 0 0; padding-top: 1.4rem; border-top: 1px solid rgba(24,55,92,0.14);">
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Key publications</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1007/s11214-024-01085-y" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Van Hoolst, T., Tobie, G., Vallat, C., et al., incl. <strong style="color: #10263d;">Cao, H.</strong> &middot; 2024 &mdash; Geophysical Characterization of the Interiors of Ganymede, Callisto and Europa by ESA&apos;s JUpiter ICy moons Explorer. <em>Space Science Reviews</em> 220, 54.</a><span style="display: block; color: #5b6a7d;">Frames how JUICE will characterize the interiors of the three icy moons.</span></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1029/2025JA034657" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Hadid, L.Z., Chust, T., Wahlund, J.-E., <strong style="color: #10263d;">Cao, H.</strong>, et al. &middot; 2026 &mdash; Evidence of an extended Alfv&eacute;n wing system at Enceladus: Cassini&apos;s multi-instrument observations. <em>JGR: Space Physics</em> 131, e2025JA034657.</a><span style="display: block; color: #5b6a7d;">Connects moon&ndash;plasma interactions with ocean-world environments.</span></li>
+          </ul>
+        </section>
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Background and media</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://www.esa.int/Science_Exploration/Space_Science/Juice/Jupiter_and_its_complex_surroundings_What_will_Juice_reveal" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">What will Juice reveal?</a><span style="display: block; color: #5b6a7d;">ESA context for the JUICE geophysics work.</span></li>
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://science.nasa.gov/missions/europa-clipper/europa-clipper-resources/induced-magnetic-field-from-europas-subsurface-ocean/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Induced magnetic field from Europa&apos;s subsurface ocean</a><span style="display: block; color: #5b6a7d;">How induction reveals oceans and ice shells.</span></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://www.jpl.nasa.gov/videos/spacecraft-makers-testing-europa-clippers-magnetometer/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Testing Europa Clipper&apos;s magnetometer</a></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <article id="surface-magnetometry" style="margin: 0 0 4rem 0; padding-top: 2rem; border-top: 1px solid rgba(24,55,92,0.2); scroll-margin-top: 1.5rem;">
+      <div data-theme-grid="true" style="display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 2.6rem; align-items: start;">
+        <div>
+          <h2 style="margin: 0 0 0.5rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2; color: #10263d;">Surface Magnetometry</h2>
+          <p style="margin: 0 0 1rem 0; font-size: 1.05rem; line-height: 1.6; color: #173861;">Building the instrument, not just analysing the data.</p>
+          <p style="margin: 0 0 1rem 0; font-size: 0.98rem; line-height: 1.75;">Instrument development supports long-duration magnetic measurements on the lunar surface. The miniaturized, low-power fluxgate magnetometer systems built for surface observatories provide sustained magnetic records for investigating electrical structure, thermal state, and interactions with plasma environments.</p>
+          <p style="margin: 0; font-size: 0.95rem; color: #5b6a7d;"><strong style="color: #10263d; font-weight: 600;">Supported by</strong> &nbsp;NASA DALI project L-MAG, with Hao Cao as Principal Investigator since April 2024.</p>
+        </div>
+        <figure style="margin: 0;">
+          <div style="width: 100%; aspect-ratio: 4 / 3; border: 1px solid rgba(24,55,92,0.16); background-color: #eef3f8; background-image: repeating-linear-gradient(135deg, rgba(24,55,92,0.055) 0 10px, rgba(24,55,92,0) 10px 20px); display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 0.95rem; color: #5b6a7d; text-align: center; padding: 1rem;">L-MAG instrument or lab photograph</span>
+          </div>
+          <figcaption style="margin: 0.7rem 0 0 0; font-size: 0.95rem; line-height: 1.6; color: #5b6a7d;">A photograph of the hardware would carry this theme better than a diagram.</figcaption>
+        </figure>
+      </div>
+
+      <div data-related="true" style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 2.6rem; margin: 1.8rem 0 0 0; padding-top: 1.4rem; border-top: 1px solid rgba(24,55,92,0.14);">
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Key publications</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><span style="color: #10263d;"><strong>Cao, H.</strong>, Kuang, W., Cheng, J.S. and Aurnou, J.M. &middot; 2024 &mdash; Revealing whole Earth dynamics through geomagnetism: From core to magnetosphere.</span> <span style="color: #5b6a7d;">White paper for the NASA Earth Science CORE 2.0 Report.</span><span style="display: block; color: #5b6a7d;">Connects magnetic observations from surface platforms to broad geophysical inference.</span></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1073/pnas.1717454115" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;"><strong style="color: #10263d;">Cao, H.</strong>, Yadav, R.K. and Aurnou, J.M. &middot; 2018 &mdash; Geomagnetic polar minima do not arise from steady meridional circulation. <em>PNAS</em> 115, 11186&ndash;11191.</a><span style="display: block; color: #5b6a7d;">Methods for separating interior dynamics from measured surface signals.</span></li>
+          </ul>
+        </section>
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Background and media</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://physicalsciences.ucla.edu/how-to-study-water-on-the-moon/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">How to study water on the Moon</a><span style="display: block; color: #5b6a7d;">UCLA overview of the lunar magnetometer work.</span></li>
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://www.nasa.gov/glenn/glenn-expertise-space-exploration/pesto/dali/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">NASA DALI programme</a></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://svs.gsfc.nasa.gov/5644/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">The Moon passes through Earth&apos;s magnetotail</a><span style="display: block; color: #5b6a7d;">The external fields a surface observatory must separate out.</span></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <article id="space-weather" style="margin: 0; padding-top: 2rem; border-top: 1px solid rgba(24,55,92,0.2); scroll-margin-top: 1.5rem;">
+      <div data-theme-grid="true" style="display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 2.6rem; align-items: start;">
+        <div>
+          <h2 style="margin: 0 0 0.5rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 1.75rem; line-height: 1.2; color: #10263d;">Space Weather</h2>
+          <p style="margin: 0 0 1rem 0; font-size: 1.05rem; line-height: 1.6; color: #173861;">Where and how the solar wind gets into Earth&apos;s magnetic field.</p>
+          <p style="margin: 0 0 1rem 0; font-size: 0.98rem; line-height: 1.75;">Fluxgate magnetometers help measure Earth&apos;s near-space response to solar-wind forcing. The TRACERS mission and related instrument work apply magnetic-field measurements to study reconnection, polar cusp dynamics, and the way solar-wind energy enters Earth&apos;s magnetosphere.</p>
+          <p style="margin: 0; font-size: 0.95rem; color: #5b6a7d;"><strong style="color: #10263d; font-weight: 600;">Supported by</strong> &nbsp;NASA TRACERS, with Hao Cao as Deputy Instrument Lead and Co-Investigator on the MAG team since February 2024.</p>
+        </div>
+        <figure style="margin: 0;">
+          <div style="width: 100%; aspect-ratio: 4 / 3; border: 1px solid rgba(24,55,92,0.16); background-color: #eef3f8; background-image: repeating-linear-gradient(135deg, rgba(24,55,92,0.055) 0 10px, rgba(24,55,92,0) 10px 20px); display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 0.95rem; color: #5b6a7d; text-align: center; padding: 1rem;">TRACERS magnetometer or cusp-sampling figure</span>
+          </div>
+          <figcaption style="margin: 0.7rem 0 0 0; font-size: 0.95rem; line-height: 1.6; color: #5b6a7d;">The UCLA-built flight hardware is the natural image here.</figcaption>
+        </figure>
+      </div>
+
+      <div data-related="true" style="display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 2.6rem; margin: 1.8rem 0 0 0; padding-top: 1.4rem; border-top: 1px solid rgba(24,55,92,0.14);">
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Key publications</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1007/s11214-025-01212-3" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Strangeway, R.J., <strong style="color: #10263d;">Cao, H.</strong>, Orrill, E., et al. &middot; 2025 &mdash; The TRACERS Fluxgate Magnetometer (MAG). <em>Space Science Reviews</em> 221, 84.</a><span style="display: block; color: #5b6a7d;">The magnetometer hardware behind the TRACERS measurements.</span></li>
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1007/s11214-025-01184-4" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Miles, D.M., Kletzing, C.A., Fuselier, S.A., et al., incl. <strong style="color: #10263d;">Cao, H.</strong> &middot; 2025 &mdash; The Tandem Reconnection And Cusp Electrodynamics Reconnaissance Satellites (TRACERS) Mission. <em>Space Science Reviews</em> 221, 61.</a><span style="display: block; color: #5b6a7d;">Mission context for the two-satellite cusp measurements.</span></li>
+            <li style="margin: 0 0 1rem 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1029/2026GL123732" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">Shen, Y., Strangeway, R.J., <strong style="color: #10263d;">Cao, H.</strong>, et al. &middot; 2026 &mdash; TRACERS small-scale field-aligned currents and intense GPS amplitude and phase scintillations in the nightside auroral region. <em>Geophysical Research Letters</em> 53, e2026GL123732.</a></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.6;"><a href="https://doi.org/10.1029/2026GL123404" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">&Oslash;ieroset, M., Fuselier, S.A., Bonnell, J.B., <strong style="color: #10263d;">Cao, H.</strong>, et al. &middot; 2026 &mdash; Simultaneous TRACERS and THEMIS observations of reversed cusp ion dispersions and dual-lobe reconnection. <em>Geophysical Research Letters</em> 53, e2026GL123404.</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3 style="margin: 0 0 0.9rem 0; font-size: 0.95rem; font-weight: 700; color: #10263d;">Background and media</h3>
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://physicalsciences.ucla.edu/nasa-launches-ucla-instrument-into-space-to-study-effects-of-sunsmagnetic-field-on-earth/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">NASA launches UCLA instrument into space</a><span style="display: block; color: #5b6a7d;">On the fluxgate magnetometer built by the UCLA team.</span></li>
+            <li style="margin: 0 0 0.8rem 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://science.nasa.gov/mission/tracers/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">NASA TRACERS mission overview</a></li>
+            <li style="margin: 0; font-size: 0.95rem; line-height: 1.55;"><a href="https://svs.gsfc.nasa.gov/20404/" target="_blank" rel="noopener" style="color: #235f92; text-decoration: none;" style-hover="color: #8a3d33;">TRACERS science animations</a></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <div style="position: relative; overflow: hidden; padding: 4.7em 0 4.2em 0; background: #2b252c; color: #fff;">
+    <div style="width: min(980px, 100% - 4rem); margin: 0 auto; text-align: center;">
+      <nav aria-label="Footer" style="margin: 0 0 2.6em 0;">
+        <ul style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.4rem; margin: 0; padding: 0; list-style: none; font-size: 0.95rem;">
+          <li><a href="Home v2.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Home</a></li>
+          <li><a href="Research v2.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Research</a></li>
+          <li><a href="https://sites.epss.ucla.edu/hcao/publications/" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Publications</a></li>
+          <li><a href="Team.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Team</a></li>
+          <li><a href="https://sites.epss.ucla.edu/hcao/teaching/" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Teaching</a></li>
+          <li><a href="CV.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">CV</a></li>
+        </ul>
+      </nav>
+      <h2 style="margin: 0 0 1em 0; color: #fff; font-size: 1.25em; font-weight: 400;">Contact</h2>
+      <p style="margin: 0 0 3em 0;">Hao Cao<br />Associate Professor, Department of Earth, Planetary, and Space Sciences<br />University of California, Los Angeles<br /><a href="mailto:hcao@epss.ucla.edu" style="color: inherit; border-bottom: solid 1px rgba(128,128,128,0.22); text-decoration: none;" style-hover="color: #ef8376; border-bottom-color: transparent;">hcao@epss.ucla.edu</a> &nbsp;|&nbsp; <a href="tel:+13107949467" style="color: inherit; border-bottom: solid 1px rgba(128,128,128,0.22); text-decoration: none;" style-hover="color: #ef8376; border-bottom-color: transparent;">310-794-9467</a><br />4859 Slichter Hall, 595 Charles Young Drive East, Los Angeles, CA 90095-1567</p>
+      <p style="margin: 0; color: rgba(190,190,190,0.9); font-size: 0.8em;">&copy; Hao Cao. Planetary magnetism and interiors research at UCLA.</p>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    document.documentElement.lang = 'en';
+    var q = window.location.search;
+    if (!q) return;
+    document.querySelectorAll('a[href$=".dc.html"]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (!href || /^(https?:|\/\/|mailto:|tel:)/i.test(href) || href.indexOf('?') !== -1) return;
+      a.setAttribute('href', href + q);
+    });
+  }
+}
+</script>
+</body>
+</html>

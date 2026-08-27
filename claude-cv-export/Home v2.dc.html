@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Hao Cao is an associate professor at UCLA studying planetary magnetism, deep interiors, and space environment across the solar system." />
+<meta property="og:title" content="Hao Cao | UCLA Planetary Magnetism" />
+<meta property="og:description" content="Planetary magnetism, interiors, and space environment — research group of Hao Cao, Department of Earth, Planetary, and Space Sciences, UCLA." />
+<meta property="og:image" content="assets/images/jupiter-europa-ganymede-hero-poster.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" />
+<style>
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+html, body { margin: 0; padding: 0; background: #f0f4f4; -webkit-text-size-adjust: none; }
+a { color: #235f92; }
+a:hover { color: #8a3d33; }
+@font-face { font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: 900; font-display: block; src: url("assets/webfonts/fa-solid-900.woff2") format("woff2"); }
+:focus-visible { outline: 2px solid rgba(58, 97, 140, 0.65); outline-offset: 4px; }
+@keyframes leftStarBloom {
+  0% { opacity: 0.4; transform: translate3d(-1%, 0, 0) scale(0.98); }
+  50% { opacity: 0.58; transform: translate3d(1.8%, -1.3%, 0) scale(1.05); }
+  100% { opacity: 0.46; transform: translate3d(-0.6%, 1%, 0) scale(1.01); }
+}
+@keyframes heroVideoLoad {
+  0% { opacity: 0; transform: translate3d(24px, calc(-50% + 18px), 0) scale(0.78); }
+  100% { opacity: 0.92; transform: translate3d(var(--hero-video-x), calc(-50% + var(--hero-video-y)), 0) scale(var(--hero-video-scale)); }
+}
+@keyframes scrollCue { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(0.28rem); } }
+@media (prefers-reduced-motion: reduce) {
+  [data-bloom], [data-hero-video], [data-scrollcue] { animation: none !important; }
+}
+@media screen and (min-width: 1681px) { [data-page] { font-size: 20px !important; line-height: 1.85em !important; } }
+@media screen and (max-width: 1280px) { [data-page] { font-size: 16px !important; line-height: 1.5em !important; } }
+@media screen and (max-width: 980px) {
+  [data-page] { --edge: clamp(1.25rem, 5vw, 3rem) !important; }
+  [data-hero-copy] { left: clamp(1.25rem, 5vw, 3rem) !important; top: 45% !important; width: min(34rem, 100vw - 2.5rem) !important; }
+  [data-hero-video] { right: -18vw !important; width: min(98vw, 920px) !important; opacity: 0.78 !important; }
+  [data-rs-layout] { grid-template-columns: 1fr !important; gap: 2rem !important; }
+  [data-rs-header] { max-width: none !important; }
+  [data-bullet] { grid-template-columns: 1rem minmax(0, 1fr) !important; gap: 0.5rem 1rem !important; }
+  [data-bullet-summary] { grid-column: 2 / -1 !important; max-width: 44rem !important; }
+  [data-about-profile] { grid-template-columns: minmax(200px, 240px) minmax(0, 1fr) !important; gap: 2rem !important; }
+  [data-milestones] { grid-template-columns: 1fr !important; }
+}
+@media screen and (max-width: 736px) {
+  [data-page] { font-size: 16.667px !important; }
+  [data-hero] { height: auto !important; min-height: 40rem !important; }
+  [data-hero-video] { top: 68% !important; right: -56vw !important; width: min(132vw, 720px) !important; opacity: 0.42 !important; }
+  [data-hero-copy] { top: 38% !important; width: min(21rem, 100vw - 2rem) !important; }
+  [data-hero-name] { display: block !important; }
+  [data-latin-name] { font-size: clamp(3rem, 13vw, 4.2rem) !important; }
+  [data-chinese-name] { display: block !important; margin: 0.28rem 0 0 0 !important; font-size: clamp(1.85rem, 8vw, 2.45rem) !important; }
+  [data-hero-tagline] { max-width: 20rem !important; font-size: 1.05rem !important; }
+  [data-about-profile] { display: block !important; max-width: 22rem !important; }
+  [data-about-photo] { margin-bottom: 1.5rem !important; }
+  [data-milestone-row] { grid-template-columns: 1fr !important; gap: 0.15rem !important; }
+}
+</style>
+</helmet>
+
+<div data-page="true" style="--edge: clamp(1.6rem, 7vw, 7.2rem); --band: min(1240px, calc(100% - (2 * var(--edge)))); background: #f0f4f4; color: #46586c; font-family: 'Source Sans Pro', sans-serif; font-weight: 300; font-size: 18.667px; line-height: 1.75em;">
+
+  <a href="#intro" style="position: absolute; left: -9999px; top: 0; z-index: 30; padding: 0.75rem 1.15rem; background: #10263d; color: #fff; text-decoration: none; font-size: 0.9rem;" style-focus="left: 0.75rem; top: 0.75rem;">Skip to content</a>
+
+  <div data-hero="true" style="position: relative; height: clamp(34rem, 76vh, 46rem); background: #020511; color: #fff; text-align: center; overflow: hidden;">
+
+    <div data-hero-layer="true" style="position: absolute; inset: 0; z-index: 1; overflow: hidden; --hero-video-x: 0px; --hero-video-y: 0px; --hero-video-scale: 0.84; background: radial-gradient(circle at 69% 48%, rgba(66, 102, 214, 0.18), transparent 29%), radial-gradient(circle at 78% 58%, rgba(117, 63, 175, 0.18), transparent 24%), radial-gradient(circle at 45% 52%, rgba(16, 42, 94, 0.28), transparent 34%), linear-gradient(105deg, #020511 0%, #050a1d 46%, #09071a 100%);">
+
+      <div data-bloom="true" style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(circle at 16% 24%, rgba(50, 92, 178, 0.18) 0%, rgba(14, 32, 80, 0.12) 25%, rgba(0, 0, 0, 0) 60%), radial-gradient(circle at 30% 68%, rgba(86, 74, 155, 0.14) 0%, rgba(18, 26, 66, 0.08) 30%, rgba(0, 0, 0, 0) 64%), radial-gradient(circle at 82% 18%, rgba(142, 92, 220, 0.16) 0%, rgba(0, 0, 0, 0) 22%); filter: blur(30px); opacity: 0.52; animation: leftStarBloom 18s ease-in-out infinite alternate;"></div>
+
+      <div style="position: absolute; inset: 0; pointer-events: none; mix-blend-mode: screen; opacity: 0.72; background: radial-gradient(circle at 10% 18%, rgba(255,255,255,0.95) 0, rgba(255,255,255,0.95) 1.7px, transparent 3px), radial-gradient(circle at 18% 23%, rgba(242,246,255,0.72) 0, rgba(242,246,255,0.72) 1.2px, transparent 2.2px), radial-gradient(circle at 13% 34%, rgba(222,234,255,0.56) 0, rgba(222,234,255,0.56) 1px, transparent 2.1px), radial-gradient(circle at 21% 39%, rgba(255,255,255,0.82) 0, rgba(255,255,255,0.82) 1.3px, transparent 2.5px), radial-gradient(circle at 12% 52%, rgba(240,246,255,0.64) 0, rgba(240,246,255,0.64) 1.1px, transparent 2.2px), radial-gradient(circle at 28% 63%, rgba(230,239,255,0.52) 0, rgba(230,239,255,0.52) 1px, transparent 2px), radial-gradient(circle at 17% 72%, rgba(255,255,255,0.76) 0, rgba(255,255,255,0.76) 1.2px, transparent 2.3px), radial-gradient(circle at 8% 82%, rgba(236,243,255,0.58) 0, rgba(236,243,255,0.58) 1px, transparent 2px), radial-gradient(circle at 36% 14%, rgba(244,247,255,0.52) 0, rgba(244,247,255,0.52) 0.9px, transparent 1.8px), radial-gradient(circle at 48% 64%, rgba(232,240,255,0.46) 0, rgba(232,240,255,0.46) 0.9px, transparent 1.9px), radial-gradient(circle at 63% 76%, rgba(238,244,255,0.5) 0, rgba(238,244,255,0.5) 0.9px, transparent 1.9px), radial-gradient(circle at 86% 34%, rgba(222,235,255,0.34) 0, rgba(222,235,255,0.34) 0.8px, transparent 1.7px), radial-gradient(circle at 92% 68%, rgba(236,243,255,0.42) 0, rgba(236,243,255,0.42) 0.9px, transparent 1.8px);"></div>
+
+      <video data-hero-video="true" autoplay="true" muted="true" playsinline="true" preload="metadata" poster="assets/images/jupiter-europa-ganymede-hero-poster.jpg" style="position: absolute; top: 50%; right: clamp(-7rem, -4vw, 2rem); z-index: 1; display: block; width: min(76vw, 1180px); height: auto; aspect-ratio: 16/9; object-fit: contain; opacity: 0.92; mix-blend-mode: screen; -webkit-mask-image: radial-gradient(ellipse at 72% 52%, #000 0%, #000 46%, rgba(0,0,0,0.55) 62%, transparent 88%); mask-image: radial-gradient(ellipse at 72% 52%, #000 0%, #000 46%, rgba(0,0,0,0.55) 62%, transparent 88%); pointer-events: none; transform: translate3d(var(--hero-video-x), calc(-50% + var(--hero-video-y)), 0) scale(var(--hero-video-scale)); transform-origin: 58% 50%; animation: heroVideoLoad 1.2s cubic-bezier(0.19, 1, 0.22, 1);">
+        <source src="assets/video/jupiter-europa-ganymede-hero.mp4" type="video/mp4" media="(prefers-reduced-motion: no-preference)" />
+      </video>
+    </div>
+
+    <nav aria-label="Main" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 6; text-align: center; padding: 1em 0; background: linear-gradient(180deg, rgba(2,5,15,0.86) 0%, rgba(2,5,15,0.48) 62%, rgba(2,5,15,0) 100%);">
+      <ul style="display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0.15rem; margin: 0; padding: 0 1em; list-style: none; border-left: solid 1px rgba(158,181,224,0.22); border-right: solid 1px rgba(158,181,224,0.22);">
+        <li style="margin: 0;"><a href="Home v2.dc.html" aria-current="page" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.95); text-decoration: none; font-size: 0.92em; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px rgba(184,207,248,0.24); border-radius: 0.5em; background: rgba(255,255,255,0.035); text-shadow: 0 0 18px rgba(0,0,0,0.72);">Home</a></li>
+        <li style="margin: 0;"><a href="Research v2.dc.html" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.95); text-decoration: none; font-size: 0.92em; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 0 18px rgba(0,0,0,0.72);" style-hover="background: rgba(255,255,255,0.06);">Research</a></li>
+        <li style="margin: 0;"><a href="https://sites.epss.ucla.edu/hcao/publications/" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.95); text-decoration: none; font-size: 0.92em; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 0 18px rgba(0,0,0,0.72);" style-hover="background: rgba(255,255,255,0.06);">Publications</a></li>
+        <li style="margin: 0;"><a href="Team.dc.html" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.95); text-decoration: none; font-size: 0.92em; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 0 18px rgba(0,0,0,0.72);" style-hover="background: rgba(255,255,255,0.06);">Team</a></li>
+        <li style="margin: 0;"><a href="https://sites.epss.ucla.edu/hcao/teaching/" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.95); text-decoration: none; font-size: 0.92em; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 0 18px rgba(0,0,0,0.72);" style-hover="background: rgba(255,255,255,0.06);">Teaching</a></li>
+        <li style="margin: 0;"><a href="CV.dc.html" style="display: block; padding: 0.7rem 0.7rem; min-height: 44px; line-height: 1.6; color: rgba(243,247,255,0.95); text-decoration: none; font-size: 0.92em; letter-spacing: 0.02em; white-space: nowrap; border: solid 1px transparent; border-radius: 0.5em; text-shadow: 0 0 18px rgba(0,0,0,0.72);" style-hover="background: rgba(255,255,255,0.06);">CV</a></li>
+      </ul>
+    </nav>
+
+    <header data-hero-copy="true" style="position: absolute; left: clamp(1.6rem, 7vw, 7.2rem); top: 50%; z-index: 3; width: min(42rem, 100vw - 4rem); padding: clamp(1rem, 2.2vw, 2rem) 0; text-align: left; transform: translateY(-50%);">
+      <h1 data-hero-name="true" style="display: flex; align-items: baseline; flex-wrap: wrap; margin: 0 0 1.05rem 0; color: #fff; line-height: 0.96; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; text-shadow: 0 0 36px rgba(8,14,30,0.78);">
+        <span data-latin-name="true" style="display: inline-block; font-size: clamp(3.4rem, 6.4vw, 6.8rem); font-weight: 400; color: rgba(255,255,255,0.97);">Hao Cao</span>
+        <span data-chinese-name="true" lang="zh" style="display: inline-block; margin-left: 0.18em; font-family: 'Source Sans Pro', sans-serif; font-size: clamp(2.05rem, 3.35vw, 3.35rem); font-weight: 300; color: rgba(218,232,255,0.9);">曹浩</span>
+      </h1>
+      <p data-hero-tagline="true" style="margin: 0 0 0.9rem 0; max-width: 37rem; font-size: clamp(1.18rem, 1.8vw, 1.75rem); line-height: 1.38; font-weight: 300; letter-spacing: 0.01em; color: rgba(240,246,255,0.92); text-shadow: 0 0 26px rgba(0,0,0,0.76);">Planetary magnetism, interiors,<br />and space environment</p>
+      <p style="margin: 0; font-size: clamp(0.98rem, 1.18vw, 1.22rem); line-height: 1.7; font-weight: 300; letter-spacing: 0.12em; color: rgba(203,218,241,0.9); text-shadow: 0 0 22px rgba(0,0,0,0.74);" style-before="content: ''; display: block; width: 2.35rem; height: 1px; margin: 0 0 0.95rem 0; background: rgba(211, 173, 118, 0.78); box-shadow: 0 0 16px rgba(211, 173, 118, 0.25);">University of California, Los Angeles</p>
+    </header>
+
+    <footer style="position: absolute; left: 50%; bottom: clamp(2rem, 5.2vh, 4.2rem); transform: translateX(-50%); z-index: 4;">
+      <a data-scrollcue="true" href="#intro" aria-label="Scroll to site overview" style="display: inline-flex; align-items: center; justify-content: center; width: 3.05em; height: 3.05em; font-size: 0.95em; border-radius: 100%; text-decoration: none; outline: 1px solid rgba(170,196,240,0.32); background: rgba(9,19,42,0.24); color: rgba(225,238,255,0.9); animation: scrollCue 2.8s ease-in-out infinite;" style-hover="background: rgba(255,255,255,0.06);" style-before="content: '\f063'; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 1.25em; line-height: 1;"></a>
+    </footer>
+  </div>
+
+  <section id="intro" style="background: #fff; padding: 3.1em 0 3.2em 0;">
+    <div style="width: var(--band); margin: 0 auto;">
+      <h2 style="margin: 0 0 1.05rem 0; max-width: 34ch; font-family: Georgia, serif; font-weight: 400; font-size: 1.55em; line-height: 1.32; color: #10263d;">Magnetic fields and gravity are how we see inside a planet.</h2>
+      <p style="margin: 0; max-width: 52rem; font-size: 1.08em; line-height: 1.78; color: #46586c;">The group studies how those signals reveal the otherwise hidden interiors, deep fluid motion, and space environments of planets and moons &mdash; connecting spacecraft observations with geophysical theory, numerical modeling, and magnetometer development, so the same measurements illuminate both planetary structure and the environments spacecraft travel through.</p>
+
+      <sc-if value="{{ showPrimaryLinks }}" hint-placeholder-val="{{ true }}">
+        <div style="display: flex; flex-wrap: wrap; gap: 0.7rem 0.9rem; margin: 1.9rem 0 0 0;">
+          <a href="Research v2.dc.html" style="display: inline-block; min-width: 11rem; padding: 0.95em 2em; background: #173861; color: #fff; text-align: center; text-decoration: none; font-size: 0.8em; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid #173861;" style-hover="background: #10263d; border-color: #10263d;">Research</a>
+          <a href="https://sites.epss.ucla.edu/hcao/publications/" style="display: inline-block; min-width: 11rem; padding: 0.95em 2em; background: transparent; color: #173861; text-align: center; text-decoration: none; font-size: 0.8em; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(24,55,92,0.32);" style-hover="background: #173861; color: #fff; border-color: #173861;">Publications</a>
+          <a href="Team.dc.html" style="display: inline-block; min-width: 11rem; padding: 0.95em 2em; background: transparent; color: #173861; text-align: center; text-decoration: none; font-size: 0.8em; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(24,55,92,0.32);" style-hover="background: #173861; color: #fff; border-color: #173861;">The group</a>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section data-rs="true" style="position: relative; overflow: hidden; padding: 3.15em 0; background: linear-gradient(180deg, #f4f9fd 0%, #eef5fb 48%, #f8fbfe 100%);" style-after="content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0.35; background: repeating-linear-gradient(0deg, rgba(30,54,87,0.045) 0 1px, transparent 1px 82px), repeating-linear-gradient(90deg, rgba(30,54,87,0.045) 0 1px, transparent 1px 82px);">
+    <div style="position: relative; z-index: 1; width: var(--band); margin: 0 auto;">
+      <div data-rs-layout="true" style="display: grid; grid-template-columns: minmax(18rem, 0.88fr) minmax(0, 1.12fr); gap: 2.2rem 4rem; align-items: center;">
+        <header data-rs-header="true" style="max-width: 47rem; text-align: left;">
+          <h2 style="margin: 0 0 0.6rem 0; white-space: nowrap; color: #10263d; font-family: Georgia, serif; font-size: 2.5em; font-weight: 400; line-height: 1.25em;">Research Areas</h2>
+          <p style="margin: 0; max-width: 34rem; font-size: 1.35em; line-height: 1.68; color: #5b6a7d;">Across giant planets, ocean worlds, the Moon, and Earth&apos;s space environment, the group uses physical signals measured by spacecraft and instruments to infer what cannot be observed directly.</p>
+          <footer style="display: flex; margin: 1.35rem 0 0 0;">
+            <a href="Research v2.dc.html" style="display: inline-block; padding: 0.95em 2.1em; background: transparent; color: #173861; text-decoration: none; border: 1px solid rgba(24,55,92,0.28); font-weight: 300; font-size: 0.8em; letter-spacing: 0.12em; text-transform: uppercase;" style-hover="background: #173861; color: #fff;">Explore Research</a>
+          </footer>
+        </header>
+
+        <div style="min-width: 0;">
+          <ul style="list-style: none; margin: 0; padding: 0;">
+            <li style="margin: 0; padding-left: 0.5em;">
+              <a data-bullet="true" href="Research v2.dc.html" style="display: grid; grid-template-columns: 1rem minmax(12rem, 0.82fr) minmax(0, 1.18fr); align-items: start; gap: 0.6rem 1.2rem; padding: 0.62rem 0; color: inherit; text-decoration: none; border: 0; border-bottom: solid 1px rgba(128,128,128,0.15);" style-hover="background: rgba(255,255,255,0.5);">
+                <span style="position: relative; display: block; width: 1rem; height: 1rem; margin-top: 0.34rem;" style-before="content: ''; position: absolute; left: 50%; top: 50%; width: 0.42rem; height: 0.42rem; border-radius: 50%; background: rgba(63,102,145,0.72); transform: translate(-50%, -50%);"></span>
+                <span style="display: block;"><span style="display: block; font-size: 1.02rem; font-weight: 700; line-height: 1.34; color: #10263d;">Planetary Interiors</span><span style="display: block; margin-top: 0.15rem; font-family: ui-monospace, Menlo, monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #5b6a7d;">Juno &middot; Cassini</span></span>
+                <span data-bullet-summary="true" style="display: block; font-size: 0.93rem; line-height: 1.62; color: #4c5f74;">Gravity and magnetic measurements reveal deep winds, electrical structure, and interior dynamics.</span>
+              </a>
+            </li>
+            <li style="margin: 0.5rem 0 0 0; padding-left: 0.5em;">
+              <a data-bullet="true" href="Research v2.dc.html" style="display: grid; grid-template-columns: 1rem minmax(12rem, 0.82fr) minmax(0, 1.18fr); align-items: start; gap: 0.6rem 1.2rem; padding: 0.62rem 0; color: inherit; text-decoration: none; border: 0; border-bottom: solid 1px rgba(128,128,128,0.15);" style-hover="background: rgba(255,255,255,0.5);">
+                <span style="position: relative; display: block; width: 1rem; height: 1rem; margin-top: 0.34rem;" style-before="content: ''; position: absolute; left: 50%; top: 50%; width: 0.42rem; height: 0.42rem; border-radius: 50%; background: rgba(63,102,145,0.72); transform: translate(-50%, -50%);"></span>
+                <span style="display: block;"><span style="display: block; font-size: 1.02rem; font-weight: 700; line-height: 1.34; color: #10263d;">Planetary Magnetic Fields</span><span style="display: block; margin-top: 0.15rem; font-family: ui-monospace, Menlo, monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #5b6a7d;">Cassini MAG &middot; JUICE J-MAG</span></span>
+                <span data-bullet-summary="true" style="display: block; font-size: 0.93rem; line-height: 1.62; color: #4c5f74;">Dynamo models and spacecraft magnetometry connect evolving fields to fluid motion inside planets.</span>
+              </a>
+            </li>
+            <li style="margin: 0.5rem 0 0 0; padding-left: 0.5em;">
+              <a data-bullet="true" href="Research v2.dc.html" style="display: grid; grid-template-columns: 1rem minmax(12rem, 0.82fr) minmax(0, 1.18fr); align-items: start; gap: 0.6rem 1.2rem; padding: 0.62rem 0; color: inherit; text-decoration: none; border: 0; border-bottom: solid 1px rgba(128,128,128,0.15);" style-hover="background: rgba(255,255,255,0.5);">
+                <span style="position: relative; display: block; width: 1rem; height: 1rem; margin-top: 0.34rem;" style-before="content: ''; position: absolute; left: 50%; top: 50%; width: 0.42rem; height: 0.42rem; border-radius: 50%; background: rgba(63,102,145,0.72); transform: translate(-50%, -50%);"></span>
+                <span style="display: block;"><span style="display: block; font-size: 1.02rem; font-weight: 700; line-height: 1.34; color: #10263d;">Ocean Worlds</span><span style="display: block; margin-top: 0.15rem; font-family: ui-monospace, Menlo, monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #5b6a7d;">Europa Clipper &middot; JUICE</span></span>
+                <span data-bullet-summary="true" style="display: block; font-size: 0.93rem; line-height: 1.62; color: #4c5f74;">Magnetic induction and plasma interactions probe icy moons and coupled interior&ndash;space environments.</span>
+              </a>
+            </li>
+            <li style="margin: 0.5rem 0 0 0; padding-left: 0.5em;">
+              <a data-bullet="true" href="Research v2.dc.html" style="display: grid; grid-template-columns: 1rem minmax(12rem, 0.82fr) minmax(0, 1.18fr); align-items: start; gap: 0.6rem 1.2rem; padding: 0.62rem 0; color: inherit; text-decoration: none; border: 0; border-bottom: solid 1px rgba(128,128,128,0.15);" style-hover="background: rgba(255,255,255,0.5);">
+                <span style="position: relative; display: block; width: 1rem; height: 1rem; margin-top: 0.34rem;" style-before="content: ''; position: absolute; left: 50%; top: 50%; width: 0.42rem; height: 0.42rem; border-radius: 50%; background: rgba(63,102,145,0.72); transform: translate(-50%, -50%);"></span>
+                <span style="display: block;"><span style="display: block; font-size: 1.02rem; font-weight: 700; line-height: 1.34; color: #10263d;">Surface Magnetometry</span><span style="display: block; margin-top: 0.15rem; font-family: ui-monospace, Menlo, monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #5b6a7d;">NASA DALI L-MAG</span></span>
+                <span data-bullet-summary="true" style="display: block; font-size: 0.93rem; line-height: 1.62; color: #4c5f74;">Instrument development supports long-duration magnetic measurements on the lunar surface.</span>
+              </a>
+            </li>
+            <li style="margin: 0.5rem 0 0 0; padding-left: 0.5em;">
+              <a data-bullet="true" href="Research v2.dc.html" style="display: grid; grid-template-columns: 1rem minmax(12rem, 0.82fr) minmax(0, 1.18fr); align-items: start; gap: 0.6rem 1.2rem; padding: 0.62rem 0; color: inherit; text-decoration: none; border: 0;" style-hover="background: rgba(255,255,255,0.5);">
+                <span style="position: relative; display: block; width: 1rem; height: 1rem; margin-top: 0.34rem;" style-before="content: ''; position: absolute; left: 50%; top: 50%; width: 0.42rem; height: 0.42rem; border-radius: 50%; background: rgba(63,102,145,0.72); transform: translate(-50%, -50%);"></span>
+                <span style="display: block;"><span style="display: block; font-size: 1.02rem; font-weight: 700; line-height: 1.34; color: #10263d;">Space Weather</span><span style="display: block; margin-top: 0.15rem; font-family: ui-monospace, Menlo, monospace; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #5b6a7d;">NASA TRACERS</span></span>
+                <span data-bullet-summary="true" style="display: block; font-size: 0.93rem; line-height: 1.62; color: #4c5f74;">Fluxgate magnetometers help measure Earth&apos;s near-space response to solar-wind forcing.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showMilestones }}" hint-placeholder-val="{{ true }}">
+    <section style="background: #fff; padding: 3.1em 0;">
+      <div style="width: var(--band); margin: 0 auto;">
+        <div data-milestones="true" style="display: grid; grid-template-columns: minmax(14rem, 0.5fr) minmax(0, 1.5fr); gap: 1.4rem 4rem; align-items: start;">
+          <header>
+            <h2 style="margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 2.5em; line-height: 1.15; color: #10263d;">Milestones</h2>
+            <p style="margin: 0.65rem 0 0 0; font-size: 0.98rem; line-height: 1.7; color: #64758a;">A record of the group&apos;s appointments, instruments, and results at UCLA.</p>
+          </header>
+          <div>
+            <div data-milestone-row="true" style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.4rem 1.6rem; align-items: baseline; padding: 0.75rem 0; border-bottom: 1px solid rgba(24,55,92,0.1);">
+              <div style="font-family: ui-monospace, Menlo, monospace; font-size: 0.76rem; letter-spacing: 0.06em; color: #5b6a7d;">Jul 2026</div>
+              <div style="font-size: 0.99rem; line-height: 1.62; color: #46586c;"><strong style="color: #10263d; font-weight: 600;">Promoted to Associate Professor</strong> in Earth, Planetary, and Space Sciences at UCLA.</div>
+            </div>
+            <div data-milestone-row="true" style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.4rem 1.6rem; align-items: baseline; padding: 0.75rem 0; border-bottom: 1px solid rgba(24,55,92,0.1);">
+              <div style="font-family: ui-monospace, Menlo, monospace; font-size: 0.76rem; letter-spacing: 0.06em; color: #5b6a7d;">Apr 2025</div>
+              <div style="font-size: 0.99rem; line-height: 1.62; color: #46586c;">Joined the <strong style="color: #10263d; font-weight: 600;">JUICE&ndash;Clipper Steering Committee</strong>, coordinating between ESA&apos;s JUICE and NASA&apos;s Europa Clipper.</div>
+            </div>
+            <div data-milestone-row="true" style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.4rem 1.6rem; align-items: baseline; padding: 0.75rem 0; border-bottom: 1px solid rgba(24,55,92,0.1);">
+              <div style="font-family: ui-monospace, Menlo, monospace; font-size: 0.76rem; letter-spacing: 0.06em; color: #5b6a7d;">Feb 2025</div>
+              <div style="font-size: 0.99rem; line-height: 1.62; color: #46586c;">Named a <strong style="color: #10263d; font-weight: 600;">Sloan Research Fellow in Physics</strong> by the Alfred P. Sloan Foundation.</div>
+            </div>
+            <div data-milestone-row="true" style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.4rem 1.6rem; align-items: baseline; padding: 0.75rem 0; border-bottom: 1px solid rgba(24,55,92,0.1);">
+              <div style="font-family: ui-monospace, Menlo, monospace; font-size: 0.76rem; letter-spacing: 0.06em; color: #5b6a7d;">2024</div>
+              <div style="font-size: 0.99rem; line-height: 1.62; color: #46586c;">&ldquo;A rapidly time-varying equatorial jet in Jupiter&apos;s deep interior&rdquo; published in <em>Nature</em>.</div>
+            </div>
+            <div data-milestone-row="true" style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.4rem 1.6rem; align-items: baseline; padding: 0.75rem 0; border-bottom: 1px solid rgba(24,55,92,0.1);">
+              <div style="font-family: ui-monospace, Menlo, monospace; font-size: 0.76rem; letter-spacing: 0.06em; color: #5b6a7d;">Apr 2024</div>
+              <div style="font-size: 0.99rem; line-height: 1.62; color: #46586c;">Became <strong style="color: #10263d; font-weight: 600;">Principal Investigator of L-MAG</strong>, a NASA DALI lunar surface magnetometer.</div>
+            </div>
+            <div data-milestone-row="true" style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.4rem 1.6rem; align-items: baseline; padding: 0.75rem 0;">
+              <div style="font-family: ui-monospace, Menlo, monospace; font-size: 0.76rem; letter-spacing: 0.06em; color: #5b6a7d;">Feb 2024</div>
+              <div style="font-size: 0.99rem; line-height: 1.62; color: #46586c;">Appointed <strong style="color: #10263d; font-weight: 600;">Deputy Instrument Lead</strong> for the NASA TRACERS magnetometer team.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <div id="about" style="background: #f8fbfe; padding: 3.1em 0 3.4em 0;">
+    <article style="width: var(--band); margin: 0 auto; text-align: left;">
+      <div data-about-profile="true" style="display: grid; grid-template-columns: minmax(220px, 300px) minmax(0, 1fr); gap: 2.4rem 5rem; align-items: start;">
+        <div data-about-photo="true" style="max-width: 300px;">
+          <img src="images/HaoCao_pic_home.png" alt="Portrait of Hao Cao" style="display: block; width: 100%; height: auto; border: 1px solid rgba(24,55,92,0.12); box-shadow: 0 18px 36px rgba(20,33,54,0.12);" />
+        </div>
+        <div style="min-width: 0;">
+          <header style="margin: 0 0 1.2rem 0;">
+            <h2 style="margin: 0; color: #10263d; font-family: Georgia, serif; font-size: 2.5em; font-weight: 400; line-height: 1.1;">About Hao Cao</h2>
+            <p style="margin: 0.65rem 0 0 0; font-size: 1.05rem; line-height: 1.7; color: #64758a;">Associate Professor, Department of Earth, Planetary, and Space Sciences, University of California, Los Angeles.</p>
+          </header>
+          <p style="margin: 0; line-height: 1.85; color: #46586c;">Dr. Hao Cao is an Associate Professor of Space Science at UCLA. His research treats magnetic fields and gravity as windows into the hidden interiors and surrounding space environments of planetary bodies. The group works across observation, theory, modeling, and magnetometer development, with applications ranging from giant planets and icy moons to the Moon and Earth&apos;s near-space environment.</p>
+          <p style="margin: 1.1rem 0 0 0; line-height: 1.85; color: #46586c;">He is a member of the Juno Science Team, a Co-Investigator on ESA&apos;s JUICE J-MAG instrument, Deputy Instrument Lead for NASA&apos;s TRACERS magnetometer, and Principal Investigator of the L-MAG lunar magnetometer. He earned his Ph.D. at UCLA and held positions at Caltech and Harvard before returning.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <sc-if value="{{ showGroupPhoto }}" hint-placeholder-val="{{ true }}">
+    <section style="background: #fff; padding: 3.1em 0 3.6em 0;">
+      <div style="width: var(--band); margin: 0 auto;">
+        <h2 style="margin: 0 0 0.5rem 0; font-family: Georgia, serif; font-weight: 400; font-size: 2.5em; line-height: 1.15; color: #10263d;">The group</h2>
+        <p style="margin: 0 0 1.6rem 0; max-width: 44rem; font-size: 1.05rem; line-height: 1.72; color: #5b6a7d;">Postdoctoral, graduate, and undergraduate researchers working across theory, spacecraft data, and instrument development. <a href="Team.dc.html" style="color: #235f92; border-bottom: 1px solid rgba(35,95,146,0.26); text-decoration: none;" style-hover="color: #8a3d33; border-bottom-color: transparent;">See the full roster and alumni</a>.</p>
+        <figure style="margin: 0;">
+          <img src="images/HaoCao_GroupPhoto_Nov2025.jpg" alt="The research group photographed together outdoors in November 2025" style="display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; object-position: center 42%; border: 1px solid rgba(24,55,92,0.16);" />
+          <figcaption style="margin: 0.85rem 0 0 0; font-size: 0.93rem; line-height: 1.6; color: #64758a;">The group in November 2025.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </sc-if>
+
+  <div style="position: relative; overflow: hidden; padding: 4.7em 0 4.2em 0; background: #2b252c; color: #fff;">
+    <div style="width: min(980px, 100% - 4rem); margin: 0 auto; text-align: center;">
+      <nav aria-label="Footer" style="margin: 0 0 2.6em 0;">
+        <ul style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.4rem; margin: 0; padding: 0; list-style: none; font-size: 0.9rem;">
+          <li><a href="Home v2.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Home</a></li>
+          <li><a href="Research v2.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Research</a></li>
+          <li><a href="https://sites.epss.ucla.edu/hcao/publications/" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Publications</a></li>
+          <li><a href="Team.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Team</a></li>
+          <li><a href="https://sites.epss.ucla.edu/hcao/teaching/" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">Teaching</a></li>
+          <li><a href="CV.dc.html" style="color: rgba(240,240,240,0.86); text-decoration: none; border-bottom: solid 1px rgba(128,128,128,0.22);" style-hover="color: #ef8376; border-bottom-color: transparent;">CV</a></li>
+        </ul>
+      </nav>
+
+      <h2 style="margin: 0 0 1em 0; color: #fff; font-size: 1.25em; font-weight: 400;">Contact</h2>
+      <p style="margin: 0 0 2.4em 0;">Hao Cao<br />Associate Professor, Department of Earth, Planetary, and Space Sciences<br />University of California, Los Angeles<br /><a href="mailto:hcao@epss.ucla.edu" style="color: inherit; border-bottom: solid 1px rgba(128,128,128,0.22); text-decoration: none;" style-hover="color: #ef8376; border-bottom-color: transparent;">hcao@epss.ucla.edu</a> &nbsp;|&nbsp; <a href="tel:+13107949467" style="color: inherit; border-bottom: solid 1px rgba(128,128,128,0.22); text-decoration: none;" style-hover="color: #ef8376; border-bottom-color: transparent;">310-794-9467</a><br />4859 Slichter Hall, 595 Charles Young Drive East, Los Angeles, CA 90095-1567</p>
+
+      <ul style="display: inline-flex; gap: 0.2rem; background: rgba(128,128,128,0.05); border-radius: 4em; padding: 0.35em 0.75em; margin: 0 0 2.6em 0; font-size: 1.25em; list-style: none;">
+        <li><a href="mailto:hcao@epss.ucla.edu" aria-label="Email" style="display: inline-block; width: 2.5em; height: 2.5em; line-height: 2.5em; text-align: center; border-radius: 100%; color: rgba(240,240,240,0.9); text-decoration: none;" style-hover="color: #ef8376;" style-before="content: '\f0e0'; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 1.25em; line-height: inherit;"></a></li>
+        <li><a href="tel:+13107949467" aria-label="Telephone" style="display: inline-block; width: 2.5em; height: 2.5em; line-height: 2.5em; text-align: center; border-radius: 100%; color: rgba(240,240,240,0.9); text-decoration: none;" style-hover="color: #ef8376;" style-before="content: '\f095'; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 1.25em; line-height: inherit;"></a></li>
+        <li><a href="https://sites.epss.ucla.edu/hcao/" target="_blank" rel="noopener" aria-label="Research website" style="display: inline-block; width: 2.5em; height: 2.5em; line-height: 2.5em; text-align: center; border-radius: 100%; color: rgba(240,240,240,0.9); text-decoration: none;" style-hover="color: #ef8376;" style-before="content: '\f0ac'; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 1.25em; line-height: inherit;"></a></li>
+        <li><a href="https://epss.ucla.edu/hao-cao/" target="_blank" rel="noopener" aria-label="EPSS profile" style="display: inline-block; width: 2.5em; height: 2.5em; line-height: 2.5em; text-align: center; border-radius: 100%; color: rgba(240,240,240,0.9); text-decoration: none;" style-hover="color: #ef8376;" style-before="content: '\f1ad'; font-family: 'Font Awesome 5 Free'; font-weight: 900; font-size: 1.25em; line-height: inherit;"></a></li>
+      </ul>
+
+      <div style="text-align: center; color: rgba(190,190,190,0.9); font-size: 0.8em;">
+        <ul style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.3rem 1.25em; list-style: none; padding: 0; margin: 0 0 0.9em 0;">
+          <li>&copy; Hao Cao. Planetary magnetism and interiors research at UCLA.</li>
+          <li>Design: <a href="http://html5up.net" style="color: rgba(200,200,200,0.92); border-bottom: solid 1px rgba(128,128,128,0.22); text-decoration: none;" style-hover="color: #ef8376; border-bottom-color: transparent;">HTML5 UP</a></li>
+        </ul>
+        <p style="margin: 0;">Last updated August 2026.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900},&quot;showPrimaryLinks&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Homepage sections&quot;},&quot;showMilestones&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Homepage sections&quot;},&quot;showGroupPhoto&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Homepage sections&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    document.documentElement.lang = 'en';
+    this.keepPreviewToken();
+    this.setupHeroScrollVideo();
+  }
+
+  // The preview serves files with an auth token in the query string; a plain
+  // relative link drops it. No-op once deployed (no query string to carry).
+  keepPreviewToken() {
+    var q = window.location.search;
+    if (!q) return;
+    document.querySelectorAll('a[href$=".dc.html"]').forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (!href || /^(https?:|\/\/|mailto:|tel:)/i.test(href) || href.indexOf('?') !== -1) return;
+      a.setAttribute('href', href + q);
+    });
+  }
+
+  componentWillUnmount() {
+    (this._cleanup || []).forEach(function (fn) { fn(); });
+  }
+
+  renderVals() {
+    return {
+      showPrimaryLinks: this.props.showPrimaryLinks ?? true,
+      showMilestones: this.props.showMilestones ?? true,
+      showGroupPhoto: this.props.showGroupPhoto ?? true
+    };
+  }
+
+  setupHeroScrollVideo() {
+    var hero = document.querySelector('[data-hero]');
+    var video = hero && hero.querySelector('[data-hero-video]');
+    if (!video) return;
+
+    var layer = document.querySelector('[data-hero-layer]') || hero;
+    var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var introSeconds = 0.35, scrubStartSeconds = 0.32, scrubEndPaddingSeconds = 0.16, scrollCompleteAt = 0.94;
+    var duration = 0, introTimer = null, introActive = true;
+    var targetProgress = 0, renderedProgress = 0, frame = null, lastVideoUpdate = 0;
+
+    video.loop = false;
+    video.removeAttribute('loop');
+
+    function clamp(v, min, max) { return Math.min(max, Math.max(min, v)); }
+
+    function scrollProgress() {
+      var travel = Math.max(hero.offsetHeight * 0.98, window.innerHeight * 0.86, 1);
+      return clamp(window.scrollY / (travel * scrollCompleteAt), 0, 1);
+    }
+
+    function syncDuration() {
+      if (!duration && Number.isFinite(video.duration)) duration = video.duration;
+      return duration;
+    }
+
+    function applyProgress(progress, timestamp) {
+      var shouldFinalize = Math.abs(targetProgress - renderedProgress) < 0.002;
+      var eased = 1 - Math.pow(1 - progress, 2);
+      layer.style.setProperty('--hero-video-x', (-24 * eased).toFixed(1) + 'px');
+      layer.style.setProperty('--hero-video-y', (36 * eased).toFixed(1) + 'px');
+      layer.style.setProperty('--hero-video-scale', (0.84 + 0.035 * eased).toFixed(3));
+
+      if (prefersReducedMotion || !syncDuration()) return;
+
+      var scrubEndSeconds = Math.max(scrubStartSeconds, duration - scrubEndPaddingSeconds);
+      var targetTime = scrubStartSeconds + progress * (scrubEndSeconds - scrubStartSeconds);
+      if (Number.isFinite(targetTime) && Math.abs(video.currentTime - targetTime) > 0.012 && (shouldFinalize || timestamp - lastVideoUpdate > 30)) {
+        try { video.currentTime = targetTime; lastVideoUpdate = timestamp; } catch (e) {}
+      }
+    }
+
+    function animateScrollState(timestamp) {
+      frame = null;
+      targetProgress = scrollProgress();
+      var delta = targetProgress - renderedProgress;
+      if (Math.abs(delta) < 0.002) renderedProgress = targetProgress;
+      else renderedProgress += clamp(delta * 0.14, -0.018, 0.018);
+      applyProgress(renderedProgress, timestamp || 0);
+      if (Math.abs(targetProgress - renderedProgress) > 0.002) requestScrollState();
+    }
+
+    function requestScrollState() {
+      if (frame !== null) return;
+      frame = window.requestAnimationFrame(animateScrollState);
+    }
+
+    function finishIntro() {
+      introActive = false;
+      window.clearTimeout(introTimer);
+      try { video.pause(); } catch (e) {}
+      targetProgress = scrollProgress();
+      requestScrollState();
+    }
+
+    function startIntro() {
+      syncDuration();
+      targetProgress = scrollProgress();
+      renderedProgress = targetProgress;
+      if (prefersReducedMotion) { finishIntro(); return; }
+      try { video.currentTime = 0; } catch (e) {}
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+      introTimer = window.setTimeout(finishIntro, introSeconds * 1000);
+      requestScrollState();
+    }
+
+    var onScroll = function () {
+      if (introActive) finishIntro();
+      targetProgress = scrollProgress();
+      requestScrollState();
+    };
+    var onResize = function () {
+      targetProgress = scrollProgress();
+      requestScrollState();
+    };
+
+    video.addEventListener('loadedmetadata', startIntro, { once: true });
+    if (video.readyState >= 1) startIntro();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onResize);
+    requestScrollState();
+
+    this._cleanup = [function () {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onResize);
+      window.clearTimeout(introTimer);
+      if (frame !== null) window.cancelAnimationFrame(frame);
+    }];
+  }
+}
+</script>
+</body>
+</html>

@@ -3584,6 +3584,15 @@ body:not(.homepage) .wrapper {
   color: #10263d;
 }
 
+.cv-actions {
+  margin: 0.85rem 0 0 0;
+}
+
+.cv-actions .button {
+  padding: 0.55em 1.45em;
+  font-size: 0.95rem;
+}
+
 .cv-section {
   display: grid;
   grid-template-columns: minmax(13rem, 0.36fr) minmax(0, 1fr);

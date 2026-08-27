@@ -47,6 +47,7 @@
 								<li><a href="<?php echo esc_url(hao_cao_research_page_url('opportunities')); ?>">Opportunities</a></li>
 								<li><a href="<?php echo esc_url(hao_cao_research_page_url('teaching')); ?>">Teaching</a></li>
 								<li><a href="<?php echo esc_url(hao_cao_research_page_url('curriculum-vitae')); ?>">CV</a></li>
+								<li><a href="<?php echo esc_url(hao_cao_research_page_url('recorded-talks')); ?>">Recorded Talks</a></li>
 							</ul>
 						</nav>
 
@@ -84,9 +85,9 @@
 													<h4>Links</h4>
 													<ul class="research-source-list">
 														<li>
-															<span class="research-source-type">Video</span>
+															<span class="research-source-type">Invited talks</span>
 															<a href="https://www.mathinstitutes.org/videos/22687" target="_blank" rel="noopener">Giant Planet Interior Dynamics: Recent Progress and Open Questions</a>
-															<span>IPAM/MathInstitutes video of Hao Cao&apos;s January 31, 2025 talk on giant-planet interior dynamics.</span>
+															<span>IPAM/MathInstitutes invited 2025 talk by Hao Cao on giant-planet interior dynamics.</span>
 														</li>
 														<li>
 															<a href="https://www.missionjuno.swri.edu/news/jupiters-jetstreams-are-unearthly" target="_blank" rel="noopener">Juno findings: Jupiter&apos;s jet-streams are unearthly</a>
@@ -137,9 +138,9 @@
 													<h4>Links</h4>
 													<ul class="research-source-list">
 														<li>
-															<span class="research-source-type">Video</span>
+															<span class="research-source-type">Invited talks</span>
 															<a href="https://www.youtube.com/watch?v=SRmGf0AUHR8" target="_blank" rel="noopener">The Magnetic Fields of Mercury, Ganymede, and Saturn</a>
-															<span>Public INI/Newton Institute seminar video by Hao Cao on comparative planetary magnetic fields.</span>
+															<span>INI invited 2022 seminar video by Hao Cao on comparative planetary magnetic fields.</span>
 														</li>
 														<li>
 															<a href="https://www.jpl.nasa.gov/news/nasas-juno-finds-changes-in-jupiters-magnetic-field/" target="_blank" rel="noopener">NASA&apos;s Juno finds changes in Jupiter&apos;s magnetic field</a>

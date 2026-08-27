@@ -47,6 +47,7 @@
 								<li class="active"><a href="<?php echo esc_url(hao_cao_research_page_url('opportunities')); ?>">Opportunities</a></li>
 								<li><a href="<?php echo esc_url(hao_cao_research_page_url('teaching')); ?>">Teaching</a></li>
 								<li><a href="<?php echo esc_url(hao_cao_research_page_url('curriculum-vitae')); ?>">CV</a></li>
+								<li><a href="<?php echo esc_url(hao_cao_research_page_url('recorded-talks')); ?>">Recorded Talks</a></li>
 							</ul>
 						</nav>
 

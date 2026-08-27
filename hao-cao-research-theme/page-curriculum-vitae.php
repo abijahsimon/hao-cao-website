@@ -18,7 +18,7 @@
 			name="description"
 			content="Curriculum vitae overview for Hao Cao, including academic appointments, research interests, mission participation, honors, and service."
 		/>
-		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260808-heading-spacing-preview')); ?>" />
+		<link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/main.css?v=20260827-cv-download')); ?>" />
 		<noscript><link rel="stylesheet" href="<?php echo esc_url(hao_cao_research_theme_uri('assets/css/noscript.css')); ?>" /></noscript>
 			<?php wp_head(); ?>
 	</head>
@@ -47,6 +47,7 @@
 								<li><a href="<?php echo esc_url(hao_cao_research_page_url('opportunities')); ?>">Opportunities</a></li>
 								<li><a href="<?php echo esc_url(hao_cao_research_page_url('teaching')); ?>">Teaching</a></li>
 								<li class="active"><a href="<?php echo esc_url(hao_cao_research_page_url('curriculum-vitae')); ?>">CV</a></li>
+								<li><a href="<?php echo esc_url(hao_cao_research_page_url('recorded-talks')); ?>">Recorded Talks</a></li>
 							</ul>
 						</nav>
 
@@ -59,6 +60,9 @@
 						<article id="main" class="special cv-page">
 							<header>
 								<h2>Curriculum Vitae</h2>
+								<ul class="actions cv-actions">
+									<li><a href="<?php echo esc_url(hao_cao_research_theme_uri('assets/pdf/hao-cao-cv.pdf')); ?>" class="button icon solid fa-download" download>Download two-page CV</a></li>
+								</ul>
 							</header>
 							<?php if (hao_cao_research_has_editor_content()) : ?>
 								<?php hao_cao_research_the_editor_content('wordpress-page-content cv-editor-content'); ?>
@@ -246,7 +250,7 @@
 										<ul class="icons">
 											<li><span class="icon solid fa-envelope footer-static-icon"><span class="label">Email</span></span></li>
 											<li><a href="tel:+13107949467" class="icon solid fa-phone"><span class="label">Phone</span></a></li>
-											<li><a href="https://sites.epss.ucla.edu/hcao/" target="_blank" rel="noopener" class="icon solid fa-globe"><span class="label">Research Website</span></a></li>
+											<li><a href="https://haocao.epss.ucla.edu/" target="_blank" rel="noopener" class="icon solid fa-globe"><span class="label">Research Website</span></a></li>
 											<li><a href="https://epss.ucla.edu/hao-cao/" target="_blank" rel="noopener" class="icon solid fa-building"><span class="label">EPSS Profile</span></a></li>
 										</ul>
 									</section>

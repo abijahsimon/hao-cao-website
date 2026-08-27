@@ -271,6 +271,7 @@
 									<li><a href="<?php echo esc_url(hao_cao_research_page_url('opportunities')); ?>">Opportunities</a></li>
 									<li><a href="<?php echo esc_url(hao_cao_research_page_url('teaching')); ?>">Teaching</a></li>
 									<li><a href="<?php echo esc_url(hao_cao_research_page_url('curriculum-vitae')); ?>">CV</a></li>
+									<li><a href="<?php echo esc_url(hao_cao_research_page_url('recorded-talks')); ?>">Recorded Talks</a></li>
 								</ul>
 							</nav>
 
@@ -380,11 +381,14 @@
 									<?php hao_cao_research_the_editor_content('wordpress-page-content home-editor-content'); ?>
 								<?php else : ?>
 								<p>
-									Dr. Hao Cao is an Associate Professor of Space Science at UCLA. His research treats magnetic
-									fields and gravity as windows into the hidden interiors and surrounding space environments of
-									planetary bodies. The group works across observation, theory, modeling, and magnetometer
-									development, with applications ranging from giant planets and icy moons to the Moon and Earth&apos;s
-									near-space environment.
+									Dr. Hao Cao is an Associate Professor of Space Science at UCLA and PI of the UCLA Space
+									Magnetometer Lab. His research focuses on the space environment and interiors of planetary
+									bodies, including Earth. He has contributed to several flagship NASA and European Space Agency
+									(ESA) missions, serving as the Deputy-PI of the MAG instrument on NASA&rsquo;s TRACERS mission,
+									Co-Investigator on the ESA JUICE mission to the icy moons of Jupiter, and a member of the NASA
+									Juno mission. He also leads a NASA DALI project developing a next-generation magnetometer for
+									long-term lunar surface operations. His honors include the Sloan Research Fellowship and the
+									NASA Group Achievement Award.
 								</p>
 								<?php endif; ?>
 							</div>
