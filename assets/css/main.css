@@ -5820,3 +5820,101 @@ body:not(.homepage) .wrapper.research-page-wrapper {
     line-height: 1.25em;
   }
 }
+
+/* ===== CV download control polish ===== */
+#main.cv-page .cv-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.75rem;
+  width: 100%;
+  text-align: left;
+}
+
+#main.cv-page .cv-page-header h2 {
+  margin: 0;
+}
+
+#main.cv-page .cv-download-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.05rem;
+}
+
+#main.cv-page .cv-download-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.85rem;
+  padding: 0.68rem 1.15rem;
+  border: 1px solid #1d426e;
+  border-radius: 0.08rem;
+  background: #1d426e;
+  color: #ffffff;
+  box-shadow: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.105em;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+#main.cv-page .cv-download-label {
+  white-space: nowrap;
+}
+
+#main.cv-page .cv-download-link:hover {
+  border-color: #102f53;
+  background: #102f53;
+  color: #ffffff;
+}
+
+#main.cv-page .cv-download-link:focus-visible {
+  outline: 3px solid rgba(47, 111, 166, 0.26);
+  outline-offset: 3px;
+}
+
+#main.cv-page .cv-download-updated {
+  margin: 0;
+  color: #6f8198;
+  font-size: 0.88rem;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.25;
+  text-align: left;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 736px) {
+  #main.cv-page .cv-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+
+  #main.cv-page .cv-download-group {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #main.cv-page .cv-download-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.55rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #main.cv-page .cv-download-link {
+    transition: none;
+  }
+}
