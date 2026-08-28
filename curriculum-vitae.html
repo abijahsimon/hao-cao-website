@@ -13,7 +13,7 @@
 			name="description"
 			content="Curriculum vitae overview for Hao Cao, including academic appointments, research interests, mission participation, honors, and service."
 		/>
-		<link rel="stylesheet" href="assets/css/main.css?v=20260828-cv-download-polish" />
+		<link rel="stylesheet" href="assets/css/main.css?v=20260828-cv-download-polish-2" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="no-sidebar is-preload">
@@ -51,22 +51,24 @@
 
 					<div class="container">
 						<article id="main" class="special cv-page">
-							<header>
+							<header class="cv-page-header">
 								<h2>Curriculum Vitae</h2>
-								<ul class="actions cv-actions">
-									<li>
-										<a
-											href="assets/pdf/hao-cao-cv.pdf"
-											class="cv-download-link"
-											download
-											aria-label="Download Hao Cao's two-page curriculum vitae as a PDF"
-										>
-											<span class="cv-download-icon icon solid fa-file-pdf" aria-hidden="true"></span>
-											<span class="cv-download-label">Download two-page CV</span>
-											<span class="cv-download-format" aria-hidden="true">PDF</span>
-										</a>
-									</li>
-								</ul>
+
+								<!-- CV download action: update the visible label and date here when replacing the PDF. -->
+								<div class="cv-download-group">
+									<a
+										href="assets/pdf/hao-cao-cv.pdf"
+										class="cv-download-link"
+										download
+										aria-label="Download Hao Cao's curriculum vitae as a PDF"
+									>
+										<span class="cv-download-label">Download CV</span>
+										<span class="cv-download-format" aria-hidden="true">PDF</span>
+									</a>
+									<p class="cv-download-updated">
+										Updated <time datetime="2026-08">August 2026</time>
+									</p>
+								</div>
 							</header>
 
 							<section class="cv-section">
